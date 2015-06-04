@@ -333,6 +333,7 @@ GameObject:
   - 222: {fileID: 1276901766}
   - 114: {fileID: 1276901765}
   - 114: {fileID: 1276901764}
+  - 114: {fileID: 1276901767}
   m_Layer: 5
   m_Name: VisualInputButton
   m_TagString: Untagged
@@ -426,6 +427,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1276901762}
+--- !u!114 &1276901767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1276901762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81bdb4274f1e0c24ea9fc046c69df622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outboundNodes:
+  - {fileID: 601553056}
 --- !u!1 &1384719682
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,6 +654,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1936482285}
+  - 114: {fileID: 1936482286}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -659,6 +674,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &1936482286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1936482284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31bf034f889eb3747aae1e7381550689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startNode: {fileID: 1276901762}
 --- !u!1 &1974965813
 GameObject:
   m_ObjectHideFlags: 0

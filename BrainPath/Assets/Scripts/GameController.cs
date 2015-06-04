@@ -10,6 +10,9 @@ public class GameController : MonoBehaviour {
     {
         instance = this;
     }
+
+    private GameObject activeNode;
+    public GameObject startNode;
 	// Use this for initialization
 	void Start () {
 	
