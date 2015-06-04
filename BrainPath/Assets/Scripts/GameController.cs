@@ -11,7 +11,10 @@ public class GameController : MonoBehaviour {
         instance = this;
     }
 
+    //References to the game object and scripts of the active brain node
     private GameObject activeNode;
+    private BrainNode activeNodeScript;
+
     public GameObject startNode;
 	// Use this for initialization
 	void Start () {

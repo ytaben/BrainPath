@@ -229,6 +229,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 601553057}
+  - 114: {fileID: 601553058}
+  - 225: {fileID: 601553059}
   m_Layer: 5
   m_Name: VisualCortex
   m_TagString: Untagged
@@ -256,6 +258,30 @@ RectTransform:
   m_AnchoredPosition: {x: 325, y: 15}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &601553058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601553056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81bdb4274f1e0c24ea9fc046c69df622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outboundNodes:
+  - {fileID: 1276901762}
+--- !u!225 &601553059
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 601553056}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &907365571
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +360,7 @@ GameObject:
   - 114: {fileID: 1276901765}
   - 114: {fileID: 1276901764}
   - 114: {fileID: 1276901767}
+  - 225: {fileID: 1276901768}
   m_Layer: 5
   m_Name: VisualInputButton
   m_TagString: Untagged
@@ -440,6 +467,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outboundNodes:
   - {fileID: 601553056}
+--- !u!225 &1276901768
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1276901762}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1384719682
 GameObject:
   m_ObjectHideFlags: 0
