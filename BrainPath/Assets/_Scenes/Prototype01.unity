@@ -269,6 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81bdb4274f1e0c24ea9fc046c69df622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
   outboundNodes:
   - {fileID: 1276901762}
 --- !u!225 &601553059
@@ -465,6 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81bdb4274f1e0c24ea9fc046c69df622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 0
   outboundNodes:
   - {fileID: 601553056}
 --- !u!225 &1276901768

@@ -18,7 +18,9 @@ public class GameController : MonoBehaviour {
     public GameObject startNode;
 	// Use this for initialization
 	void Start () {
-	
+        activeNode = startNode;
+        activeNodeScript = activeNode.GetComponent<BrainNode>();
+        activeNodeScript.isActive = true;
 	}
 	
 	// Update is called once per frame
