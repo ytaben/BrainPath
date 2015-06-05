@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class BrainNode : MonoBehaviour {
     public bool isActive;
@@ -7,9 +8,12 @@ public class BrainNode : MonoBehaviour {
     public GameObject[] outboundNodes;
 
     private CanvasGroup canvasGroup;
+    private GameController gameController;
     // Use this for initialization
     void Start () {
         canvasGroup = GetComponent<CanvasGroup>();
+        gameController = GameController.getInstance();
+        GetComponent<Button>().onClick.AddListener(OnClickBrainNode);
 	}
 	
 	// Update is called once per frame
@@ -20,5 +24,10 @@ public class BrainNode : MonoBehaviour {
         }
         else
             canvasGroup.alpha = 1;
+    }
+
+    void OnClickBrainNode()
+    {
+
     }
 }
