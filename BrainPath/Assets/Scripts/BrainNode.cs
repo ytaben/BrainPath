@@ -2,22 +2,26 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class BrainNode : MonoBehaviour {
-    public bool isActive;
+public class BrainNode : MonoBehaviour
+{
+    public bool isActive; //Determine whether this node is currently selected
 
-    public GameObject[] outboundNodes;
+    public GameObject[] outboundNodes; //List of nodes that are connected to this one
 
-    private CanvasGroup canvasGroup;
-    private GameController gameController;
+    private CanvasGroup canvasGroup; //Useful to control alpha of the element
+    private GameController gameController; //Reference to gameController (singleton)
     // Use this for initialization
-    void Start () {
-        canvasGroup = GetComponent<CanvasGroup>();
+    void Start()
+    {
+        canvasGroup = GetComponent<CanvasGroup>(); //Initialize member variables
         gameController = GameController.getInstance();
-        GetComponent<Button>().onClick.AddListener(OnClickBrainNode);
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        GetComponent<Button>().onClick.AddListener(OnClickBrainNode); //Add an onClick listener 
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //If this node is active, pulse by changing alpha
         if (isActive)
         {
             canvasGroup.alpha = Mathf.PingPong(Time.time, 1);
@@ -26,6 +30,7 @@ public class BrainNode : MonoBehaviour {
             canvasGroup.alpha = 1;
     }
 
+    //On Click - notify gameController using the Transition method
     void OnClickBrainNode()
     {
         gameController.Transition(gameObject);

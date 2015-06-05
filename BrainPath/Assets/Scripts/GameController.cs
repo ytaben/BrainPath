@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameController : MonoBehaviour {
+public class GameController : MonoBehaviour
+{
 
     //Make sure GameController is singleton and easily accessible
     private static GameController instance;
@@ -15,22 +16,25 @@ public class GameController : MonoBehaviour {
     private GameObject activeNode;
     private BrainNode activeNodeScript;
 
-    public GameObject startNode;
-	// Use this for initialization
-	void Start () {
-        activeNode = startNode;
+    public GameObject startNode; //Set start node in editor for every level
+    // Use this for initialization
+    void Start()
+    {
+        activeNode = startNode; //Set member references 
         activeNodeScript = activeNode.GetComponent<BrainNode>();
-        activeNodeScript.isActive = true;
-        ReinitializeField();
-	}
+        ReinitializeField(); //Initialize the field when the game starts
+    }
 
+    //This function is used to notify GameController of a transition to another node
     public void Transition(GameObject destination)
     {
         activeNode = destination;
         activeNodeScript = activeNode.GetComponent<BrainNode>();
-        ReinitializeField();
+        ReinitializeField(); //Reinitialize field after every transition
     }
 
+    //Reinitialize the game field by disabling all brain nodes, then reactivating only the current one and
+    //All the outbound nodes
     void ReinitializeField()
     {
         foreach (GameObject brainNode in GameObject.FindGameObjectsWithTag("BrainNode"))
@@ -45,9 +49,10 @@ public class GameController : MonoBehaviour {
             brainNode.SetActive(true);
         }
     }
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
 }
