@@ -21,13 +21,30 @@ public class GameController : MonoBehaviour {
         activeNode = startNode;
         activeNodeScript = activeNode.GetComponent<BrainNode>();
         activeNodeScript.isActive = true;
+        ReinitializeField();
 	}
 
     public void Transition(GameObject destination)
     {
         activeNode = destination;
+        activeNodeScript = activeNode.GetComponent<BrainNode>();
+        ReinitializeField();
     }
-	
+
+    void ReinitializeField()
+    {
+        foreach (GameObject brainNode in GameObject.FindGameObjectsWithTag("BrainNode"))
+        {
+            brainNode.SetActive(false);
+            brainNode.GetComponent<BrainNode>().isActive = false;
+        }
+        activeNode.SetActive(true);
+        activeNodeScript.isActive = true;
+        foreach (GameObject brainNode in activeNodeScript.outboundNodes)
+        {
+            brainNode.SetActive(true);
+        }
+    }
 	// Update is called once per frame
 	void Update () {
 	
