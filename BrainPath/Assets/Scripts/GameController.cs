@@ -22,6 +22,11 @@ public class GameController : MonoBehaviour {
         activeNodeScript = activeNode.GetComponent<BrainNode>();
         activeNodeScript.isActive = true;
 	}
+
+    public void Transition(GameObject destination)
+    {
+        activeNode = destination;
+    }
 	
 	// Update is called once per frame
 	void Update () {

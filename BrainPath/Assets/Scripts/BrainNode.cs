@@ -28,6 +28,6 @@ public class BrainNode : MonoBehaviour {
 
     void OnClickBrainNode()
     {
-
+        gameController.Transition(gameObject);
     }
 }
