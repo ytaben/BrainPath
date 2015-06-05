@@ -299,7 +299,7 @@ GameObject:
   - 225: {fileID: 601553059}
   m_Layer: 5
   m_Name: VisualCortex
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -362,7 +362,7 @@ GameObject:
   - 225: {fileID: 715739659}
   m_Layer: 5
   m_Name: SensoryCortex
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -888,7 +888,7 @@ GameObject:
   - 114: {fileID: 1412367497}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: BrainNode
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -949,7 +949,7 @@ GameObject:
   - 114: {fileID: 1450067737}
   m_Layer: 5
   m_Name: Text
-  m_TagString: BrainNode
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1015,7 +1015,7 @@ GameObject:
   - 114: {fileID: 1498001922}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: BrainNode
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1137,7 +1137,7 @@ GameObject:
   - 225: {fileID: 1791524407}
   m_Layer: 5
   m_Name: PrefrontalCortex
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
