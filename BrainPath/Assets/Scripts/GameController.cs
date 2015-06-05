@@ -5,7 +5,7 @@ public class GameController : MonoBehaviour {
 
     //Make sure GameController is singleton and easily accessible
     private static GameController instance;
-    public GameController getInstance() { if (instance) { return instance; } else { return new GameController(); } }
+    public static GameController getInstance() { if (instance) { return instance; } else { return new GameController(); } }
     void Awake()
     {
         instance = this;
@@ -27,4 +27,5 @@ public class GameController : MonoBehaviour {
 	void Update () {
 	
 	}
+
 }
