@@ -17,7 +17,7 @@ public class BrainNode3D : MonoBehaviour {
     void OnMouseExit()
     {
         Material[] mats = GetComponent<Renderer>().materials;
-        mats[0] = materialController.undiscoveredMaterial;
+        mats[0] = materialController.undiscoveredMaterial   ;
         GetComponent<Renderer>().materials = mats;
     }
 
