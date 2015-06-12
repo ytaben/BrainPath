@@ -4897,6 +4897,7 @@ GameObject:
   - 222: {fileID: 860065953}
   - 114: {fileID: 860065952}
   - 114: {fileID: 860065951}
+  - 114: {fileID: 860065955}
   m_Layer: 5
   m_Name: ReturnButton
   m_TagString: Untagged
@@ -4990,6 +4991,18 @@ RectTransform:
   m_AnchoredPosition: {x: -1.56866336, y: -26.2299423}
   m_SizeDelta: {x: 165, y: 30}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &860065955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 860065950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41eaa6dd8262ec24b99c82c1f0e63407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 2105940114}
 --- !u!1001 &864541818
 Prefab:
   m_ObjectHideFlags: 0
