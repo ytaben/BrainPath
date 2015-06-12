@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BrainNode
   - VisualCortexPart
+  - BrainPart
   layers:
   - Default
   - TransparentFX
