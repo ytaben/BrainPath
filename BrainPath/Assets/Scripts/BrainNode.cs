@@ -9,16 +9,21 @@ public class BrainNode : MonoBehaviour
     public bool isExplored;
     public bool isNew;
 
-    public System.Collections.Generic.IDictionary<GameObject, int> outboundNodes; //List of nodes that are connected to this one
+    public System.Collections.Generic.IDictionary<GameObject, int> outboundNodes; //HashTable of nodes that are connected to this one
     [Serializable]
     public struct OutboundEdge
     {
         public GameObject destination;
         public int cost;
     };
-    public OutboundEdge[] outboundEdges;
+    public OutboundEdge[] outboundEdges; //An array of struct to conviniently display in editor
 
     public GameObject[] brainParts; //List of brain parts that correspond to this node
+
+
+    //A drop down menu to choose which animation should be triggered upon being active or hovering over this node
+    public enum AnimationChoice { Normal, Split, UpsideDown}
+    public AnimationChoice BrainState;
 
     // private CanvasGroup canvasGroup; //Useful to control alpha of the element
     private Button button;
