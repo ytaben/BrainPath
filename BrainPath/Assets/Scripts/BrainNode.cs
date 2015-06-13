@@ -32,6 +32,11 @@ public class BrainNode : MonoBehaviour
         materialController = MaterialController.getInstance();
         button = GetComponent<Button>();
         button.onClick.AddListener(OnClickBrainNode); //Add an onClick listener 
+
+        foreach (OutboundEdge edge in outboundEdges)
+        {
+            outboundNodes[edge.destination] = edge.cost;
+        }
     }
 
     // Update is called once per frame
