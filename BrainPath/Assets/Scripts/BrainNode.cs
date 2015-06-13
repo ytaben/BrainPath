@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
 
 public class BrainNode : MonoBehaviour
 {
@@ -8,7 +9,15 @@ public class BrainNode : MonoBehaviour
     public bool isExplored;
     public bool isNew;
 
-    public GameObject[] outboundNodes; //List of nodes that are connected to this one
+    public System.Collections.Generic.IDictionary<GameObject, int> outboundNodes; //List of nodes that are connected to this one
+    [Serializable]
+    public struct OutboundEdge
+    {
+        public GameObject destination;
+        public int cost;
+    };
+    public OutboundEdge[] outboundEdges;
+
     public GameObject[] brainParts; //List of brain parts that correspond to this node
 
     // private CanvasGroup canvasGroup; //Useful to control alpha of the element

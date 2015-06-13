@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
         }
         activeNode.SetActive(true);
         activeNodeScript.isActive = true;
-        foreach (GameObject brainNode in activeNodeScript.outboundNodes)
+        foreach (GameObject brainNode in activeNodeScript.outboundNodes.Keys)
         {
             brainNode.SetActive(true);
         }
