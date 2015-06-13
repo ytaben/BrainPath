@@ -9,7 +9,7 @@ public class BrainNode : MonoBehaviour
     public bool isExplored;
     public bool isNew;
 
-    public System.Collections.Generic.IDictionary<GameObject, int> outboundNodes; //HashTable of nodes that are connected to this one
+    public System.Collections.Generic.Dictionary<GameObject, int> outboundNodes; //HashTable of nodes that are connected to this one
     [Serializable]
     public struct OutboundEdge
     {
@@ -22,7 +22,7 @@ public class BrainNode : MonoBehaviour
 
 
     //A drop down menu to choose which animation should be triggered upon being active or hovering over this node
-    public enum AnimationChoice { Normal, Split, UpsideDown}
+    public enum AnimationChoice {Normal, Split, UpsideDown}
     public AnimationChoice BrainState;
 
     // private CanvasGroup canvasGroup; //Useful to control alpha of the element
@@ -37,7 +37,7 @@ public class BrainNode : MonoBehaviour
         materialController = MaterialController.getInstance();
         button = GetComponent<Button>();
         button.onClick.AddListener(OnClickBrainNode); //Add an onClick listener 
-
+        outboundNodes = new System.Collections.Generic.Dictionary<GameObject, int>();
         foreach (OutboundEdge edge in outboundEdges)
         {
             outboundNodes[edge.destination] = edge.cost;
@@ -73,6 +73,15 @@ public class BrainNode : MonoBehaviour
 
     }
 
+    public void OnMouseEnter()
+    {
+
+    }
+    public void OnMouseExit()
+    {
+
+    }
+
     private void SetMaterial(Material material)
     {
         foreach (GameObject brainPart in brainParts)
@@ -85,6 +94,6 @@ public class BrainNode : MonoBehaviour
     //On Click - notify gameController using the Transition method
     void OnClickBrainNode()
     {
-        gameController.Transition(gameObject);
+        gameController.Transition(gameObject); gameController.SetBrainAnimation(BrainState);
     }
 }

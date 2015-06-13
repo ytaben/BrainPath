@@ -16,13 +16,17 @@ public class GameController : MonoBehaviour
     private GameObject activeNode;
     private BrainNode activeNodeScript;
 
+    //Brain animator controller
+    Animator brainAnimator;
+
     public GameObject startNode; //Set start node in editor for every level
     // Use this for initialization
     void Start()
     {
         activeNode = startNode; //Set member references 
         activeNodeScript = activeNode.GetComponent<BrainNode>();
-        ReinitializeField(); //Initialize the field when the game starts
+       // ReinitializeField(); //Initialize the field when the game starts
+        brainAnimator = GameObject.Find("Brain").GetComponent<Animator>(); if (!brainAnimator) Debug.Log("null animator");
     }
 
     //This function is used to notify GameController of a transition to another node
@@ -30,7 +34,7 @@ public class GameController : MonoBehaviour
     {
         activeNode = destination;
         activeNodeScript = activeNode.GetComponent<BrainNode>();
-        ReinitializeField(); //Reinitialize field after every transition
+        //ReinitializeField(); //Reinitialize field after every transition
     }
 
     //Reinitialize the game field by disabling all brain nodes, then reactivating only the current one and
@@ -47,6 +51,21 @@ public class GameController : MonoBehaviour
         foreach (GameObject brainNode in activeNodeScript.outboundNodes.Keys)
         {
             brainNode.SetActive(true);
+        }
+    }
+
+    public void ResetBrainAnimation()
+    {
+        brainAnimator.SetBool("IsUpsideDown", false);
+        brainAnimator.SetBool("IsSeparated", false);
+    }
+    public void SetBrainAnimation(BrainNode.AnimationChoice animation)
+    {
+        ResetBrainAnimation();
+        switch (animation)
+        {
+            case BrainNode.AnimationChoice.Split: brainAnimator.SetBool("IsSeparated", true); break;
+            case BrainNode.AnimationChoice.UpsideDown: brainAnimator.SetBool("IsUpsideDown", true); Debug.Log("Got here"); break;
         }
     }
     // Update is called once per frame

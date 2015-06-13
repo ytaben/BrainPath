@@ -707,7 +707,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 138388916}
   m_LocalRotation: {x: .707106829, y: -.707106709, z: -1.15202326e-07, w: -1.15202312e-07}
-  m_LocalPosition: {x: -37.0442047, y: -166.415939, z: -47.2164421}
+  m_LocalPosition: {x: -37.0442047, y: -166.415939, z: -100}
   m_LocalScale: {x: 1.66666698, y: 2, z: 2}
   m_Children:
   - {fileID: 1953344355}
@@ -6454,7 +6454,9 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
-  outboundEdges: []
+  outboundEdges:
+  - destination: {fileID: 1197936677}
+    cost: 1
   brainParts:
   - {fileID: 942301166}
   - {fileID: 1767982009}
@@ -6825,7 +6827,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1131890171}
   m_LocalRotation: {x: .707106829, y: -.707106709, z: -1.15202326e-07, w: -1.15202312e-07}
-  m_LocalPosition: {x: -37.0442047, y: -166.415939, z: -47.2164421}
+  m_LocalPosition: {x: -37.0442047, y: -166.415939, z: -100}
   m_LocalScale: {x: 1.66666698, y: 2, z: 2}
   m_Children:
   - {fileID: 1023515849}
@@ -7353,7 +7355,9 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
-  outboundEdges: []
+  outboundEdges:
+  - destination: {fileID: 1058629785}
+    cost: 1
   brainParts:
   - {fileID: 2033209088}
   - {fileID: 814511947}
@@ -8524,8 +8528,6 @@ MonoBehaviour:
     cost: 25
   - destination: {fileID: 2051817932}
     cost: 25
-  - destination: {fileID: 0}
-    cost: 0
   brainParts:
   - {fileID: 813720029}
   - {fileID: 1691786752}
@@ -11273,7 +11275,9 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
-  outboundEdges: []
+  outboundEdges:
+  - destination: {fileID: 209739894}
+    cost: 1
   brainParts: []
   BrainState: 0
 --- !u!1 &1836787452
@@ -12255,8 +12259,6 @@ MonoBehaviour:
   outboundEdges:
   - destination: {fileID: 1469920577}
     cost: 50
-  - destination: {fileID: 0}
-    cost: 0
   brainParts:
   - {fileID: 899422685}
   - {fileID: 1323794461}
