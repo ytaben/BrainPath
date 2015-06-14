@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     {
         instance = this;
         brainAnimator = GameObject.Find("Brain").GetComponent<Animator>(); if (!brainAnimator) Debug.Log("null animator");
-
+        gameTimeText = GameObject.Find("GameTimeText").GetComponent<Text>();
     }
 
     //References to the game object and scripts of the active brain node
