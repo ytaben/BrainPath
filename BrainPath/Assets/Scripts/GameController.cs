@@ -48,6 +48,7 @@ public class GameController : MonoBehaviour
         SetCurrentAnimation();
         activeNodeScript.Refresh();
         activeNodeScript.ExploreOutboundObjects();
+        UpdateTimeText();
         GameObject.Find("TimeLimitText").GetComponent<Text>().text = "Timelimit: " + TimeLimit.ToString() + " ms";
     }
 
