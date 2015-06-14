@@ -8891,6 +8891,8 @@ MonoBehaviour:
     cost: 25
   - destination: {fileID: 2051817932}
     cost: 25
+  - destination: {fileID: 431886608}
+    cost: 50
   brainParts:
   - {fileID: 813720029}
   - {fileID: 1691786752}

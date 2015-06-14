@@ -149,7 +149,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         {
             GameObject node = (GameObject)nodes[0];
             nodes.Remove(node);
-            foreach (GameObject outboundNode in source.GetComponent<BrainNode>().outboundNodes.Keys)
+            foreach (GameObject outboundNode in node.GetComponent<BrainNode>().outboundNodes.Keys)
             {
                 BrainNode outboundBrainNode = outboundNode.GetComponent<BrainNode>();
                 if (!marked[outboundNode])
