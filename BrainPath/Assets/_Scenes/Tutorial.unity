@@ -1412,7 +1412,7 @@ MonoBehaviour:
   - {fileID: 1953344354}
   - {fileID: 1012738942}
   nodeCanvas: {fileID: 0}
-  BrainState: 1
+  BrainState: 0
 --- !u!114 &252806745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8906,7 +8906,7 @@ MonoBehaviour:
   - {fileID: 1953344354}
   - {fileID: 1012738942}
   nodeCanvas: {fileID: 2105940118}
-  BrainState: 1
+  BrainState: 0
 --- !u!114 &1353083298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13094,7 +13094,7 @@ MonoBehaviour:
   - {fileID: 1953344354}
   - {fileID: 1012738942}
   nodeCanvas: {fileID: 0}
-  BrainState: 1
+  BrainState: 0
 --- !u!114 &2051817935
 MonoBehaviour:
   m_ObjectHideFlags: 0

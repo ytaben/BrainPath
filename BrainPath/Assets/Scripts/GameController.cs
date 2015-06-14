@@ -108,7 +108,7 @@ public class GameController : MonoBehaviour
         switch (animation)
         {
             case BrainNode.AnimationChoice.Split: brainAnimator.SetBool("IsSeparated", true); break;
-            case BrainNode.AnimationChoice.UpsideDown: brainAnimator.SetBool("IsUpsideDown", true); Debug.Log("Got here"); break;
+            case BrainNode.AnimationChoice.UpsideDown: brainAnimator.SetBool("IsUpsideDown", true); break;
         }
     }
     public void SetCurrentAnimation() { SetBrainAnimation(currentAnimationState); }
