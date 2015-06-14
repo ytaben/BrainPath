@@ -59,7 +59,7 @@ public class GameController : MonoBehaviour
 
     public void UpdateTimeText()
     {
-        gameTimeText.text = gameTime.ToString();
+        gameTimeText.text = "Time: " + gameTime.ToString();
         if (gameTime > TimeLimit / 2) { gameTimeText.color = Color.yellow; }
         if (gameTime > TimeLimit / 4) { gameTimeText.color = Color.red; }
     }
