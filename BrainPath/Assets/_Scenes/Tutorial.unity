@@ -1379,7 +1379,7 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 481, y: 41}
+  m_AnchoredPosition: {x: 510, y: -32}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &252806744
@@ -1398,6 +1398,10 @@ MonoBehaviour:
   isNew: 0
   outboundEdges:
   - destination: {fileID: 1353083292}
+    cost: 25
+  - destination: {fileID: 1469920577}
+    cost: 25
+  - destination: {fileID: 2051817932}
     cost: 25
   brainParts:
   - {fileID: 813720029}
@@ -8803,7 +8807,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 528, y: -24}
+  m_AnchoredPosition: {x: 458, y: 26}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1353083294
@@ -8890,8 +8894,6 @@ MonoBehaviour:
   isNew: 0
   outboundEdges:
   - destination: {fileID: 252806742}
-    cost: 25
-  - destination: {fileID: 2051817932}
     cost: 25
   - destination: {fileID: 431886608}
     cost: 50
@@ -9589,8 +9591,8 @@ MonoBehaviour:
     cost: 25
   - destination: {fileID: 252806742}
     cost: 25
-  - destination: {fileID: 1353083292}
-    cost: 25
+  - destination: {fileID: 2030803752}
+    cost: 50
   brainParts:
   - {fileID: 813720029}
   - {fileID: 1691786752}
@@ -13079,7 +13081,9 @@ MonoBehaviour:
   isExplored: 0
   isNew: 0
   outboundEdges:
-  - destination: {fileID: 1353083292}
+  - destination: {fileID: 252806742}
+    cost: 25
+  - destination: {fileID: 1469920577}
     cost: 25
   brainParts:
   - {fileID: 813720029}
