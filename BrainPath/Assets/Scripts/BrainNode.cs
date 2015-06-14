@@ -40,6 +40,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         button = GetComponent<Button>();
         button.onClick.AddListener(OnClickBrainNode); //Add an onClick listener 
         outboundNodes = new System.Collections.Generic.Dictionary<GameObject, int>();
+        foreach (OutboundEdge edge in outboundEdges) { outboundNodes[edge.destination] = edge.cost; }
     }
 
     void Start()
@@ -139,7 +140,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         ArrayList nodes = new ArrayList();
         Dictionary<GameObject, int> distance = new Dictionary<GameObject, int>();
         Dictionary<GameObject, bool> marked = new Dictionary<GameObject, bool>();
-        GameObject[] allNodes = GameObject.FindGameObjectsWithTag("BrainNode");
+        GameObject[] allNodes = GameController.getInstance().allBrainNodes;
         foreach (GameObject node in allNodes) { distance[node] = -1; marked[node] = false;} //Initialize the "graph"
 
         distance[source] = 0;
@@ -154,11 +155,10 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 BrainNode outboundBrainNode = outboundNode.GetComponent<BrainNode>();
                 if (!marked[outboundNode])
                 {
-                    distance[outboundNode] = distance[node] + 1;
+                    distance[outboundNode] = distance[node] + node.GetComponent<BrainNode>().outboundNodes[outboundNode];
                     marked[outboundNode] = true;
                     nodes.Add(outboundNode);
                 }
-                nodes.Add(node);
             }
         }
         return distance;

@@ -1055,6 +1055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31bf034f889eb3747aae1e7381550689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allBrainNodes: []
   startNode: {fileID: 431886608}
   TimeLimit: 550
 --- !u!1001 &190296479
