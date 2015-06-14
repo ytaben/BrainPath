@@ -34,14 +34,20 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     private GameController gameController; //Reference to gameController (singleton)
     private MaterialController materialController;
     // Use this for initialization
-    void Start()
+    void Awake()
     {
-        //canvasGroup = GetComponent<CanvasGroup>(); //Initialize member variables
-        gameController = GameController.getInstance();
-        materialController = MaterialController.getInstance();
+        
         button = GetComponent<Button>();
         button.onClick.AddListener(OnClickBrainNode); //Add an onClick listener 
         outboundNodes = new System.Collections.Generic.Dictionary<GameObject, int>();
+    }
+
+    void Start()
+    {
+        gameController = GameController.getInstance();
+        materialController = MaterialController.getInstance();
+        //canvasGroup = GetComponent<CanvasGroup>(); //Initialize member variables
+
     }
 
     // Update is called once per frame
@@ -76,14 +82,28 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
     }
 
+    public void ExploreOutboundObjects()
+    {
+        foreach (BrainNode.OutboundEdge brainNode in outboundEdges)
+        {
+            if (!brainNode.destination.activeSelf) { 
+            brainNode.destination.SetActive(true);
+            BrainNode script = brainNode.destination.GetComponent<BrainNode>();
+            script.isNew = true; script.isExplored = true; script.Refresh();
+        }
+        }
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         SetColor(Color.white);
         SetMaterial(materialController.highlitedMaterial);
+        gameController.SetBrainAnimation(BrainState);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        gameController.SetCurrentAnimation();
         Refresh();
     }
     

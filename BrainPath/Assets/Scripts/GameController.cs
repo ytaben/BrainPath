@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         instance = this;
+        brainAnimator = GameObject.Find("Brain").GetComponent<Animator>(); if (!brainAnimator) Debug.Log("null animator");
     }
 
     //References to the game object and scripts of the active brain node
@@ -22,20 +23,23 @@ public class GameController : MonoBehaviour
 
     public GameObject startNode; //Set start node in editor for every level
     // Use this for initialization
-    void Start()
+
+    IEnumerator Start()
     {
+        yield return new WaitForSeconds(1);
+        foreach (GameObject brainNode in GameObject.FindGameObjectsWithTag("BrainNode"))
+        {
+            brainNode.SetActive(false);
+        }    
         activeNode = startNode; //Set member references 
+        activeNode.SetActive(true);
         activeNodeScript = activeNode.GetComponent<BrainNode>();
         activeNodeScript.isExplored = true;
         activeNodeScript.isActive = true;
         currentAnimationState = activeNodeScript.BrainState;
         SetCurrentAnimation();
         activeNodeScript.Refresh();
-
-        
-
-       // ReinitializeField(); //Initialize the field when the game starts
-        brainAnimator = GameObject.Find("Brain").GetComponent<Animator>(); if (!brainAnimator) Debug.Log("null animator");
+        activeNodeScript.ExploreOutboundObjects();   
     }
 
     //This function is used to notify GameController of a transition to another node

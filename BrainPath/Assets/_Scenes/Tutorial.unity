@@ -2762,7 +2762,7 @@ MonoBehaviour:
   isExplored: 0
   isNew: 0
   outboundEdges:
-  - destination: {fileID: 209739894}
+  - destination: {fileID: 1353083292}
     cost: 50
   brainParts:
   - {fileID: 1438486542}
@@ -8832,7 +8832,7 @@ MonoBehaviour:
   - {fileID: 1953344354}
   - {fileID: 1012738942}
   nodeCanvas: {fileID: 0}
-  BrainState: 0
+  BrainState: 1
 --- !u!114 &1353083298
 MonoBehaviour:
   m_ObjectHideFlags: 0
