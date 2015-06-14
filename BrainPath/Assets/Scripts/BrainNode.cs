@@ -129,7 +129,8 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         Refresh();
         if (isActive) { nodeCanvas.gameObject.SetActive(enabled); return; }
-        gameController.Transition(gameObject, 0); //TODO: SET APPROPRIATE COST
+        Dictionary<GameObject, int> costs = FindCost(gameObject);
+        gameController.Transition(gameObject, costs[gameController.activeNode]); //TODO: SET APPROPRIATE COST
     }
 
     public static Dictionary<GameObject, int> FindCost(GameObject source)

@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
     }
 
     //References to the game object and scripts of the active brain node
-    private GameObject activeNode;
+    public GameObject activeNode { get; set; }
     private BrainNode activeNodeScript;
 
     //Brain animator controller
@@ -53,6 +53,11 @@ public class GameController : MonoBehaviour
     {
         activeNode = destination;
         activeNodeScript = activeNode.GetComponent<BrainNode>();
+        activeNodeScript.isNew = false;
+        currentAnimationState = activeNodeScript.BrainState;
+        SetCurrentAnimation();
+        activeNodeScript.ExploreOutboundObjects();
+        activeNodeScript.Refresh();
         gameTime += cost;
         UpdateTimeText();
     }
