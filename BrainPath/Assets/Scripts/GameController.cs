@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour
 
     //Brain animator controller
     Animator brainAnimator;
+    BrainNode.AnimationChoice currentAnimationState; //Current state is used to go back after hovering mouse over an element
 
     public GameObject startNode; //Set start node in editor for every level
     // Use this for initialization
@@ -25,6 +26,14 @@ public class GameController : MonoBehaviour
     {
         activeNode = startNode; //Set member references 
         activeNodeScript = activeNode.GetComponent<BrainNode>();
+        activeNodeScript.isExplored = true;
+        activeNodeScript.isActive = true;
+        currentAnimationState = activeNodeScript.BrainState;
+        SetCurrentAnimation();
+        activeNodeScript.Refresh();
+
+        
+
        // ReinitializeField(); //Initialize the field when the game starts
         brainAnimator = GameObject.Find("Brain").GetComponent<Animator>(); if (!brainAnimator) Debug.Log("null animator");
     }
@@ -68,6 +77,8 @@ public class GameController : MonoBehaviour
             case BrainNode.AnimationChoice.UpsideDown: brainAnimator.SetBool("IsUpsideDown", true); Debug.Log("Got here"); break;
         }
     }
+    public void SetCurrentAnimation() { SetBrainAnimation(currentAnimationState); }
+
     // Update is called once per frame
     void Update()
     {
