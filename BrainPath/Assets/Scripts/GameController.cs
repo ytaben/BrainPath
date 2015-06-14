@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GameController : MonoBehaviour
     {
         instance = this;
         brainAnimator = GameObject.Find("Brain").GetComponent<Animator>(); if (!brainAnimator) Debug.Log("null animator");
+
     }
 
     //References to the game object and scripts of the active brain node
@@ -22,6 +24,9 @@ public class GameController : MonoBehaviour
     BrainNode.AnimationChoice currentAnimationState; //Current state is used to go back after hovering mouse over an element
 
     public GameObject startNode; //Set start node in editor for every level
+    private int gameTime = 0;
+    public int TimeLimit;
+    private Text gameTimeText;
     // Use this for initialization
 
     IEnumerator Start()
@@ -39,7 +44,8 @@ public class GameController : MonoBehaviour
         currentAnimationState = activeNodeScript.BrainState;
         SetCurrentAnimation();
         activeNodeScript.Refresh();
-        activeNodeScript.ExploreOutboundObjects();   
+        activeNodeScript.ExploreOutboundObjects();
+        UpdateTimeText();
     }
 
     //This function is used to notify GameController of a transition to another node
@@ -47,7 +53,15 @@ public class GameController : MonoBehaviour
     {
         activeNode = destination;
         activeNodeScript = activeNode.GetComponent<BrainNode>();
-        //ReinitializeField(); //Reinitialize field after every transition
+        gameTime += cost;
+        UpdateTimeText();
+    }
+
+    public void UpdateTimeText()
+    {
+        gameTimeText.text = gameTime.ToString();
+        if (gameTime > TimeLimit / 2) { gameTimeText.color = Color.yellow; }
+        if (gameTime > TimeLimit / 4) { gameTimeText.color = Color.red; }
     }
 
     //Reinitialize the game field by disabling all brain nodes, then reactivating only the current one and
