@@ -37,7 +37,8 @@ public class GameController : MonoBehaviour
         foreach (GameObject brainNode in GameObject.FindGameObjectsWithTag("BrainNode"))
         {
             brainNode.SetActive(false);
-        }    
+        }
+        SetBrainPartsUnexplored();
         activeNode = startNode; //Set member references 
         activeNode.SetActive(true);
         activeNodeScript = activeNode.GetComponent<BrainNode>();
@@ -47,7 +48,7 @@ public class GameController : MonoBehaviour
         SetCurrentAnimation();
         activeNodeScript.Refresh();
         activeNodeScript.ExploreOutboundObjects();
-        UpdateTimeText();
+        GameObject.Find("TimeLimitText").GetComponent<Text>().text = "Timelimit: " + TimeLimit.ToString() + " ms";
     }
 
     //This function is used to notify GameController of a transition to another node
@@ -76,7 +77,7 @@ public class GameController : MonoBehaviour
     {
         gameTimeText.text = "Time: " + gameTime.ToString() + " ms";
         if (gameTime > TimeLimit / 2) { gameTimeText.color = Color.yellow; }
-        if (gameTime > TimeLimit / 4) { gameTimeText.color = Color.red; }
+        if (gameTime > TimeLimit * 3 / 4) { gameTimeText.color = Color.red; }
     }
 
     //Reinitialize the game field by disabling all brain nodes, then reactivating only the current one and
@@ -118,4 +119,13 @@ public class GameController : MonoBehaviour
 
     }
 
+    private void SetBrainPartsUnexplored()
+    {
+        MaterialController materialController = MaterialController.getInstance();
+        foreach (GameObject brainPart in GameObject.FindGameObjectsWithTag("BrainPart")){
+            Material[] mats = brainPart.GetComponent<Renderer>().materials;
+            mats[0] = materialController.undiscoveredMaterial;
+            brainPart.GetComponent<Renderer>().materials = mats;
+        }
+    }
 }
