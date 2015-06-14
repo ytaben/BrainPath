@@ -51,13 +51,20 @@ public class GameController : MonoBehaviour
     //This function is used to notify GameController of a transition to another node
     public void Transition(GameObject destination, int cost)
     {
+        BrainNode oldNodeScript = activeNodeScript;
+        oldNodeScript.isActive = false;
+
         activeNode = destination;
         activeNodeScript = activeNode.GetComponent<BrainNode>();
         activeNodeScript.isNew = false;
         currentAnimationState = activeNodeScript.BrainState;
         SetCurrentAnimation();
         activeNodeScript.ExploreOutboundObjects();
+
+        //Refresh both new and old nodes
+        oldNodeScript.Refresh();
         activeNodeScript.Refresh();
+
         gameTime += cost;
         UpdateTimeText();
     }
