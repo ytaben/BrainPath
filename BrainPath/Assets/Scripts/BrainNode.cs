@@ -3,8 +3,9 @@ using System.Collections;
 using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
-public class BrainNode : MonoBehaviour
+public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public bool isActive; //Determine whether this node is currently selected
     public bool isExplored;
@@ -41,10 +42,6 @@ public class BrainNode : MonoBehaviour
         button = GetComponent<Button>();
         button.onClick.AddListener(OnClickBrainNode); //Add an onClick listener 
         outboundNodes = new System.Collections.Generic.Dictionary<GameObject, int>();
-        foreach (OutboundEdge edge in outboundEdges)
-        {
-            outboundNodes[edge.destination] = edge.cost;
-        }
     }
 
     // Update is called once per frame
@@ -79,15 +76,17 @@ public class BrainNode : MonoBehaviour
         }
     }
 
-    public void OnMouseEnter()
+    public void OnPointerEnter(PointerEventData eventData)
     {
-
-    }
-    public void OnMouseExit()
-    {
-
+        SetColor(Color.white);
+        SetMaterial(materialController.highlitedMaterial);
     }
 
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Refresh();
+    }
+    
     private void SetColor(Color color)
     {
         ColorBlock buttonColors;
@@ -142,4 +141,5 @@ public class BrainNode : MonoBehaviour
         }
         return distance;
     }
+    
 }
