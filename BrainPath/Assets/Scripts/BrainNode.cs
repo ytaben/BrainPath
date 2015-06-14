@@ -47,6 +47,10 @@ public class BrainNode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+
+    public void Refresh()
+    {
         ColorBlock buttonColors;
         if (!isExplored)
         {
@@ -70,7 +74,6 @@ public class BrainNode : MonoBehaviour
             //canvasGroup.alpha = Mathf.PingPong(Time.time, 1);
 
         }
-
     }
 
     public void OnMouseEnter()
