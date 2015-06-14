@@ -90,6 +90,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             brainNode.destination.SetActive(true);
             BrainNode script = brainNode.destination.GetComponent<BrainNode>();
             script.isNew = true; script.isExplored = true; script.Refresh();
+                Refresh();
         }
         }
     }
@@ -128,7 +129,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     void OnClickBrainNode()
     {
         Refresh();
-        if (isActive) { nodeCanvas.gameObject.SetActive(enabled); return; }
+        if (isActive) { nodeCanvas.gameObject.SetActive(enabled); Debug.Log("gotHere"); return; }
         Dictionary<GameObject, int> costs = FindCost(gameObject);
         gameController.Transition(gameObject, costs[gameController.activeNode]); //TODO: SET APPROPRIATE COST
     }
