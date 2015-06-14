@@ -20,6 +20,8 @@ public class BrainNode : MonoBehaviour
 
     public GameObject[] brainParts; //List of brain parts that correspond to this node
 
+    public Canvas nodeCanvas;
+
 
     //A drop down menu to choose which animation should be triggered upon being active or hovering over this node
     public enum AnimationChoice {Normal, Split, UpsideDown}
@@ -72,7 +74,6 @@ public class BrainNode : MonoBehaviour
             button.colors = buttonColors;
             SetMaterial(materialController.currentMaterial);
             //canvasGroup.alpha = Mathf.PingPong(Time.time, 1);
-
         }
     }
 
@@ -97,6 +98,7 @@ public class BrainNode : MonoBehaviour
     //On Click - notify gameController using the Transition method
     void OnClickBrainNode()
     {
-        gameController.Transition(gameObject); gameController.SetBrainAnimation(BrainState);
+        if (isActive) { nodeCanvas.gameObject.SetActive(enabled); return; }
+        gameController.Transition(gameObject, 0); //TODO: SET APPROPRIATE COST
     }
 }
