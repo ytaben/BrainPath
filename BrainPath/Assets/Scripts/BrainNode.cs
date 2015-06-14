@@ -54,27 +54,28 @@ public class BrainNode : MonoBehaviour
 
     public void Refresh()
     {
-        ColorBlock buttonColors;
+        
         if (!isExplored)
         {
-            buttonColors = button.colors;
-            buttonColors.normalColor = Color.green;
-            button.colors = buttonColors;
+            SetColor(Color.black);
             SetMaterial(materialController.undiscoveredMaterial);
             //canvasGroup.alpha = 1;
+            return;
         }
+        SetColor(Color.white);
+        SetMaterial(materialController.normalMaterial);
         if (isNew)
         {
+            SetColor(Color.yellow);
             SetMaterial(materialController.outboundMaterial);
         }
-        //If this node is active, pulse by changing alpha
+        
         if (isActive)
         {
-            buttonColors = button.colors;
-            buttonColors.normalColor = Color.green;
-            button.colors = buttonColors;
+            SetColor(Color.green);
             SetMaterial(materialController.currentMaterial);
             //canvasGroup.alpha = Mathf.PingPong(Time.time, 1);
+            return;
         }
     }
 
@@ -85,6 +86,14 @@ public class BrainNode : MonoBehaviour
     public void OnMouseExit()
     {
 
+    }
+
+    private void SetColor(Color color)
+    {
+        ColorBlock buttonColors;
+        buttonColors = button.colors;
+        buttonColors.normalColor = color;
+        button.colors = buttonColors;
     }
 
     private void SetMaterial(Material material)
@@ -99,6 +108,7 @@ public class BrainNode : MonoBehaviour
     //On Click - notify gameController using the Transition method
     void OnClickBrainNode()
     {
+        Refresh();
         if (isActive) { nodeCanvas.gameObject.SetActive(enabled); return; }
         gameController.Transition(gameObject, 0); //TODO: SET APPROPRIATE COST
     }

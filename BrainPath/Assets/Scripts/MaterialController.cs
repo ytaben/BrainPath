@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class MaterialController : MonoBehaviour {
-    public Material undiscoveredMaterial, currentMaterial, outboundMaterial;
+    public Material undiscoveredMaterial, currentMaterial, outboundMaterial, normalMaterial, highlitedMaterial;
     // Use this for initialization
     private static MaterialController instance;
     public static MaterialController getInstance()

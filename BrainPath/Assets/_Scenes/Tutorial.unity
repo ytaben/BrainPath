@@ -12206,6 +12206,8 @@ MonoBehaviour:
     type: 2}
   currentMaterial: {fileID: 2100000, guid: 14006b75c181f2844bc164448fc09790, type: 2}
   outboundMaterial: {fileID: 2100000, guid: bb49096777dd83f4a876f387d29e94e5, type: 2}
+  normalMaterial: {fileID: 2100000, guid: 9d4660f9a9cf44b96a8d16601d5205b2, type: 2}
+  highlitedMaterial: {fileID: 2100000, guid: 09292e11e5b92ff4195883631c14f3af, type: 2}
 --- !u!95 &1954865385
 Animator:
   serializedVersion: 3
