@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System;
+using System.Collections.Generic;
 
 public class BrainNode : MonoBehaviour
 {
@@ -100,5 +101,35 @@ public class BrainNode : MonoBehaviour
     {
         if (isActive) { nodeCanvas.gameObject.SetActive(enabled); return; }
         gameController.Transition(gameObject, 0); //TODO: SET APPROPRIATE COST
+    }
+
+    public static Dictionary<GameObject, int> FindCost(GameObject source)
+    {
+        ArrayList nodes = new ArrayList();
+        Dictionary<GameObject, int> distance = new Dictionary<GameObject, int>();
+        Dictionary<GameObject, bool> marked = new Dictionary<GameObject, bool>();
+        GameObject[] allNodes = GameObject.FindGameObjectsWithTag("BrainNode");
+        foreach (GameObject node in allNodes) { distance[node] = -1; marked[node] = false;} //Initialize the "graph"
+
+        distance[source] = 0;
+        marked[source] = true;
+        nodes.Add(source);
+        while (nodes.Count > 0)
+        {
+            GameObject node = (GameObject)nodes[0];
+            nodes.Remove(node);
+            foreach (GameObject outboundNode in source.GetComponent<BrainNode>().outboundNodes.Keys)
+            {
+                BrainNode outboundBrainNode = outboundNode.GetComponent<BrainNode>();
+                if (!marked[outboundNode])
+                {
+                    distance[outboundNode] = distance[node] + 1;
+                    marked[outboundNode] = true;
+                    nodes.Add(outboundNode);
+                }
+                nodes.Add(node);
+            }
+        }
+        return distance;
     }
 }

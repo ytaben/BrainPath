@@ -1296,7 +1296,7 @@ GameObject:
   - 114: {fileID: 252806744}
   m_Layer: 0
   m_Name: PrestriateCortex
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1344,6 +1344,7 @@ MonoBehaviour:
   - {fileID: 50895672}
   - {fileID: 1953344354}
   - {fileID: 1012738942}
+  nodeCanvas: {fileID: 0}
   BrainState: 0
 --- !u!114 &252806745
 MonoBehaviour:
@@ -6417,7 +6418,7 @@ GameObject:
   - 114: {fileID: 1058629787}
   m_Layer: 0
   m_Name: PrimaryMotorButton
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6460,6 +6461,7 @@ MonoBehaviour:
   brainParts:
   - {fileID: 942301166}
   - {fileID: 1767982009}
+  nodeCanvas: {fileID: 0}
   BrainState: 0
 --- !u!114 &1058629788
 MonoBehaviour:
@@ -7318,7 +7320,7 @@ GameObject:
   - 114: {fileID: 1197936679}
   m_Layer: 0
   m_Name: PrimarySomatosensoryButton
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7361,6 +7363,7 @@ MonoBehaviour:
   brainParts:
   - {fileID: 2033209088}
   - {fileID: 814511947}
+  nodeCanvas: {fileID: 0}
   BrainState: 0
 --- !u!114 &1197936680
 MonoBehaviour:
@@ -8418,7 +8421,7 @@ GameObject:
   - 114: {fileID: 1353083297}
   m_Layer: 0
   m_Name: VisualCortexButton
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8536,6 +8539,7 @@ MonoBehaviour:
   - {fileID: 50895672}
   - {fileID: 1953344354}
   - {fileID: 1012738942}
+  nodeCanvas: {fileID: 0}
   BrainState: 0
 --- !u!114 &1353083298
 MonoBehaviour:
@@ -9179,7 +9183,7 @@ GameObject:
   - 114: {fileID: 1469920579}
   m_Layer: 0
   m_Name: VisualArea4
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9231,6 +9235,7 @@ MonoBehaviour:
   - {fileID: 50895672}
   - {fileID: 1953344354}
   - {fileID: 1012738942}
+  nodeCanvas: {fileID: 0}
   BrainState: 0
 --- !u!114 &1469920580
 MonoBehaviour:
@@ -11170,7 +11175,7 @@ GameObject:
   - 114: {fileID: 1831539223}
   m_Layer: 0
   m_Name: PrefrontalCortexButton
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11279,6 +11284,7 @@ MonoBehaviour:
   - destination: {fileID: 209739894}
     cost: 1
   brainParts: []
+  nodeCanvas: {fileID: 0}
   BrainState: 0
 --- !u!1 &1836787452
 GameObject:
@@ -12219,7 +12225,7 @@ GameObject:
   - 114: {fileID: 2030803754}
   m_Layer: 0
   m_Name: InferiorTemporalCortex
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12262,6 +12268,7 @@ MonoBehaviour:
   brainParts:
   - {fileID: 899422685}
   - {fileID: 1323794461}
+  nodeCanvas: {fileID: 0}
   BrainState: 2
 --- !u!114 &2030803755
 MonoBehaviour:
@@ -12602,7 +12609,7 @@ GameObject:
   - 114: {fileID: 2051817934}
   m_Layer: 0
   m_Name: ThirdVisualCortex
-  m_TagString: Untagged
+  m_TagString: BrainNode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12650,6 +12657,7 @@ MonoBehaviour:
   - {fileID: 50895672}
   - {fileID: 1953344354}
   - {fileID: 1012738942}
+  nodeCanvas: {fileID: 0}
   BrainState: 0
 --- !u!114 &2051817935
 MonoBehaviour:
