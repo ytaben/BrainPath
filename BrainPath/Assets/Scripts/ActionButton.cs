@@ -7,6 +7,7 @@ public class ActionButton : MonoBehaviour
 
     public int correctState; //Number of the correct stage when this button should be pressed
     public int actionCost; //Cost of this action in milliseconds
+    public bool isCorrect; //Specify whether this button is a correct answer and can advance the game
     public string earlyMessage; //Message to display if the button was presesd too early in the game
     public string correctMessage; //Message to display if the button was presesd at the right time
     public string LateMessage; //Message to display if the button was presesd too late in the game
