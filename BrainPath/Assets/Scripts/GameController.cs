@@ -134,6 +134,7 @@ public class GameController : MonoBehaviour
     public void IncreaseTime(int time)
     {
         gameTime += time;
+        UpdateTimeText();
     }
     public void IncrementStage()
     {
