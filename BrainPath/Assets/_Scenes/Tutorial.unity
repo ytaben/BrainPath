@@ -3844,7 +3844,7 @@ GameObject:
   - 114: {fileID: 438803477}
   m_Layer: 5
   m_Name: VisualArea3Canvas
-  m_TagString: Untagged
+  m_TagString: NodeMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4854,7 +4854,7 @@ GameObject:
   - 114: {fileID: 602103300}
   m_Layer: 5
   m_Name: VisualArea4Canvas
-  m_TagString: Untagged
+  m_TagString: NodeMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6161,7 +6161,7 @@ GameObject:
   - 114: {fileID: 727173981}
   m_Layer: 5
   m_Name: ThalamusCanvas
-  m_TagString: Untagged
+  m_TagString: NodeMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16439,7 +16439,7 @@ GameObject:
   - 114: {fileID: 1832170468}
   m_Layer: 5
   m_Name: PrestriateCortexCanvas
-  m_TagString: Untagged
+  m_TagString: NodeMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18357,7 +18357,7 @@ GameObject:
   - 114: {fileID: 2009357999}
   m_Layer: 5
   m_Name: InferiorTemporalCortexCanvas
-  m_TagString: Untagged
+  m_TagString: NodeMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19447,7 +19447,7 @@ GameObject:
   - 114: {fileID: 2105940119}
   m_Layer: 5
   m_Name: VisualCortexCanvas
-  m_TagString: Untagged
+  m_TagString: NodeMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

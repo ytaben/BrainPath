@@ -113,6 +113,11 @@ public class GameController : MonoBehaviour
 
     public void EndGame()
     {
+        foreach (GameObject menu in GameObject.FindGameObjectsWithTag("NodeMenu"))
+        {
+            menu.SetActive(false);
+        }
+
         bool isWin = currentStage == winningStage;
         finalScorePanel.SetActive(true);
 
