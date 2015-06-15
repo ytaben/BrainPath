@@ -1240,7 +1240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctState: 5
+  correctState: 4
   actionCost: 75
   isCorrect: 1
   earlyMessage: We haven't yet received information to encode.
@@ -1635,7 +1635,7 @@ MonoBehaviour:
   messageText: {fileID: 1394684245}
   messagePanel: {fileID: 1757820213}
   currentStage: 0
-  winningStage: 6
+  winningStage: 5
   finalScorePanel: {fileID: 511996672}
   finalResultsText: {fileID: 767380116}
   baseScoreText: {fileID: 519847522}
@@ -5290,7 +5290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &623780741
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17843,10 +17843,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctState: 4
+  correctState: 3
   actionCost: 50
   isCorrect: 1
-  earlyMessage: We haven't yet received information from the Thalamus!
+  earlyMessage: We haven't yet received information from the previous visual area!
   correctMessage: We have successfuly processed the color related information. It
     seems to have been sent somewhere in the Temporal Lobe.
   LateMessage: The visual information about color has already been processed and transfered

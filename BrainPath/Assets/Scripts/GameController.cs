@@ -88,7 +88,7 @@ public class GameController : MonoBehaviour
         oldNodeScript.Refresh();
         activeNodeScript.Refresh();
 
-        gameTime += cost;
+        IncreaseTime(cost);
         UpdateTimeText();
     }
 
@@ -114,22 +114,22 @@ public class GameController : MonoBehaviour
     public void EndGame()
     {
         bool isWin = currentStage == winningStage;
-
         finalScorePanel.SetActive(true);
 
         finalResultsText.text = isWin ? victoryMessage : defeatMessage;
         finalResultsText.color = isWin ? Color.green : Color.red;
 
-        int timeLeftScore = TimeLimit - gameTime;
-        timeLeftScoreText.text = Mathf.Clamp(timeLeftScore, 0, float.MaxValue).ToString();
+        int timeLeftScore = (int)Mathf.Clamp(TimeLimit - gameTime, 0, float.MaxValue);
+        timeLeftScoreText.text = timeLeftScore.ToString();
         if (timeLeftScore < 1) { timeLeftScoreText.color = Color.red; }
         else
         timeLeftScoreText.color = timeLeftScore / TimeLimit > 0.75 ? Color.green : Color.yellow;
 
-        baseScoreText.text = isWin ? BaseLevelScore.ToString() : "0";
+        int baseLevelScore = isWin ? BaseLevelScore: 0;
+        baseScoreText.text = baseLevelScore.ToString();
         baseScoreText.color = isWin ? Color.green : Color.red;
 
-        int totalScore = timeLeftScore + BaseLevelScore;
+        int totalScore = timeLeftScore + baseLevelScore;
 
         totalScoreText.text = totalScore.ToString();
         totalScoreText.color = isWin ? Color.green : Color.red;
@@ -171,10 +171,12 @@ public class GameController : MonoBehaviour
     {
         gameTime += time;
         UpdateTimeText();
+        if (gameTime > TimeLimit) { EndGame(); }
     }
     public void IncrementStage()
     {
         currentStage++;
+        if (currentStage >= winningStage) EndGame();
     }
 
     // Update is called once per frame
