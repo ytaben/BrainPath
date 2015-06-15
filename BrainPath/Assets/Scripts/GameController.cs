@@ -30,6 +30,7 @@ public class GameController : MonoBehaviour
     public int TimeLimit;
     private Text gameTimeText;
 
+    private int currentStage = 0;
     public int winningStage;
     // Use this for initialization
 
@@ -120,6 +121,11 @@ public class GameController : MonoBehaviour
         }
     }
     public void SetCurrentAnimation() { SetBrainAnimation(currentAnimationState); }
+
+    public void IncrementStage()
+    {
+        currentStage++;
+    }
 
     // Update is called once per frame
     void Update()
