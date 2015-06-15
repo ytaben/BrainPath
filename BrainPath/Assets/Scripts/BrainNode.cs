@@ -107,6 +107,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         gameController.SetCurrentAnimation();
         Refresh();
+        gameController.RefreshActive();
     }
     
     private void SetColor(Color color)
@@ -130,7 +131,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     void OnClickBrainNode()
     {
         Refresh();
-        if (isActive) { nodeCanvas.gameObject.SetActive(enabled); Debug.Log("gotHere"); return; }
+        if (isActive) { nodeCanvas.gameObject.SetActive(enabled); return; }
         Dictionary<GameObject, int> costs = FindCost(gameObject);
         gameController.Transition(gameObject, costs[gameController.activeNode]); //TODO: SET APPROPRIATE COST
     }

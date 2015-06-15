@@ -81,6 +81,11 @@ public class GameController : MonoBehaviour
         if (gameTime > TimeLimit * 3 / 4) { gameTimeText.color = Color.red; }
     }
 
+    public void RefreshActive()
+    {
+        activeNodeScript.Refresh();
+    }
+
     //Reinitialize the game field by disabling all brain nodes, then reactivating only the current one and
     //All the outbound nodes
     void ReinitializeField()
