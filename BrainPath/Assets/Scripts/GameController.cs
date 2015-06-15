@@ -14,9 +14,6 @@ public class GameController : MonoBehaviour
         brainAnimator = GameObject.Find("Brain").GetComponent<Animator>(); if (!brainAnimator) Debug.Log("null animator");
         gameTimeText = GameObject.Find("GameTimeText").GetComponent<Text>();
         allBrainNodes = GameObject.FindGameObjectsWithTag("BrainNode");
-
-        messagePanel = GameObject.Find("MessagePanel");
-        messageText = GameObject.Find("MessageText").GetComponent<Text>();
     }
 
     //References to the game object and scripts of the active brain node
