@@ -75,9 +75,10 @@ public class GameController : MonoBehaviour
     {
         BrainNode oldNodeScript = activeNodeScript;
         oldNodeScript.isActive = false;
-        //foreach (GameObject outboundNode in oldNodeScript.outboundNodes.Keys) { outboundNode.SetActive(); }
-
+        foreach (GameObject outboundNode in oldNodeScript.outboundNodes.Keys) { outboundNode.SetActive(false); }
+        
         activeNode = destination;
+        activeNode.SetActive(true);
         activeNodeScript = activeNode.GetComponent<BrainNode>();
         activeNodeScript.isActive = true;
         activeNodeScript.isNew = false;
