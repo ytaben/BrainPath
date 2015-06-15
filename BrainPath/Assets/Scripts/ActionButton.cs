@@ -13,8 +13,6 @@ public class ActionButton : MonoBehaviour
     public string LateMessage; //Message to display if the button was presesd too late in the game
 
     private GameController gameController;
-    private GameObject messagePanel;
-    private Text messageText;
 
     // Use this for initialization
     void Start()
@@ -43,10 +41,25 @@ public class ActionButton : MonoBehaviour
     public void OnClick()
     {
         gameController.IncreaseTime(actionCost);
-        if (gameController.currentStage > correctState) { }
-        else if (gameController.currentStage < correctState) { }
-        else {
-            if (isCorrect) { gameController.IncrementStage(); }
+        if (gameController.currentStage > correctState)
+        {
+            if (isCorrect) { gameController.DisplayMessage(LateMessage, Color.yellow); }
+            else
+            {
+                gameController.DisplayMessage(LateMessage, Color.red);
+            }
+        }
+        else if (gameController.currentStage < correctState)
+        {
+            gameController.DisplayMessage(earlyMessage, Color.red);
+        }
+        else
+        {
+            if (isCorrect) { gameController.IncrementStage(); gameController.DisplayMessage(correctMessage, Color.green); }
+            else
+            {
+                gameController.DisplayMessage(correctMessage, Color.red);
+            }
         }
     }
 }
