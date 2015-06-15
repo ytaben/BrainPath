@@ -28,7 +28,11 @@ public class GameController : MonoBehaviour
     public GameObject startNode; //Set start node in editor for every level
     private int gameTime = 0;
     public int TimeLimit;
+    public int BaseLevelScore;
     private Text gameTimeText;
+
+    public string victoryMessage;
+    public string defeatMessage;
 
     public Text messageText;
     public GameObject messagePanel;
@@ -105,6 +109,30 @@ public class GameController : MonoBehaviour
         messagePanel.SetActive(true);
         messageText.color = color ?? Color.black;
         messageText.text = message;
+    }
+
+    public void EndGame()
+    {
+        bool isWin = currentStage == winningStage;
+
+        finalScorePanel.SetActive(true);
+
+        finalResultsText.text = isWin ? victoryMessage : defeatMessage;
+        finalResultsText.color = isWin ? Color.green : Color.red;
+
+        int timeLeftScore = TimeLimit - gameTime;
+        timeLeftScoreText.text = Mathf.Clamp(timeLeftScore, 0, float.MaxValue).ToString();
+        if (timeLeftScore < 1) { timeLeftScoreText.color = Color.red; }
+        else
+        timeLeftScoreText.color = timeLeftScore / TimeLimit > 0.75 ? Color.green : Color.yellow;
+
+        baseScoreText.text = isWin ? BaseLevelScore.ToString() : "0";
+        baseScoreText.color = isWin ? Color.green : Color.red;
+
+        int totalScore = timeLeftScore + BaseLevelScore;
+
+        totalScoreText.text = totalScore.ToString();
+        totalScoreText.color = isWin ? Color.green : Color.red;
     }
     //Reinitialize the game field by disabling all brain nodes, then reactivating only the current one and
     //All the outbound nodes

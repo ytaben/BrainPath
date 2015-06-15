@@ -1627,7 +1627,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allBrainNodes: []
   startNode: {fileID: 431886608}
-  TimeLimit: 550
+  TimeLimit: 600
+  BaseLevelScore: 1000
+  victoryMessage: Congratulations! You have successfuly retained the color of the
+    observed object in memory!
+  defeatMessage: You have not been able to complete the task in time!
   messageText: {fileID: 1394684245}
   messagePanel: {fileID: 1757820213}
   currentStage: 0
