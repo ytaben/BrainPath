@@ -14,6 +14,9 @@ public class GameController : MonoBehaviour
         brainAnimator = GameObject.Find("Brain").GetComponent<Animator>(); if (!brainAnimator) Debug.Log("null animator");
         gameTimeText = GameObject.Find("GameTimeText").GetComponent<Text>();
         allBrainNodes = GameObject.FindGameObjectsWithTag("BrainNode");
+
+        messagePanel = GameObject.Find("MessagePanel");
+        messageText = GameObject.Find("MessageText").GetComponent<Text>();
     }
 
     //References to the game object and scripts of the active brain node
@@ -29,6 +32,9 @@ public class GameController : MonoBehaviour
     private int gameTime = 0;
     public int TimeLimit;
     private Text gameTimeText;
+
+    public Text messageText;
+    public GameObject messagePanel;
 
     public int currentStage = 0;
     public int winningStage;
@@ -89,6 +95,12 @@ public class GameController : MonoBehaviour
         activeNodeScript.Refresh();
     }
 
+    public void DisplayMessage(string message, Color? color = null)
+    {
+        messagePanel.SetActive(true);
+        messageText.color = color ?? Color.black;
+        messageText.text = message;
+    }
     //Reinitialize the game field by disabling all brain nodes, then reactivating only the current one and
     //All the outbound nodes
     void ReinitializeField()

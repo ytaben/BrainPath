@@ -13,6 +13,8 @@ public class ActionButton : MonoBehaviour
     public string LateMessage; //Message to display if the button was presesd too late in the game
 
     private GameController gameController;
+    private GameObject messagePanel;
+    private Text messageText;
 
     // Use this for initialization
     void Start()
