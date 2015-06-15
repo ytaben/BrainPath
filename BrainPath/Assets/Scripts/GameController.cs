@@ -35,6 +35,14 @@ public class GameController : MonoBehaviour
 
     public int currentStage = 0;
     public int winningStage;
+
+    //Fields to display final score
+    public GameObject finalScorePanel;
+    public Text finalResultsText;
+    public Text baseScoreText;
+    public Text timeLeftScoreText;
+    public Text totalScoreText;
+
     // Use this for initialization
 
     IEnumerator Start()

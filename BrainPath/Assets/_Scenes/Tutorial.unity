@@ -1632,6 +1632,11 @@ MonoBehaviour:
   messagePanel: {fileID: 1757820213}
   currentStage: 0
   winningStage: 6
+  finalScorePanel: {fileID: 511996672}
+  finalResultsText: {fileID: 767380116}
+  baseScoreText: {fileID: 519847522}
+  timeLeftScoreText: {fileID: 507434098}
+  totalScoreText: {fileID: 1608129016}
 --- !u!1001 &190296479
 Prefab:
   m_ObjectHideFlags: 0
@@ -4342,7 +4347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &511996673
 RectTransform:
   m_ObjectHideFlags: 0
