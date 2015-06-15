@@ -743,7 +743,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fadc961d62de5d64693047b2cd31d467, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &95437163
+--- !u!4 &95437163 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: fadc961d62de5d64693047b2cd31d467, type: 3}
   m_PrefabInternal: {fileID: 95437162}
@@ -797,7 +797,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77b409d1157318b429de75bd0eb37777, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &114908665
+--- !u!4 &114908665 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 77b409d1157318b429de75bd0eb37777, type: 3}
   m_PrefabInternal: {fileID: 114908664}
@@ -1052,7 +1052,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2c7f313c7eb721479abd348642c7451, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &128301034
+--- !u!4 &128301034 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: c2c7f313c7eb721479abd348642c7451, type: 3}
   m_PrefabInternal: {fileID: 128301033}
@@ -1242,6 +1242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctState: 6
   actionCost: 75
+  isCorrect: 1
   earlyMessage: We haven't yet received information to encode.
   correctMessage: We have successfuly processed the color related information. It
     seems to have been sent somewhere in the Temporal Lobe.
@@ -1525,7 +1526,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02520cbab27c27e4fb3840ad9f5d3dda, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &166420053
+--- !u!4 &166420053 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 02520cbab27c27e4fb3840ad9f5d3dda, type: 3}
   m_PrefabInternal: {fileID: 166420052}
@@ -1579,7 +1580,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e9d233ccdc9a27478930308b3ed8e2d, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &169064485
+--- !u!4 &169064485 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 4e9d233ccdc9a27478930308b3ed8e2d, type: 3}
   m_PrefabInternal: {fileID: 169064484}
@@ -1675,7 +1676,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ecfdfa1ccee4894d83fb7c37ac5a512, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &190296480
+--- !u!4 &190296480 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7ecfdfa1ccee4894d83fb7c37ac5a512, type: 3}
   m_PrefabInternal: {fileID: 190296479}
@@ -1907,7 +1908,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a33aacb3e6663642983e0873056d238, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &237785374
+--- !u!4 &237785374 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 1a33aacb3e6663642983e0873056d238, type: 3}
   m_PrefabInternal: {fileID: 237785373}
@@ -2175,7 +2176,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6dbdbf1cc010bc4f97b7f60c906dc1d, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &264206202
+--- !u!4 &264206202 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e6dbdbf1cc010bc4f97b7f60c906dc1d, type: 3}
   m_PrefabInternal: {fileID: 264206201}
@@ -2229,7 +2230,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd6b61bec1999ba4691482be577bfa82, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &268711303
+--- !u!4 &268711303 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: fd6b61bec1999ba4691482be577bfa82, type: 3}
   m_PrefabInternal: {fileID: 268711302}
@@ -2349,7 +2350,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5265e3bed9938894db1ef782d9414461, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &290648741
+--- !u!4 &290648741 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 5265e3bed9938894db1ef782d9414461, type: 3}
   m_PrefabInternal: {fileID: 290648740}
@@ -2496,7 +2497,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43620f0d8190d6f4aa0278f1f2f28769, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &302891404
+--- !u!4 &302891404 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 43620f0d8190d6f4aa0278f1f2f28769, type: 3}
   m_PrefabInternal: {fileID: 302891403}
@@ -2807,7 +2808,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dce799b5c4ce1d6489bce670485fd063, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &358650633
+--- !u!4 &358650633 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: dce799b5c4ce1d6489bce670485fd063, type: 3}
   m_PrefabInternal: {fileID: 358650632}
@@ -2861,7 +2862,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37e8bab054137644f8b8921db27cb26c, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &362243229
+--- !u!4 &362243229 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 37e8bab054137644f8b8921db27cb26c, type: 3}
   m_PrefabInternal: {fileID: 362243228}
@@ -2915,7 +2916,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7112a8f6a9531494a879ade4c3d1070d, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &367847254
+--- !u!4 &367847254 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7112a8f6a9531494a879ade4c3d1070d, type: 3}
   m_PrefabInternal: {fileID: 367847253}
@@ -2969,7 +2970,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c31631d8009d424bb53a06cbde89afd, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &382583350
+--- !u!4 &382583350 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7c31631d8009d424bb53a06cbde89afd, type: 3}
   m_PrefabInternal: {fileID: 382583349}
@@ -3127,6 +3128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctState: 0
   actionCost: 20
+  isCorrect: 0
   earlyMessage: 
   correctMessage: Visual information was successfully sent to Visual Cortex
   LateMessage: Visual information was already sent to visual cortex
@@ -3396,7 +3398,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5ca1ec256f71384584b081d0a26f748, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &418006872
+--- !u!4 &418006872 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e5ca1ec256f71384584b081d0a26f748, type: 3}
   m_PrefabInternal: {fileID: 418006871}
@@ -3578,7 +3580,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe20053d734ad2f45a6bf1fe51d72c24, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &430346242
+--- !u!4 &430346242 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: fe20053d734ad2f45a6bf1fe51d72c24, type: 3}
   m_PrefabInternal: {fileID: 430346241}
@@ -4005,7 +4007,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 40c557cd000d44b44924c86d22fa521e, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &472706066
+--- !u!4 &472706066 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 40c557cd000d44b44924c86d22fa521e, type: 3}
   m_PrefabInternal: {fileID: 472706065}
@@ -4272,7 +4274,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 62b4e492a55b2e941857bf382df65889, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &565372268
+--- !u!4 &565372268 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 62b4e492a55b2e941857bf382df65889, type: 3}
   m_PrefabInternal: {fileID: 565372267}
@@ -4326,6 +4328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctState: 0
   actionCost: 20
+  isCorrect: 1
   earlyMessage: 
   correctMessage: Visual information was successfully sent to Visual Cortex
   LateMessage: Visual information was already sent to visual cortex
@@ -4795,7 +4798,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c81b29a97dbcaf34aa1b12702636ee4d, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &604656238
+--- !u!4 &604656238 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: c81b29a97dbcaf34aa1b12702636ee4d, type: 3}
   m_PrefabInternal: {fileID: 604656237}
@@ -5253,7 +5256,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88a364269cd9f484fb878ee470cae8bb, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &645639051
+--- !u!4 &645639051 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 88a364269cd9f484fb878ee470cae8bb, type: 3}
   m_PrefabInternal: {fileID: 645639050}
@@ -5455,7 +5458,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7781b9dbe55f90b4b97627e6c39762ed, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &664502741
+--- !u!4 &664502741 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7781b9dbe55f90b4b97627e6c39762ed, type: 3}
   m_PrefabInternal: {fileID: 664502740}
@@ -5509,7 +5512,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fae43d017b3c9c54c962663bbad1bac5, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &675019509
+--- !u!4 &675019509 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: fae43d017b3c9c54c962663bbad1bac5, type: 3}
   m_PrefabInternal: {fileID: 675019508}
@@ -5623,7 +5626,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 433811d56954ec844a8cf3d52cc861e7, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &679082784
+--- !u!4 &679082784 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 433811d56954ec844a8cf3d52cc861e7, type: 3}
   m_PrefabInternal: {fileID: 679082783}
@@ -5781,7 +5784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &727173980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6462,7 +6465,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 868159eb3d5c82049adc3083f9da361b, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &770616639
+--- !u!4 &770616639 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 868159eb3d5c82049adc3083f9da361b, type: 3}
   m_PrefabInternal: {fileID: 770616638}
@@ -6590,7 +6593,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7b782b5beb0bc747b62c6af2dc34037, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &780796463
+--- !u!4 &780796463 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: c7b782b5beb0bc747b62c6af2dc34037, type: 3}
   m_PrefabInternal: {fileID: 780796462}
@@ -6643,7 +6646,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctState: 4
-  actionCost: 10
+  actionCost: 20
+  isCorrect: 0
   earlyMessage: The information from other visual cortices haven not yet reach us!
   correctMessage: The resulting information doesn't seem to contain anything about
     color. We should try to use a different visual brain that can process color.
@@ -6766,7 +6770,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95c72344ef656bc4aae53b37a7070bdb, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &795999854
+--- !u!4 &795999854 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 95c72344ef656bc4aae53b37a7070bdb, type: 3}
   m_PrefabInternal: {fileID: 795999853}
@@ -6955,7 +6959,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74f8c6d98cba00c43923f4b019b390cd, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &808771574
+--- !u!4 &808771574 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 74f8c6d98cba00c43923f4b019b390cd, type: 3}
   m_PrefabInternal: {fileID: 808771573}
@@ -7453,7 +7457,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7cf4a57eac7b0a347a07212b1f2189de, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &849542134
+--- !u!4 &849542134 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7cf4a57eac7b0a347a07212b1f2189de, type: 3}
   m_PrefabInternal: {fileID: 849542133}
@@ -7507,7 +7511,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e713115963ff8eb48a175f5db57dd08c, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &853006062
+--- !u!4 &853006062 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e713115963ff8eb48a175f5db57dd08c, type: 3}
   m_PrefabInternal: {fileID: 853006061}
@@ -7678,7 +7682,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb8c96730cb78234da51b658fe08cd09, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &864541819
+--- !u!4 &864541819 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: fb8c96730cb78234da51b658fe08cd09, type: 3}
   m_PrefabInternal: {fileID: 864541818}
@@ -7936,7 +7940,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2f748238fe3c764b8f999fe24603a99, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &883555424
+--- !u!4 &883555424 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: f2f748238fe3c764b8f999fe24603a99, type: 3}
   m_PrefabInternal: {fileID: 883555423}
@@ -7990,7 +7994,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf9eaf2010122564e92e251cbc6f584c, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &895713051
+--- !u!4 &895713051 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: cf9eaf2010122564e92e251cbc6f584c, type: 3}
   m_PrefabInternal: {fileID: 895713050}
@@ -8258,7 +8262,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 61e1ce8813649654daba410e4a18bdd1, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &930041312
+--- !u!4 &930041312 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 61e1ce8813649654daba410e4a18bdd1, type: 3}
   m_PrefabInternal: {fileID: 930041311}
@@ -8526,7 +8530,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 85feabf0fd1f7de499c720928e10a962, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &951070616
+--- !u!4 &951070616 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 85feabf0fd1f7de499c720928e10a962, type: 3}
   m_PrefabInternal: {fileID: 951070615}
@@ -8580,7 +8584,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: edcb893cb6447004ea55b63979714373, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &960533181
+--- !u!4 &960533181 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: edcb893cb6447004ea55b63979714373, type: 3}
   m_PrefabInternal: {fileID: 960533180}
@@ -9510,7 +9514,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f7e9b6cac8f3f642baeaeb2fe01c0af, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1131209969
+--- !u!4 &1131209969 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7f7e9b6cac8f3f642baeaeb2fe01c0af, type: 3}
   m_PrefabInternal: {fileID: 1131209968}
@@ -9626,7 +9630,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48cacd0bc311b7949974788c0b2c6d2c, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1132393443
+--- !u!4 &1132393443 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 48cacd0bc311b7949974788c0b2c6d2c, type: 3}
   m_PrefabInternal: {fileID: 1132393442}
@@ -9680,7 +9684,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d58b8ed9b9bf434ebfadf7f1c9bc56e, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1134926158
+--- !u!4 &1134926158 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 8d58b8ed9b9bf434ebfadf7f1c9bc56e, type: 3}
   m_PrefabInternal: {fileID: 1134926157}
@@ -9882,7 +9886,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e48a69a973691e458741916f8d42fe2, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1170206244
+--- !u!4 &1170206244 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 4e48a69a973691e458741916f8d42fe2, type: 3}
   m_PrefabInternal: {fileID: 1170206243}
@@ -9936,7 +9940,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f95e9ed8005445479d2f9cae3804a9d, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1170981417
+--- !u!4 &1170981417 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 5f95e9ed8005445479d2f9cae3804a9d, type: 3}
   m_PrefabInternal: {fileID: 1170981416}
@@ -10391,7 +10395,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7d378ab3e190d749b513c70184afde1, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1239912587
+--- !u!4 &1239912587 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e7d378ab3e190d749b513c70184afde1, type: 3}
   m_PrefabInternal: {fileID: 1239912586}
@@ -10519,7 +10523,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 872706aa009419546a7ce21ffdbb6673, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1241199098
+--- !u!4 &1241199098 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 872706aa009419546a7ce21ffdbb6673, type: 3}
   m_PrefabInternal: {fileID: 1241199097}
@@ -10978,11 +10982,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed00b87afcb29bf4d92b8bb84d416e3a, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1314599739
+--- !u!4 &1314599739 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: ed00b87afcb29bf4d92b8bb84d416e3a, type: 3}
   m_PrefabInternal: {fileID: 1314599738}
---- !u!1 &1314599740
+--- !u!1 &1314599740 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: ed00b87afcb29bf4d92b8bb84d416e3a, type: 3}
   m_PrefabInternal: {fileID: 1314599738}
@@ -11156,7 +11160,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9244db1bdc8546d4eaefb43db9355943, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1322037888
+--- !u!4 &1322037888 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 9244db1bdc8546d4eaefb43db9355943, type: 3}
   m_PrefabInternal: {fileID: 1322037887}
@@ -11434,11 +11438,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctState: -1
+  correctState: 1
   actionCost: 10
+  isCorrect: 0
   earlyMessage: We haven't yet received information from the Thalamus!
-  correctMessage: We have successfuly used the Dorsal stream.\nThe information seems
-    to have gone to another Visual Area, responsible for Color Processing.
+  correctMessage: Dorsal stream doesn't seem to require color information. We should
+    try another stream.
   LateMessage: We have already done this
 --- !u!1 &1347426629
 GameObject:
@@ -12036,7 +12041,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f31c592b13a2f64c82aad22cefffce8, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1393058206
+--- !u!4 &1393058206 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7f31c592b13a2f64c82aad22cefffce8, type: 3}
   m_PrefabInternal: {fileID: 1393058205}
@@ -12281,7 +12286,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 462b93af7bb15de4ca493cb07727063c, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1413198130
+--- !u!4 &1413198130 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 462b93af7bb15de4ca493cb07727063c, type: 3}
   m_PrefabInternal: {fileID: 1413198129}
@@ -12409,7 +12414,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9947e868d91f7f49a3608f4862eb2ec, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1421345022
+--- !u!4 &1421345022 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: a9947e868d91f7f49a3608f4862eb2ec, type: 3}
   m_PrefabInternal: {fileID: 1421345021}
@@ -12463,7 +12468,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d28174abe28e16a4dbcb78356f0e4ea5, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1437898261
+--- !u!4 &1437898261 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: d28174abe28e16a4dbcb78356f0e4ea5, type: 3}
   m_PrefabInternal: {fileID: 1437898260}
@@ -13288,7 +13293,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffe26d3c530890b4ea75b7d4203ba721, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1507352554
+--- !u!4 &1507352554 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: ffe26d3c530890b4ea75b7d4203ba721, type: 3}
   m_PrefabInternal: {fileID: 1507352553}
@@ -13416,7 +13421,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 109382a9b787ec34b8840f1c536684d6, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1527136535
+--- !u!4 &1527136535 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 109382a9b787ec34b8840f1c536684d6, type: 3}
   m_PrefabInternal: {fileID: 1527136534}
@@ -13683,7 +13688,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 556749a628a098b4aac19a62d479d92d, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1553878366
+--- !u!4 &1553878366 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 556749a628a098b4aac19a62d479d92d, type: 3}
   m_PrefabInternal: {fileID: 1553878365}
@@ -14068,7 +14073,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af12c174646498f4aaa5e6757781ca07, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1597496682
+--- !u!4 &1597496682 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: af12c174646498f4aaa5e6757781ca07, type: 3}
   m_PrefabInternal: {fileID: 1597496681}
@@ -14122,7 +14127,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c52ce6750dcf20c489f2278f3aaa5e0f, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1602168286
+--- !u!4 &1602168286 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: c52ce6750dcf20c489f2278f3aaa5e0f, type: 3}
   m_PrefabInternal: {fileID: 1602168285}
@@ -14242,7 +14247,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d34b3d12cb40ef84fba6b577137d0265, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1610264077
+--- !u!4 &1610264077 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: d34b3d12cb40ef84fba6b577137d0265, type: 3}
   m_PrefabInternal: {fileID: 1610264076}
@@ -14296,7 +14301,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de094106cd0d1b34abde0f82114cfc01, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1628452077
+--- !u!4 &1628452077 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: de094106cd0d1b34abde0f82114cfc01, type: 3}
   m_PrefabInternal: {fileID: 1628452076}
@@ -14350,7 +14355,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f23d49063703294084277f7de1c54ec, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1669824967
+--- !u!4 &1669824967 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 8f23d49063703294084277f7de1c54ec, type: 3}
   m_PrefabInternal: {fileID: 1669824966}
@@ -14544,7 +14549,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 056431fe3f8539e44be5ba58a70899b7, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1696816981
+--- !u!4 &1696816981 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 056431fe3f8539e44be5ba58a70899b7, type: 3}
   m_PrefabInternal: {fileID: 1696816980}
@@ -14936,7 +14941,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bea43e231f78434c937c91fca99803c, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1758565389
+--- !u!4 &1758565389 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 8bea43e231f78434c937c91fca99803c, type: 3}
   m_PrefabInternal: {fileID: 1758565388}
@@ -15212,7 +15217,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32f0192a95684a8488b9114c51b580d0, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1777008189
+--- !u!4 &1777008189 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 32f0192a95684a8488b9114c51b580d0, type: 3}
   m_PrefabInternal: {fileID: 1777008188}
@@ -15266,7 +15271,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 574feee7dccf9d749b0386bc0f16f732, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1781621966
+--- !u!4 &1781621966 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 574feee7dccf9d749b0386bc0f16f732, type: 3}
   m_PrefabInternal: {fileID: 1781621965}
@@ -15320,7 +15325,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e9157e2bb2a85742a09c433a7a09717, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1810211496
+--- !u!4 &1810211496 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 4e9157e2bb2a85742a09c433a7a09717, type: 3}
   m_PrefabInternal: {fileID: 1810211495}
@@ -15374,6 +15379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctState: 3
   actionCost: 10
+  isCorrect: 1
   earlyMessage: We haven't yet received information from the previous visual cortex!
   correctMessage: The transfer is succsessful. We seem to be close to an area that
     can process the color information
@@ -15875,7 +15881,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69b0cd0b50582d44eb3ae38e65d598fb, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1841845176
+--- !u!4 &1841845176 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 69b0cd0b50582d44eb3ae38e65d598fb, type: 3}
   m_PrefabInternal: {fileID: 1841845175}
@@ -15929,7 +15935,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dfa31d72918a6af4f90217a59e56e1c6, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1845290753
+--- !u!4 &1845290753 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: dfa31d72918a6af4f90217a59e56e1c6, type: 3}
   m_PrefabInternal: {fileID: 1845290752}
@@ -16400,7 +16406,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c3102e62bb2b7de4c8d1a7d64fc91b2a, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1909070472
+--- !u!4 &1909070472 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: c3102e62bb2b7de4c8d1a7d64fc91b2a, type: 3}
   m_PrefabInternal: {fileID: 1909070471}
@@ -16933,6 +16939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctState: 5
   actionCost: 50
+  isCorrect: 1
   earlyMessage: We haven't yet received information from the Thalamus!
   correctMessage: We have successfuly processed the color related information. It
     seems to have been sent somewhere in the Temporal Lobe.
@@ -17121,7 +17128,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 12c9c3a1968be7b4d87e1b30047dc8ca, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &1964734638
+--- !u!4 &1964734638 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 12c9c3a1968be7b4d87e1b30047dc8ca, type: 3}
   m_PrefabInternal: {fileID: 1964734637}
@@ -17175,8 +17182,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctState: 1
   actionCost: 10
+  isCorrect: 1
   earlyMessage: We haven't yet received information from the Thalamus!
-  correctMessage: 
+  correctMessage: We have successfuly used the Ventral stream.\nThe information seems
+    to have gone towards another Visual Area, responsible for Color Processing.
   LateMessage: We have already done this
 --- !u!114 &1969013020
 MonoBehaviour:
@@ -17424,7 +17433,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8fc2855114eb5a241a64d3a29442939d, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &2007812135
+--- !u!4 &2007812135 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 8fc2855114eb5a241a64d3a29442939d, type: 3}
   m_PrefabInternal: {fileID: 2007812134}
@@ -17912,7 +17921,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88e81821612dc9142a72b5980e2018f6, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &2041421001
+--- !u!4 &2041421001 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 88e81821612dc9142a72b5980e2018f6, type: 3}
   m_PrefabInternal: {fileID: 2041421000}
@@ -17966,7 +17975,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b895b57f7cfe3f740823b6de2eb23e51, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &2042646082
+--- !u!4 &2042646082 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: b895b57f7cfe3f740823b6de2eb23e51, type: 3}
   m_PrefabInternal: {fileID: 2042646081}
@@ -18675,7 +18684,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab8a3a8bb3c48a24891db5382c433d97, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &2114517547
+--- !u!4 &2114517547 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: ab8a3a8bb3c48a24891db5382c433d97, type: 3}
   m_PrefabInternal: {fileID: 2114517546}
