@@ -122,6 +122,10 @@ public class GameController : MonoBehaviour
     }
     public void SetCurrentAnimation() { SetBrainAnimation(currentAnimationState); }
 
+    public void IncreaseTime(int time)
+    {
+        gameTime += time;
+    }
     public void IncrementStage()
     {
         currentStage++;
