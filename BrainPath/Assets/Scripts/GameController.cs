@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
     public int TimeLimit;
     private Text gameTimeText;
 
-    private int currentStage = 0;
+    public int currentStage = 0;
     public int winningStage;
     // Use this for initialization
 

@@ -40,6 +40,11 @@ public class ActionButton : MonoBehaviour
     */
     public void OnClick()
     {
-
+        gameController.IncreaseTime(actionCost);
+        if (gameController.currentStage > correctState) { }
+        else if (gameController.currentStage < correctState) { }
+        else {
+            if (isCorrect) { gameController.IncrementStage(); }
+        }
     }
 }
