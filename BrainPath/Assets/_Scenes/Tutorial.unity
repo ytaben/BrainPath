@@ -17977,7 +17977,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Transfer through <b>Dorsal</b> stream
+  m_Text: Process information and continue transfer
 --- !u!222 &1962439699
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18090,7 +18090,7 @@ MonoBehaviour:
   actionCost: 10
   isCorrect: 1
   earlyMessage: We haven't yet received information from the Thalamus!
-  correctMessage: We have successfuly used the Ventral stream.\nThe information seems
+  correctMessage: We have successfuly used the Ventral stream. The information seems
     to have gone towards another Visual Area, responsible for Color Processing.
   LateMessage: We have already done this
 --- !u!114 &1969013020
