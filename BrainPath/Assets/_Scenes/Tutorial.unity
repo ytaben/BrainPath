@@ -1626,6 +1626,7 @@ MonoBehaviour:
   allBrainNodes: []
   startNode: {fileID: 431886608}
   TimeLimit: 550
+  winningStage: 7
 --- !u!1001 &190296479
 Prefab:
   m_ObjectHideFlags: 0

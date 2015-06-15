@@ -29,6 +29,8 @@ public class GameController : MonoBehaviour
     private int gameTime = 0;
     public int TimeLimit;
     private Text gameTimeText;
+
+    public int winningStage;
     // Use this for initialization
 
     IEnumerator Start()
