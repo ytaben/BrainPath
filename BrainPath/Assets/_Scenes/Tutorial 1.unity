@@ -527,6 +527,7 @@ GameObject:
   - 114: {fileID: 75872958}
   - 114: {fileID: 75872957}
   - 114: {fileID: 75872960}
+  - 114: {fileID: 75872961}
   m_Layer: 5
   m_Name: ThalamusButton0
   m_TagString: Untagged
@@ -637,6 +638,18 @@ MonoBehaviour:
   earlyMessage: 
   correctMessage: Successfuly transfered visual information to Visual Cortex
   LateMessage: We have already transfered information from Thalamus
+--- !u!114 &75872961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 75872955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctStage: 0
 --- !u!1 &82102517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,6 +1866,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 182287096}
   - 114: {fileID: 182287097}
+  - 114: {fileID: 182287098}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1899,6 +1913,24 @@ MonoBehaviour:
   baseScoreText: {fileID: 519847522}
   timeLeftScoreText: {fileID: 507434098}
   totalScoreText: {fileID: 1608129016}
+--- !u!114 &182287098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 182287095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0249f2cdabf6c674f9123ff21db3b57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalStages: 3
+  currentStage: 0
+  helpScreens:
+  - {fileID: 1525276401}
+  - {fileID: 1377525744}
+  - {fileID: 449880386}
+  - {fileID: 344028046}
 --- !u!1 &185094556
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,10 +2951,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -7.43240003e-09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 345207243}
   - {fileID: 1525276402}
   - {fileID: 1377525745}
   - {fileID: 449880387}
+  - {fileID: 344028047}
+  - {fileID: 345207243}
   m_Father: {fileID: 149745110}
   m_RootOrder: 17
   m_AnchorMin: {x: 0, y: 0}
@@ -3334,6 +3367,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &344028046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 344028047}
+  - 222: {fileID: 344028049}
+  - 114: {fileID: 344028048}
+  m_Layer: 5
+  m_Name: PanelStage03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &344028047
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344028046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 696971722}
+  m_Father: {fileID: 295306456}
+  m_RootOrder: 3
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 431, y: -201}
+  m_SizeDelta: {x: -876, y: -417}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &344028048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344028046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .713725507, g: .654901981, b: .396078438, a: 1}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &344028049
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344028046}
 --- !u!1 &345207242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3350,7 +3445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &345207243
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3365,7 +3460,7 @@ RectTransform:
   - {fileID: 2057397917}
   - {fileID: 923943899}
   m_Father: {fileID: 295306456}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -2, y: -47}
@@ -4600,12 +4695,12 @@ GameObject:
   - 222: {fileID: 449880389}
   - 114: {fileID: 449880388}
   m_Layer: 5
-  m_Name: PanelStage01 (1)
+  m_Name: PanelStage02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &449880387
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4618,10 +4713,10 @@ RectTransform:
   m_Children:
   - {fileID: 674583113}
   m_Father: {fileID: 295306456}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3, y: -182}
+  m_AnchoredPosition: {x: 3, y: 89}
   m_SizeDelta: {x: -876, y: -417}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &449880388
@@ -4861,7 +4956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &493126723
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7000,6 +7095,77 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 433811d56954ec844a8cf3d52cc861e7, type: 3}
   m_PrefabInternal: {fileID: 679082783}
+--- !u!1 &696971721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 696971722}
+  - 222: {fileID: 696971724}
+  - 114: {fileID: 696971723}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &696971722
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696971721}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 344028047}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 3, y: 1}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &696971723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696971721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Nice!
+
+
+    There is one last action left. Try to use what you have learned and complete it
+    on your own. Remember that we want the brain to send a signal for the body to
+    shield itself.'
+--- !u!222 &696971724
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696971721}
 --- !u!1 &701074566
 GameObject:
   m_ObjectHideFlags: 0
@@ -10548,6 +10714,7 @@ GameObject:
   - 114: {fileID: 982728866}
   - 114: {fileID: 982728865}
   - 114: {fileID: 982728864}
+  - 114: {fileID: 982728868}
   m_Layer: 5
   m_Name: VisualCortexButton0
   m_TagString: Untagged
@@ -10658,6 +10825,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 982728862}
+--- !u!114 &982728868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982728862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctStage: 3
 --- !u!1 &992333472
 GameObject:
   m_ObjectHideFlags: 0
@@ -13951,6 +14130,7 @@ GameObject:
   - 114: {fileID: 1353083294}
   - 114: {fileID: 1353083298}
   - 114: {fileID: 1353083297}
+  - 114: {fileID: 1353083299}
   m_Layer: 0
   m_Name: VisualCortexButton
   m_TagString: BrainNode
@@ -14086,6 +14266,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9141c309b3fe4924ebbc11ed47663cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1353083299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353083292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctStage: 1
 --- !u!1 &1355033478
 GameObject:
   m_ObjectHideFlags: 0
@@ -14301,7 +14493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1377525745
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14314,7 +14506,7 @@ RectTransform:
   m_Children:
   - {fileID: 2042855997}
   m_Father: {fileID: 295306456}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 428, y: -182}
@@ -16022,7 +16214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1525276402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16035,7 +16227,7 @@ RectTransform:
   m_Children:
   - {fileID: 1755518873}
   m_Father: {fileID: 295306456}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 9.15530036e-05, y: 62}
@@ -17584,6 +17776,7 @@ GameObject:
   - 114: {fileID: 1722546124}
   - 114: {fileID: 1722546123}
   - 114: {fileID: 1722546122}
+  - 114: {fileID: 1722546126}
   m_Layer: 5
   m_Name: VisualCortexButton1
   m_TagString: Untagged
@@ -17696,6 +17889,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1722546120}
+--- !u!114 &1722546126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1722546120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctStage: 2
 --- !u!1 &1722554347
 GameObject:
   m_ObjectHideFlags: 0
@@ -18031,7 +18236,7 @@ MonoBehaviour:
     It contains name, description and actions you can perform.
 
 
-    The game is complete by performing correct actions in the right sequence.
+    The game is won by performing correct actions in the right sequence.
 
 
     Remember that performing actions takes time. You must complete each level before
@@ -21838,7 +22043,7 @@ MonoBehaviour:
   m_Text: 'Excellent!
 
 
-    Now we can advance further an process visual information in Visual Cortex.
+    Now we can advance further and process information in Visual Cortex.
 
 
     You can move within the brain by clicking names of corresponding brain parts.
@@ -22199,8 +22404,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your objective in this tutorial level is to to send a motor signal to shield
+  m_Text: 'Your objective in this tutorial level is to to send a motor signal to shield
     yourself against an incoming object.
+
+    You can learn about the gameplay by reading the tutorial popups.'
 --- !u!222 &2057397919
 CanvasRenderer:
   m_ObjectHideFlags: 0
