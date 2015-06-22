@@ -22,7 +22,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public GameObject[] brainParts; //List of brain parts that correspond to this node
 
-    public Canvas nodeCanvas;
+    public GameObject nodeMenu;
 
 
     //A drop down menu to choose which animation should be triggered upon being active or hovering over this node
@@ -131,7 +131,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     void OnClickBrainNode()
     {
         Refresh();
-        if (isActive) { nodeCanvas.gameObject.SetActive(enabled); return; }
+        if (isActive) { nodeMenu.gameObject.SetActive(enabled); return; }
         Dictionary<GameObject, int> costs = FindCost(gameObject);
         gameController.Transition(gameObject, costs[gameController.activeNode]); //TODO: SET APPROPRIATE COST
     }
