@@ -83,7 +83,7 @@ public class GameController : MonoBehaviour
         activeNode.SetActive(true);
         activeNodeScript = activeNode.GetComponent<BrainNode>();
         activeNodeScript.isActive = true;
-        activeNodeScript.isNew = false;
+        //activeNodeScript.isNew = false;
         currentAnimationState = activeNodeScript.BrainState;
         SetCurrentAnimation();
         activeNodeScript.ExploreOutboundObjects();
