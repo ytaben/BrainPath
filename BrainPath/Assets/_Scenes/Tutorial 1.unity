@@ -6913,6 +6913,9 @@ MonoBehaviour:
   m_Text: 'Perfect!
 
 
+    Now we''re in the visual cortex!
+
+
     Often, you will have to choose from multiple actions. Try to find clues in the
     description menu and take into consideration your objective.
 
@@ -19884,7 +19887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1892676748
 RectTransform:
   m_ObjectHideFlags: 0
