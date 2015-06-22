@@ -11187,7 +11187,7 @@ MonoBehaviour:
   brainParts:
   - {fileID: 942301166}
   - {fileID: 1767982009}
-  nodeMenu: {fileID: 0}
+  nodeMenu: {fileID: 127071300}
   BrainState: 0
 --- !u!114 &1058629788
 MonoBehaviour:
@@ -14055,7 +14055,7 @@ MonoBehaviour:
   - {fileID: 50895672}
   - {fileID: 1953344354}
   - {fileID: 1012738942}
-  nodeMenu: {fileID: 1705456508}
+  nodeMenu: {fileID: 1892676747}
   BrainState: 1
 --- !u!114 &1353083298
 MonoBehaviour:

@@ -131,7 +131,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     void OnClickBrainNode()
     {
         Refresh();
-        if (isActive) { nodeMenu.gameObject.SetActive(enabled); return; }
+        //if (isActive) { nodeMenu.gameObject.SetActive(enabled); return; } //We open menus automatically now
         Dictionary<GameObject, int> costs = FindCost(gameObject);
         gameController.Transition(gameObject, costs[gameController.activeNode]); //TODO: SET APPROPRIATE COST
     }

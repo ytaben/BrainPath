@@ -66,6 +66,7 @@ public class GameController : MonoBehaviour
         SetCurrentAnimation();
         activeNodeScript.Refresh();
         activeNodeScript.ExploreOutboundObjects();
+        activeNodeScript.nodeMenu.SetActive(true);
         UpdateTimeText();
         GameObject.Find("TimeLimitText").GetComponent<Text>().text = "Timelimit: " + TimeLimit.ToString() + " ms";
     }
@@ -74,6 +75,7 @@ public class GameController : MonoBehaviour
     public void Transition(GameObject destination, int cost)
     {
         BrainNode oldNodeScript = activeNodeScript;
+        oldNodeScript.nodeMenu.SetActive(false);
         oldNodeScript.isActive = false;
         foreach (GameObject outboundNode in oldNodeScript.outboundNodes.Keys) { outboundNode.SetActive(false); }
         
@@ -85,6 +87,7 @@ public class GameController : MonoBehaviour
         currentAnimationState = activeNodeScript.BrainState;
         SetCurrentAnimation();
         activeNodeScript.ExploreOutboundObjects();
+        activeNodeScript.nodeMenu.SetActive(true);
 
         //Refresh both new and old nodes
         oldNodeScript.Refresh();
