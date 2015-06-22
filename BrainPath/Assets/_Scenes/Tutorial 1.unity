@@ -1973,7 +1973,7 @@ MonoBehaviour:
   messageText: {fileID: 1394684245}
   messagePanel: {fileID: 1757820213}
   currentStage: 0
-  winningStage: 5
+  winningStage: 4
   finalScorePanel: {fileID: 511996672}
   finalResultsText: {fileID: 767380116}
   baseScoreText: {fileID: 519847522}
@@ -10566,7 +10566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctState: 3
+  correctState: 2
   actionCost: 25
   isCorrect: 1
   earlyMessage: We don't know where the object is and how fast it is moving!
@@ -20830,7 +20830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctState: 3
+  correctState: 2
   actionCost: 50
   isCorrect: 0
   earlyMessage: The visual information is not yet processed by the visual cortex
