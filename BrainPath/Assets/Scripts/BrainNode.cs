@@ -87,7 +87,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         foreach (BrainNode.OutboundEdge brainNode in outboundEdges)
         {
-            if (!brainNode.destination.activeSelf) { 
+            if (true) {//!brainNode.destination.activeSelf) { 
             brainNode.destination.SetActive(true);
             BrainNode script = brainNode.destination.GetComponent<BrainNode>();
             script.isNew = true; script.isExplored = true; script.Refresh();
