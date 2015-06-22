@@ -1965,7 +1965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allBrainNodes: []
   startNode: {fileID: 431886608}
-  TimeLimit: 300
+  TimeLimit: 450
   BaseLevelScore: 500
   victoryMessage: Congratulations! We have successfuly shielded ourselves against
     the incoming object!
