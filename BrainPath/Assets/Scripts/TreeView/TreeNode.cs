@@ -49,7 +49,7 @@ public class TreeNode : MonoBehaviour {
 
     }
 
-    void Toggle()
+    public void Toggle()
     {
         if (isExpanded)
         {
