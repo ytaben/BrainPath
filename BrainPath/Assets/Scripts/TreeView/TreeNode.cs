@@ -44,8 +44,12 @@ public class TreeNode : MonoBehaviour {
         }
         gameObject.SetActive(false);
     }
-
     void OnClick()
+    {
+
+    }
+
+    void Toggle()
     {
         if (isExpanded)
         {
@@ -63,16 +67,6 @@ public class TreeNode : MonoBehaviour {
             {
                 child.SetActive(true);
             }
-            //float verticalOffset = (float)(offset * 1.5);
-            //foreach (GameObject child in children)
-            //{
-            //    child.SetActive(true);
-            //    Vector2 position = child.GetComponent<RectTransform>().position;
-            //    position.x = rectTransform.position.x + horizontalOffset;
-            //    position.y = rectTransform.position.y - verticalOffset;
-            //    child.GetComponent<RectTransform>().position = position;
-            //    verticalOffset += offset;
-            //}
         }
         SetIconRotation();
         tree.GetComponent<TreeView>().RefreshTree();
