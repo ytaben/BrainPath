@@ -2788,7 +2788,7 @@ GameObject:
   - 222: {fileID: 278825884}
   - 114: {fileID: 278825883}
   m_Layer: 5
-  m_Name: ThalamusPanel
+  m_Name: VisualCortexPanel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6732,14 +6732,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctState: 1
+  correctState: 0
   actionCost: 25
-  isCorrect: 0
-  earlyMessage: We have not yet received information to decode
-  correctMessage: The object turns out to be a soccer ball, but it doesn't help us
-    react to it. Try to find more useful information.
-  LateMessage: Visual information has already been decoded. Try using it in a different
-    cortex
+  isCorrect: 1
+  earlyMessage: 
+  correctMessage: Successfuly transfered visual information to Visual Cortex
+  LateMessage: We have already transfered information from Thalamus
 --- !u!114 &611856104
 MonoBehaviour:
   m_ObjectHideFlags: 0
