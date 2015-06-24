@@ -14,7 +14,7 @@ public class NodeExpander : MonoBehaviour {
 	void Start () {
         GetComponent<Button>().onClick.AddListener(OnClick);
         Vector2 position = node.gameObject.GetComponent<RectTransform>().position;
-        position.x -= 5;
+        position.x -= 7;
         GetComponent<RectTransform>().position = position;
 	}
 	
