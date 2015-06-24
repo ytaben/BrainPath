@@ -65,6 +65,8 @@ public class TreeNode : MonoBehaviour {
             isExpanded = true;
             foreach (GameObject child in children)
             {
+                child.GetComponent<TreeNode>().isExpanded = false;
+                child.GetComponent<TreeNode>().SetIconRotation();
                 child.SetActive(true);
             }
         }
@@ -87,7 +89,7 @@ public class TreeNode : MonoBehaviour {
     public float DrawChildren()
     {
         if (!isActiveAndEnabled) { return 0; }
-        float verticalOffset = (float)(offset * 1.5);
+        float verticalOffset = (float)(offset + 3);
         if (isExpanded) { 
         
         foreach (GameObject child in children)
