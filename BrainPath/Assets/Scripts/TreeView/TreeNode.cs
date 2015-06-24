@@ -92,8 +92,9 @@ public class TreeNode : MonoBehaviour {
     
     public float DrawChildren()
     {
+        if (!isActiveAndEnabled) { return 0; }
         float verticalOffset = (float)(offset * 1.5);
-        if (true) {//isExpanded) { 
+        if (isExpanded) { 
         
         foreach (GameObject child in children)
         {
