@@ -330,6 +330,7 @@ GameObject:
   - 222: {fileID: 722502429}
   - 114: {fileID: 722502428}
   - 114: {fileID: 722502427}
+  - 114: {fileID: 722502430}
   m_Layer: 0
   m_Name: TutorialButton
   m_TagString: Untagged
@@ -423,6 +424,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 722502425}
+--- !u!114 &722502430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 722502425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1498f10d82eeb7943a207455dbdf3741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelName: Tutorial 1
 --- !u!1001 &763743735
 Prefab:
   m_ObjectHideFlags: 0
