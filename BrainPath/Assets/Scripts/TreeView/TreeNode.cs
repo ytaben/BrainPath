@@ -44,6 +44,17 @@ public class TreeNode : MonoBehaviour {
         }
         gameObject.SetActive(false);
     }
+
+    public void ActivateChildren()
+    {
+        foreach (GameObject child in children)
+        {
+            TreeNode childNode = child.GetComponent<TreeNode>();
+            child.gameObject.SetActive(true);
+            if (childNode.isExpanded) { childNode.ActivateChildren(); }
+        }
+    }
+
     void OnClick()
     {
 
@@ -65,9 +76,8 @@ public class TreeNode : MonoBehaviour {
             isExpanded = true;
             foreach (GameObject child in children)
             {
-                child.GetComponent<TreeNode>().isExpanded = false;
-                child.GetComponent<TreeNode>().SetIconRotation();
                 child.SetActive(true);
+                child.GetComponent<TreeNode>().ActivateChildren();
             }
         }
         SetIconRotation();
