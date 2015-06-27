@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class TreeNode : MonoBehaviour {
 
-    public GameObject[] children;
+    public List<GameObject> children;
     public GameObject nextNode;
 
     public int horizontalOffset;
@@ -86,6 +87,11 @@ public class TreeNode : MonoBehaviour {
         }
         SetIconRotation();
         tree.GetComponent<TreeView>().RefreshTree();
+    }
+
+    public void AddChild(GameObject child)
+    {
+        children.Add(child);
     }
 
     public void SetIconRotation()
