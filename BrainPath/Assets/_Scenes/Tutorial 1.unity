@@ -13801,15 +13801,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Thalamus is responsible for the following functions:
+  m_Text: 'Visual Cortex is responsible for receiving visual information and relaying
+    it to other visual areas for further processing.
 
-    - Relaying sensory and motor signals to the Cerebral Cortex.
+    Two main visual streams are:
 
-    - Consciousness
+    - Dorsal stream (known as "what" stream)
 
-    - Sleep
-
-    - Alertness'
+    - Ventral stream (known as "where" stream)'
 --- !u!222 &1677810943
 CanvasRenderer:
   m_ObjectHideFlags: 0
