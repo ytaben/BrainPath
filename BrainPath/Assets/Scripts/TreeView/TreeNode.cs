@@ -68,26 +68,40 @@ public class TreeNode : MonoBehaviour {
     {
         if (isExpanded)
         {
-            isExpanded = false;
-            foreach (GameObject child in children)
-            {
-                child.GetComponent<TreeNode>().DeactivateChildren();
-            }
-            
+            Collapse();
         }
         else
         {
-            isExpanded = true;
-            foreach (GameObject child in children)
-            {
-                child.SetActive(true);
-                //child.GetComponent<TreeNode>().ActivateChildren();
-            }
-            ActivateChildren();
+            Expand();
         }
+        
+    }
+
+    public void Expand()
+    {
+        isExpanded = true;
+        foreach (GameObject child in children)
+        {
+            child.SetActive(true);
+            //child.GetComponent<TreeNode>().ActivateChildren();
+        }
+        ActivateChildren();
         SetIconRotation();
         tree.GetComponent<TreeView>().RefreshTree();
     }
+
+    
+
+    public void Collapse()
+    {
+        isExpanded = false;
+        foreach (GameObject child in children)
+        {
+            child.GetComponent<TreeNode>().DeactivateChildren();
+        }
+    SetIconRotation();
+    tree.GetComponent<TreeView>().RefreshTree();
+}
 
     public void AddChild(GameObject child)
     {
