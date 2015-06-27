@@ -61,12 +61,12 @@ public class GameController : MonoBehaviour
         activeNode.SetActive(true);
         activeNodeScript = activeNode.GetComponent<BrainNode>();
         activeNodeScript.isExplored = true;
-        activeNodeScript.isActive = true;
-        currentAnimationState = activeNodeScript.BrainState;
-        SetCurrentAnimation();
-        activeNodeScript.Refresh();
-        activeNodeScript.ExploreOutboundObjects();
-        activeNodeScript.nodeMenu.SetActive(true);
+        //activeNodeScript.isActive = true;
+        //currentAnimationState = activeNodeScript.BrainState;
+        //SetCurrentAnimation();
+       // activeNodeScript.Refresh();
+        //activeNodeScript.ExploreOutboundObjects();
+       // activeNodeScript.nodeMenu.SetActive(true);
         UpdateTimeText();
         GameObject.Find("TimeLimitText").GetComponent<Text>().text = "Timelimit: " + TimeLimit.ToString() + " ms";
     }
@@ -75,13 +75,16 @@ public class GameController : MonoBehaviour
     public void Transition(GameObject destination, int cost)
     {
         BrainNode oldNodeScript = activeNodeScript;
-        oldNodeScript.nodeMenu.SetActive(false);
-        oldNodeScript.isActive = false;
-        foreach (GameObject outboundNode in oldNodeScript.outboundNodes.Keys) {
-            outboundNode.GetComponent<BrainNode>().isNew = false;
-            outboundNode.GetComponent<BrainNode>().Refresh();
-            outboundNode.SetActive(false);
+        if (oldNodeScript)
+        {
+            oldNodeScript.nodeMenu.SetActive(false);
+            oldNodeScript.isActive = false;
         }
+        //foreach (GameObject outboundNode in oldNodeScript.outboundNodes.Keys) {
+        //    outboundNode.GetComponent<BrainNode>().isNew = false;
+        //    outboundNode.GetComponent<BrainNode>().Refresh();
+        //    outboundNode.SetActive(false);
+        //}
         
         activeNode = destination;
         activeNode.SetActive(true);
@@ -90,11 +93,11 @@ public class GameController : MonoBehaviour
         //activeNodeScript.isNew = false;
         currentAnimationState = activeNodeScript.BrainState;
         SetCurrentAnimation();
-        activeNodeScript.ExploreOutboundObjects();
+        //activeNodeScript.ExploreOutboundObjects();
         activeNodeScript.nodeMenu.SetActive(true);
 
         //Refresh both new and old nodes
-        oldNodeScript.Refresh();
+        if (oldNodeScript) { oldNodeScript.Refresh(); }
         activeNodeScript.Refresh();
 
         IncreaseTime(cost);

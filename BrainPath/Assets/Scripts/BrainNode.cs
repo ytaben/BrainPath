@@ -10,6 +10,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public bool isActive; //Determine whether this node is currently selected
     public bool isExplored;
     public bool isNew;
+    private bool isVisited;
 
     public System.Collections.Generic.Dictionary<GameObject, int> outboundNodes; //HashTable of nodes that are connected to this one
     [Serializable]
@@ -33,6 +34,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     private Button button;
     private GameController gameController; //Reference to gameController (singleton)
     private MaterialController materialController;
+    private TreeNode treeNode;
     // Use this for initialization
     void Awake()
     {
@@ -40,6 +42,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         button = GetComponent<Button>();
         button.onClick.AddListener(OnClickBrainNode); //Add an onClick listener 
         outboundNodes = new System.Collections.Generic.Dictionary<GameObject, int>();
+        treeNode = GetComponent<TreeNode>();
         foreach (OutboundEdge edge in outboundEdges) { outboundNodes[edge.destination] = edge.cost; }
     }
 
@@ -130,7 +133,22 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     //On Click - notify gameController using the Transition method
     void OnClickBrainNode()
     {
+        if (!isVisited)
+        {
+            isVisited = true;
+            foreach (GameObject child in outboundNodes.Keys)
+            {
+                BrainNode childScript = child.GetComponent<BrainNode>();
+                if (!childScript.isExplored)
+                {
+                    treeNode.AddChild(child);
+                    childScript.isExplored = true;
+                }
+            }
+            treeNode.Expand();
+        }
         Refresh();
+        
         //if (isActive) { nodeMenu.gameObject.SetActive(enabled); return; } //We open menus automatically now
         Dictionary<GameObject, int> costs = FindCost(gameObject);
         gameController.Transition(gameObject, costs[gameController.activeNode]); //TODO: SET APPROPRIATE COST

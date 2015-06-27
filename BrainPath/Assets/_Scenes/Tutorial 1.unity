@@ -1511,7 +1511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &232009526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1879,7 +1879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &278825882
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2420,7 +2420,7 @@ MonoBehaviour:
   brainParts:
   - {fileID: 899422685}
   - {fileID: 1323794461}
-  nodeMenu: {fileID: 927724247}
+  nodeMenu: {fileID: 588064301}
   BrainState: 2
 --- !u!1 &331747918
 GameObject:
@@ -3923,7 +3923,7 @@ MonoBehaviour:
   brainParts:
   - {fileID: 1438486542}
   - {fileID: 19143090}
-  nodeMenu: {fileID: 0}
+  nodeMenu: {fileID: 278825881}
   BrainState: 1
 --- !u!1 &500645533
 GameObject:
@@ -4608,7 +4608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &588064302
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11453,7 +11453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1366855648
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14848,7 +14848,7 @@ MonoBehaviour:
   brainParts:
   - {fileID: 942301166}
   - {fileID: 1767982009}
-  nodeMenu: {fileID: 0}
+  nodeMenu: {fileID: 1366855647}
   BrainState: 0
 --- !u!1001 &1781621965
 Prefab:
@@ -15073,7 +15073,7 @@ MonoBehaviour:
   - {fileID: 50895672}
   - {fileID: 1953344354}
   - {fileID: 1012738942}
-  nodeMenu: {fileID: 0}
+  nodeMenu: {fileID: 232009525}
   BrainState: 1
 --- !u!1 &1792730503
 GameObject:
