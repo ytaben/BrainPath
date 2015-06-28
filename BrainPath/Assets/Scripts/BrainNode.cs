@@ -118,6 +118,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         ColorBlock buttonColors;
         buttonColors = button.colors;
         buttonColors.normalColor = color;
+        buttonColors.highlightedColor = color;
         button.colors = buttonColors;
     }
 
