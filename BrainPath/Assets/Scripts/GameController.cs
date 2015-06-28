@@ -129,7 +129,8 @@ public class GameController : MonoBehaviour
         {
             menu.SetActive(false);
         }
-        GameObject.Find("HelpMenus").SetActive(false);
+        GameObject helpMenu = GameObject.Find("HelpMenus");
+        if (helpMenu) { helpMenu.SetActive(false); }
 
         bool isWin = currentStage == winningStage;
         finalScorePanel.SetActive(true);
