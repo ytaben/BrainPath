@@ -1246,6 +1246,7 @@ MonoBehaviour:
   - {fileID: 1525276401}
   - {fileID: 1377525744}
   - {fileID: 449880386}
+  - {fileID: 449880386}
   - {fileID: 344028046}
 --- !u!1 &185094556
 GameObject:
@@ -2827,8 +2828,8 @@ RectTransform:
   m_RootOrder: 9
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 430.997559, y: -200.003113}
-  m_SizeDelta: {x: -875.995483, y: -416.006226}
+  m_AnchoredPosition: {x: 7, y: -95.6719971}
+  m_SizeDelta: {x: -700.119995, y: -299}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &344028048
 MonoBehaviour:
@@ -3711,10 +3712,10 @@ RectTransform:
   - {fileID: 674583113}
   m_Father: {fileID: 149745110}
   m_RootOrder: 10
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.99758911, y: 89.9968872}
-  m_SizeDelta: {x: -875.995483, y: -416.006226}
+  m_AnchorMin: {x: .577348709, y: .359931827}
+  m_AnchorMax: {x: .788480401, y: .768726826}
+  m_AnchoredPosition: {x: 0, y: -.500007629}
+  m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &449880388
 MonoBehaviour:
@@ -4009,6 +4010,7 @@ GameObject:
   - 114: {fileID: 473725248}
   - 114: {fileID: 473725249}
   - 114: {fileID: 473725250}
+  - 114: {fileID: 473725251}
   m_Layer: 5
   m_Name: ThalamusNode
   m_TagString: BrainNode
@@ -4157,6 +4159,18 @@ MonoBehaviour:
   - {fileID: 19143090}
   nodeMenu: {fileID: 278825881}
   BrainState: 1
+--- !u!114 &473725251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473725243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctStage: 1
 --- !u!1 &491878414
 GameObject:
   m_ObjectHideFlags: 0
@@ -5370,6 +5384,7 @@ GameObject:
   - 114: {fileID: 611856105}
   - 114: {fileID: 611856104}
   - 114: {fileID: 611856103}
+  - 114: {fileID: 611856107}
   m_Layer: 5
   m_Name: ThalamusButton0
   m_TagString: Untagged
@@ -5480,6 +5495,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 611856101}
+--- !u!114 &611856107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 611856101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctStage: 2
 --- !u!1 &612724227
 GameObject:
   m_ObjectHideFlags: 0
@@ -6248,17 +6275,19 @@ MonoBehaviour:
   m_Text: 'Perfect!
 
 
-    Now we''re in the visual cortex!
+    You can see the parts you''re currently in highlited in green.
 
 
-    Often, you will have to choose from multiple actions. Try to find clues in the
-    description menu and take into consideration your objective.
-
-    Performing wrong actions can still give you information, but it costs time.
+    You have also opened an information menu on the right. Here, you can find the
+    name of the current node, its description and all available actions.
 
 
-    Remember that we are trying to process a reflex. Do we need to know what the object
-    is, or where and how fast it is?'
+    Performing actions also costs time (usually less than traveling). Performing actions
+    is required to win the game, and also provides useful information on your current
+    objective. Even wrong actions can provide useful information, in cost of time.
+
+
+    Try to perform an action here then move to visual cortex.'
 --- !u!222 &674583115
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6625,12 +6654,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Nice!
+  m_Text: 'Excellent!
 
 
-    There is one last action left. Try to use what you have learned and complete it
-    on your own. Remember that we want the brain to send a signal for the body to
-    shield itself.'
+    Often, you will have to choose between multiple actions and multiple destinations
+    to travel. You get higher score if you make few mistakes, so try to guess the
+    correct actions from what you know about the brain part, its description and your
+    current objective.
+
+
+    In this case, we are trying to react to an incoming object. Do we need to identify
+    what the object is, or know where it is and how fast it is moving?
+
+
+    Use the information you get from performing the correct action to determine where
+    to go next. Try to complete the level from here, good luck!'
 --- !u!222 &696971724
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11074,7 +11112,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'In this simple tutorial we will learn about motor reflexes.
+  m_Text: 'In this simple tutorial we will learn about motor reactions.
+
+    Reactions are slightly more complex than reflexes, because they actually involve
+    brain activity rather than autonomous reaction.
+
 
     Imagine you have an object flying at you. There is only a split second to react,
     so your brain has to process the visual information and send a motor signal as
@@ -11775,10 +11817,10 @@ RectTransform:
   - {fileID: 2042855997}
   m_Father: {fileID: 149745110}
   m_RootOrder: 11
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 427.997559, y: -181.003113}
-  m_SizeDelta: {x: -875.995483, y: -416.006226}
+  m_AnchorMin: {x: .258420825, y: .448605388}
+  m_AnchorMax: {x: .454176307, y: .85132885}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1377525746
 MonoBehaviour:
@@ -12751,13 +12793,15 @@ GameObject:
   - 224: {fileID: 1525276402}
   - 222: {fileID: 1525276404}
   - 114: {fileID: 1525276403}
+  - 114: {fileID: 1525276405}
+  - 114: {fileID: 1525276406}
   m_Layer: 5
   m_Name: PanelStage00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1525276402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12771,8 +12815,8 @@ RectTransform:
   - {fileID: 1755518873}
   m_Father: {fileID: 149745110}
   m_RootOrder: 12
-  m_AnchorMin: {x: .710647464, y: .633320093}
-  m_AnchorMax: {x: .925000072, y: .861000061}
+  m_AnchorMin: {x: .710647464, y: .523593962}
+  m_AnchorMax: {x: .980161667, y: .861000061}
   m_AnchoredPosition: {x: -.0009765625, y: 1.24255371}
   m_SizeDelta: {x: -1.99908447, y: .226257324}
   m_Pivot: {x: .5, y: .5}
@@ -12803,6 +12847,59 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1525276401}
+--- !u!114 &1525276405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1525276401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctStage: 0
+--- !u!114 &1525276406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1525276401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_ColorMultiplier: 1
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1525276403}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &1527136534
 Prefab:
   m_ObjectHideFlags: 0
@@ -14446,10 +14543,22 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'This is the brain that you will navigate through. Right now it''s unexplored,
-    but don''t worry. As you progress, you will explore more and more of it.
+  m_Text: 'This is the brain!
 
-    In this level, your final objective will be to get to Motor Cortex'
+    Throughout the game, you will navigate yourself through the brain and perform
+    various actions in its different parts.
+
+
+    In order to accomplish your objectives in this game, you will have to perform
+    actions in the correct parts of the brain and in the correct sequence, before
+    the time runs out.
+
+
+    The first step in processing visual information is Thalamus, so let''s visit it
+    first!
+
+
+    Click this message to continue.'
 --- !u!222 &1755518875
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15079,6 +15188,7 @@ GameObject:
   - 114: {fileID: 1785720414}
   - 114: {fileID: 1785720415}
   - 114: {fileID: 1785720416}
+  - 114: {fileID: 1785720417}
   m_Layer: 5
   m_Name: VisualCortexNode
   m_TagString: BrainNode
@@ -15236,6 +15346,18 @@ MonoBehaviour:
   - {fileID: 1012738942}
   nodeMenu: {fileID: 232009525}
   BrainState: 1
+--- !u!114 &1785720417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785720409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctStage: 3
 --- !u!1 &1792730503
 GameObject:
   m_ObjectHideFlags: 0
@@ -17557,22 +17679,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Excellent!
-
-
-    Now we can advance further and process information in Visual Cortex.
-
-
-    You can move within the brain by clicking names of corresponding brain parts.
-    The part where you currenly are is green. You can travel to yellow parts. Unexplored
-    parts are transparent.
-
-
-    Moving within the brain takes more time than performing actions, so choose your
-    destination wisely!
-
-
-    Try moving to visual cortex now.'
+  m_Text: "This is the Brain Menu. You can use it to navigate through the brain by
+    visiting different brain parts (or nodes). \n\nWhen you visit a node, you will
+    automatically explore all nodes that are connected. Remember that moving between
+    nodes requires time, so choose when and where to move between them carefuly.\n\nClick
+    on Thalamus to visit it."
 --- !u!222 &2042855999
 CanvasRenderer:
   m_ObjectHideFlags: 0
