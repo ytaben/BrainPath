@@ -101,7 +101,8 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        SetColor(Color.white);
+        if (isActive) return;
+        SetColor(Color.yellow);
         SetMaterial(materialController.highlitedMaterial);
         GetComponent<Text>().fontStyle = FontStyle.Bold;
         gameController.SetBrainAnimation(BrainState);
