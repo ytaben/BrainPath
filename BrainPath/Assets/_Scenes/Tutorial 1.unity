@@ -13298,7 +13298,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Brain Path
+  m_Text: The Brain Path
 --- !u!222 &1577200529
 CanvasRenderer:
   m_ObjectHideFlags: 0
