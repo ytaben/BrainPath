@@ -2811,7 +2811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &344028047
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2825,8 +2825,8 @@ RectTransform:
   - {fileID: 696971722}
   m_Father: {fileID: 149745110}
   m_RootOrder: 9
-  m_AnchorMin: {x: .245363146, y: .0850000009}
-  m_AnchorMax: {x: .454176307, y: .523593962}
+  m_AnchorMin: {x: .529053152, y: .0850000009}
+  m_AnchorMax: {x: .779000044, y: .482611001}
   m_AnchoredPosition: {x: .5, y: -.67199707}
   m_SizeDelta: {x: -1.11999512, y: 1}
   m_Pivot: {x: .5, y: .5}
@@ -6274,7 +6274,7 @@ MonoBehaviour:
   m_Text: 'Perfect!
 
 
-    You can see the parts you''re currently in highlited in green.
+    The current brain part is always highlited in green.
 
 
     You have also opened an information menu on the right. Here, you can find the
@@ -6282,8 +6282,8 @@ MonoBehaviour:
 
 
     Performing actions also costs time (usually less than traveling). Performing actions
-    is required to win the game, and also provides useful information on your current
-    objective. Even wrong actions can provide useful information, in cost of time.
+    is required to win the game and provides useful information on your current objective.
+    Even wrong actions can provide useful information, in cost of time.
 
 
     Try to perform an action here then move to visual cortex.'
