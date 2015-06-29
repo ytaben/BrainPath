@@ -946,7 +946,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Process and send info using <b>Ventral </b>stream
+  m_Text: Process and send info using <b>Ventral</b> stream
 --- !u!222 &142355163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3846,8 +3846,8 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: .068497926, y: .139178485}
   m_AnchorMax: {x: .921899617, y: .190564319}
-  m_AnchoredPosition: {x: .693481445, y: .5}
-  m_SizeDelta: {x: -2.46899414, y: 2}
+  m_AnchoredPosition: {x: .69350028, y: -.0249938965}
+  m_SizeDelta: {x: -2.5, y: -.050009001}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &469838754
 MonoBehaviour:
@@ -10611,7 +10611,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thalamus
+  m_Text: Visual Cortex
 --- !u!222 &1197184177
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14204,10 +14204,10 @@ RectTransform:
   - {fileID: 142355161}
   m_Father: {fileID: 232009526}
   m_RootOrder: 2
-  m_AnchorMin: {x: .068497926, y: .211154774}
+  m_AnchorMin: {x: .068497926, y: .217517018}
   m_AnchorMax: {x: .921899617, y: .27063778}
-  m_AnchoredPosition: {x: .693500519, y: .5}
-  m_SizeDelta: {x: -2.46900177, y: -1}
+  m_AnchoredPosition: {x: .693500519, y: 0}
+  m_SizeDelta: {x: -2.5, y: .0999999046}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1705456510
 MonoBehaviour:
