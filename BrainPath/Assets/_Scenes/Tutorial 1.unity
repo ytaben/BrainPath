@@ -178,7 +178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &31739282
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2811,7 +2811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &344028047
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3024,7 +3024,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tutorial 1: Motor Reflex'
+  m_Text: 'Tutorial 1: Motor Reaction'
 --- !u!222 &367723612
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3632,7 +3632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &438667657
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14411,9 +14411,8 @@ MonoBehaviour:
     various actions in its different parts.
 
 
-    In order to accomplish your objectives in this game, you will have to perform
-    actions in the correct parts of the brain and in the correct sequence, before
-    the time runs out.
+    In order to accomplish your objectives, you will have to perform actions in the
+    correct parts of the brain and in the correct sequence, before the time runs out.
 
 
     The first step in processing visual information is Thalamus, so let''s visit it
