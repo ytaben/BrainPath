@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Button))]
 public class TutorialButton : MonoBehaviour {
     public int correctStage;
     private TutorialController tutorialController;
