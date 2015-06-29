@@ -25,6 +25,7 @@ public class GameController : MonoBehaviour
     Animator brainAnimator;
     BrainNode.AnimationChoice currentAnimationState; //Current state is used to go back after hovering mouse over an element
 
+    public string levelName;
     public GameObject startNode; //Set start node in editor for every level
     private int gameTime = 0;
     public int TimeLimit;
@@ -59,6 +60,9 @@ public class GameController : MonoBehaviour
         {
             brainNode.SetActive(false);
         }
+        GameObject levelNameText = GameObject.Find("LevelNameText");
+        if (levelNameText) { levelNameText.GetComponent<Text>().text = levelName; }
+        else Debug.Log("Couldn't find LevelName text");
         SetBrainPartsUnexplored();
         activeNode = startNode; //Set member references 
         activeNode.SetActive(true);
