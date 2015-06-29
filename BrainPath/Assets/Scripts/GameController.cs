@@ -46,6 +46,9 @@ public class GameController : MonoBehaviour
     public Text baseScoreText;
     public Text timeLeftScoreText;
     public Text totalScoreText;
+    public Image finalImage;
+    public Sprite victoryImage;
+    public Sprite defeatImage;
 
     // Use this for initialization
 
@@ -152,6 +155,8 @@ public class GameController : MonoBehaviour
 
         totalScoreText.text = totalScore.ToString();
         totalScoreText.color = isWin ? Color.green : Color.red;
+
+        finalImage.sprite = isWin ? victoryImage : defeatImage;
     }
     //Reinitialize the game field by disabling all brain nodes, then reactivating only the current one and
     //All the outbound nodes
