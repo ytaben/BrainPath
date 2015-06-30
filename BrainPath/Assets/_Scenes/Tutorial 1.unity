@@ -190,7 +190,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 149745110}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -993,6 +993,7 @@ RectTransform:
   - {fileID: 344028047}
   - {fileID: 449880387}
   - {fileID: 1377525745}
+  - {fileID: 717561656}
   - {fileID: 1525276402}
   - {fileID: 295306456}
   - {fileID: 1524757622}
@@ -2267,7 +2268,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 149745110}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: .988382518}
   m_AnchoredPosition: {x: -.00241119997, y: 4}
@@ -3816,7 +3817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &438667657
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3832,7 +3833,7 @@ RectTransform:
   - {fileID: 965097851}
   - {fileID: 1150908399}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4650,7 +4651,7 @@ RectTransform:
   - {fileID: 767380115}
   - {fileID: 491878415}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: .00913047791}
@@ -7059,6 +7060,123 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &717561655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 717561656}
+  - 222: {fileID: 717561660}
+  - 114: {fileID: 717561659}
+  - 114: {fileID: 717561658}
+  - 114: {fileID: 717561657}
+  m_Layer: 5
+  m_Name: PanelStage00 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &717561656
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717561655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 881296498}
+  m_Father: {fileID: 149745110}
+  m_RootOrder: 12
+  m_AnchorMin: {x: .710647464, y: .523593962}
+  m_AnchorMax: {x: .980161667, y: .861000061}
+  m_AnchoredPosition: {x: -.0009765625, y: 1.24261475}
+  m_SizeDelta: {x: -1.99908447, y: .226257324}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &717561657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717561655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_ColorMultiplier: 1
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 717561659}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &717561658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717561655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctStage: 0
+--- !u!114 &717561659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717561655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .713725507, g: .654901981, b: .396078438, a: 1}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &717561660
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717561655}
 --- !u!1 &735244577
 GameObject:
   m_ObjectHideFlags: 0
@@ -8518,6 +8636,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &881296497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 881296498}
+  - 222: {fileID: 881296500}
+  - 114: {fileID: 881296499}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &881296498
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 881296497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 717561656}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 3, y: 1}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &881296499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 881296497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: In order to accomplish your objectives, you will have to perform actions
+    in the correct parts of the brain and in the correct sequence, before the time
+    runs out.
+--- !u!222 &881296500
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 881296497}
 --- !u!1001 &883555423
 Prefab:
   m_ObjectHideFlags: 0
@@ -13035,7 +13221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1524757622
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13051,7 +13237,7 @@ RectTransform:
   - {fileID: 513566335}
   - {fileID: 315254434}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -13094,15 +13280,15 @@ GameObject:
   - 224: {fileID: 1525276402}
   - 222: {fileID: 1525276404}
   - 114: {fileID: 1525276403}
-  - 114: {fileID: 1525276405}
   - 114: {fileID: 1525276406}
+  - 114: {fileID: 1525276405}
   m_Layer: 5
   m_Name: PanelStage00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1525276402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13115,7 +13301,7 @@ RectTransform:
   m_Children:
   - {fileID: 1755518873}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_AnchorMin: {x: .710647464, y: .523593962}
   m_AnchorMax: {x: .980161667, y: .861000061}
   m_AnchoredPosition: {x: -.0009765625, y: 1.24255371}
@@ -14814,10 +15000,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1525276402}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3, y: 1}
-  m_SizeDelta: {x: -20, y: -20}
+  m_AnchorMin: {x: .0664586723, y: .0743320137}
+  m_AnchorMax: {x: .947170675, y: .922347009}
+  m_AnchoredPosition: {x: 1, y: .299999237}
+  m_SizeDelta: {x: 0, y: 1.5}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1755518874
 MonoBehaviour:
@@ -14850,15 +15036,7 @@ MonoBehaviour:
     various actions in its different parts.
 
 
-    In order to accomplish your objectives, you will have to perform actions in the
-    correct parts of the brain and in the correct sequence, before the time runs out.
-
-
-    The first step in processing visual information is Thalamus, so let''s visit it
-    first!
-
-
-    Click this message to continue.'
+    Click this message to continue'
 --- !u!222 &1755518875
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14895,7 +15073,7 @@ RectTransform:
   - {fileID: 655388926}
   - {fileID: 1394684244}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: .781000018, y: .0850000009}
   m_AnchoredPosition: {x: .400001526, y: 0}
