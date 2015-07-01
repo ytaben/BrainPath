@@ -99,7 +99,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
     }
 
-    private void OnPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
         OnPointerEnter();
     }
@@ -113,7 +113,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         gameController.SetBrainAnimation(BrainState);
     }
 
-    private void OnPointerExit(PointerEventData eventData)
+    public void OnPointerExit(PointerEventData eventData)
     {
         OnPointerExit();
     }
