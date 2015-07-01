@@ -99,7 +99,12 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    private void OnPointerEnter(PointerEventData eventData)
+    {
+        OnPointerEnter();
+    }
+
+    public void OnPointerEnter()
     {
         if (isActive) return;
         SetColor(Color.yellow);
@@ -108,7 +113,12 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         gameController.SetBrainAnimation(BrainState);
     }
 
-    public void OnPointerExit(PointerEventData eventData)
+    private void OnPointerExit(PointerEventData eventData)
+    {
+        OnPointerExit();
+    }
+
+    public void OnPointerExit()
     {
         gameController.SetCurrentAnimation();
         GetComponent<Text>().fontStyle = FontStyle.Normal;
