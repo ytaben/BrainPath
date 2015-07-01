@@ -13,12 +13,26 @@ public class BrainNode3D : MonoBehaviour {
 	}
     void OnMouseOver()
     {
-        brainNode.OnPointerEnter();
+        if (brainNode.isExplored)
+        {
+            brainNode.OnPointerEnter();
+        }
     }
 
     void OnMouseExit()
     {
-        brainNode.OnPointerExit();
+        if (brainNode.isExplored)
+        {
+            brainNode.OnPointerExit();
+        }
+    }
+
+    void OnMouseDown()
+    {
+        if (brainNode.isExplored)
+        {
+            brainNode.OnClickBrainNode();
+        }
     }
 
 
