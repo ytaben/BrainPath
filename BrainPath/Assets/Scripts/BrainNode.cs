@@ -147,7 +147,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
     }
     //On Click - notify gameController using the Transition method
-    void OnClickBrainNode()
+    public void OnClickBrainNode()
     {
         if (!isVisited)
         {
