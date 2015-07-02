@@ -34,7 +34,6 @@ public class TreeNode : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        GetComponent<Button>().onClick.AddListener(OnClick);
 	}
     public void DeactivateChildren()
     {
@@ -57,11 +56,6 @@ public class TreeNode : MonoBehaviour {
                 if (childNode.isExpanded) {  childNode.ActivateChildren(); }
             }
         }
-    }
-
-    void OnClick()
-    {
-
     }
 
     public void Toggle()
