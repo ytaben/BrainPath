@@ -3456,6 +3456,7 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
+  pathNode: {fileID: 0}
   outboundEdges:
   - destination: {fileID: 1785720409}
     cost: 50
@@ -4844,7 +4845,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thalamus
+  m_Text: ??????
 --- !u!222 &453138128
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5053,6 +5054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 1785720416}
   correctState: 1
   actionCost: 25
   isCorrect: 1
@@ -5338,6 +5340,7 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
+  pathNode: {fileID: 1520652349}
   outboundEdges:
   - destination: {fileID: 1785720409}
     cost: 50
@@ -6961,6 +6964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 473725250}
   correctState: 0
   actionCost: 25
   isCorrect: 1
@@ -10772,13 +10776,14 @@ GameObject:
   - 222: {fileID: 943387680}
   - 114: {fileID: 943387679}
   - 114: {fileID: 943387678}
+  - 114: {fileID: 943387681}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: PrimaryMotorPathNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &943387677
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10819,7 +10824,7 @@ MonoBehaviour:
     m_NormalColor: {r: .388235301, g: .607843161, b: .945098042, a: 1}
     m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
     m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
-    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_DisabledColor: {r: .388235301, g: .607843161, b: .945098042, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
@@ -10831,7 +10836,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 943387679}
   m_OnClick:
     m_PersistentCalls:
@@ -10865,6 +10870,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 943387676}
+--- !u!114 &943387681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 943387676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0c32d3be0803b4bb00af41eb5132c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previousArrow: {fileID: 0}
+  nextArrow: {fileID: 0}
+  previousNode: {fileID: 0}
+  nextNode: {fileID: 0}
+  name: Primary Motor Cortex
+  yellowArrow: {fileID: 0}
+  greenArrow: {fileID: 0}
 --- !u!1 &946266601
 GameObject:
   m_ObjectHideFlags: 0
@@ -11018,12 +11041,12 @@ GameObject:
   - 222: {fileID: 951802387}
   - 114: {fileID: 951802386}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: VisualCortexOutArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &951802385
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11915,13 +11938,14 @@ GameObject:
   - 222: {fileID: 1099642952}
   - 114: {fileID: 1099642951}
   - 114: {fileID: 1099642950}
+  - 114: {fileID: 1099642953}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: VisualCortexPathNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1099642949
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11962,7 +11986,7 @@ MonoBehaviour:
     m_NormalColor: {r: .388235301, g: .607843161, b: .945098042, a: 1}
     m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
     m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
-    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_DisabledColor: {r: .388235301, g: .607843161, b: .945098042, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
@@ -11974,7 +11998,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1099642951}
   m_OnClick:
     m_PersistentCalls:
@@ -12008,6 +12032,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1099642948}
+--- !u!114 &1099642953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1099642948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0c32d3be0803b4bb00af41eb5132c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previousArrow: {fileID: 0}
+  nextArrow: {fileID: 0}
+  previousNode: {fileID: 0}
+  nextNode: {fileID: 0}
+  name: Visual Cortex
+  yellowArrow: {fileID: 0}
+  greenArrow: {fileID: 0}
 --- !u!1 &1102918095
 GameObject:
   m_ObjectHideFlags: 0
@@ -13579,6 +13621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 329039376}
   correctState: 2
   actionCost: 50
   isCorrect: 0
@@ -15398,8 +15441,9 @@ GameObject:
   - 222: {fileID: 1520652348}
   - 114: {fileID: 1520652347}
   - 114: {fileID: 1520652346}
+  - 114: {fileID: 1520652349}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ThalamusPathNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15420,8 +15464,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .029000001, y: .576000035}
   m_AnchorMax: {x: .217267901, y: .880000055}
-  m_AnchoredPosition: {x: -.299987793, y: .100000381}
-  m_SizeDelta: {x: .300003052, y: -.299999237}
+  m_AnchoredPosition: {x: -.299987793, y: -1.88296318}
+  m_SizeDelta: {x: 0, y: 3.66589999}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1520652346
 MonoBehaviour:
@@ -15442,10 +15486,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: .388235301, g: .607843161, b: .945098042, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 0, a: 1}
     m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
     m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
-    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_DisabledColor: {r: 1, g: 1, b: 0, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
@@ -15457,7 +15501,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1520652347}
   m_OnClick:
     m_PersistentCalls:
@@ -15491,6 +15535,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1520652344}
+--- !u!114 &1520652349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520652344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0c32d3be0803b4bb00af41eb5132c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previousArrow: {fileID: 0}
+  nextArrow: {fileID: 0}
+  previousNode: {fileID: 0}
+  nextNode: {fileID: 0}
+  name: Thalamus
+  yellowArrow: {fileID: 21300000, guid: 83acda484772b454f9028ea329d6a071, type: 3}
+  greenArrow: {fileID: 21300000, guid: a0fbf72457f145b4080ba6df2180a788, type: 3}
 --- !u!1 &1523359607
 GameObject:
   m_ObjectHideFlags: 0
@@ -16999,6 +17061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 1785720416}
   correctState: 1
   actionCost: 25
   isCorrect: 0
@@ -18080,6 +18143,7 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
+  pathNode: {fileID: 943387681}
   outboundEdges:
   - destination: {fileID: 1785720409}
     cost: 50
@@ -18297,6 +18361,7 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
+  pathNode: {fileID: 1099642953}
   outboundEdges:
   - destination: {fileID: 473725243}
     cost: 50
@@ -19331,12 +19396,12 @@ GameObject:
   - 222: {fileID: 1926623556}
   - 114: {fileID: 1926623555}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ThalamusOutArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1926623554
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19429,6 +19494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 1781105296}
   correctState: 2
   actionCost: 25
   isCorrect: 1
@@ -20067,6 +20133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
   correctState: 2
   actionCost: 50
   isCorrect: 0
