@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
     //Brain animator controller
     Animator brainAnimator;
     BrainNode.AnimationChoice currentAnimationState; //Current state is used to go back after hovering mouse over an element
+    Text stateLabel; //Label used to indicate current brain state
 
     public string levelName;
     public GameObject startNode; //Set start node in editor for every level
@@ -60,9 +61,13 @@ public class GameController : MonoBehaviour
         {
             brainNode.SetActive(false);
         }
+
         GameObject levelNameText = GameObject.Find("LevelNameText");
         if (levelNameText) { levelNameText.GetComponent<Text>().text = levelName; }
         else Debug.Log("Couldn't find LevelName text");
+
+        stateLabel = GameObject.Find("BrainStateLabel").GetComponent<Text>();
+
         SetBrainPartsUnexplored();
         activeNode = startNode; //Set member references 
         activeNode.SetActive(true);
@@ -183,14 +188,21 @@ public class GameController : MonoBehaviour
     {
         brainAnimator.SetBool("IsUpsideDown", false);
         brainAnimator.SetBool("IsSeparated", false);
+        stateLabel.text = "Normal";
     }
     public void SetBrainAnimation(BrainNode.AnimationChoice animation)
     {
         ResetBrainAnimation();
         switch (animation)
         {
-            case BrainNode.AnimationChoice.Split: brainAnimator.SetBool("IsSeparated", true); break;
-            case BrainNode.AnimationChoice.UpsideDown: brainAnimator.SetBool("IsUpsideDown", true); break;
+            case BrainNode.AnimationChoice.Split:
+                brainAnimator.SetBool("IsSeparated", true);
+                stateLabel.text = "Separated";
+                break;
+            case BrainNode.AnimationChoice.UpsideDown:
+                brainAnimator.SetBool("IsUpsideDown", true);
+                stateLabel.text = "Upside-Down";
+                break;
         }
     }
     public void SetCurrentAnimation() { SetBrainAnimation(currentAnimationState); }

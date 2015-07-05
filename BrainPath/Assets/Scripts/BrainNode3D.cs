@@ -11,9 +11,10 @@ public class BrainNode3D : MonoBehaviour {
 	void Start () {
         materialController = MaterialController.getInstance();
 	}
+
     void OnMouseOver()
     {
-        if (brainNode.isExplored)
+        if (brainNode &&  brainNode.isExplored)
         {
             brainNode.OnPointerEnter();
         }
@@ -21,7 +22,7 @@ public class BrainNode3D : MonoBehaviour {
 
     void OnMouseExit()
     {
-        if (brainNode.isExplored)
+        if (brainNode && brainNode.isExplored)
         {
             brainNode.OnPointerExit();
         }
@@ -29,7 +30,7 @@ public class BrainNode3D : MonoBehaviour {
 
     void OnMouseDown()
     {
-        if (brainNode.isExplored)
+        if (brainNode &&  brainNode.isExplored)
         {
             brainNode.OnClickBrainNode();
         }

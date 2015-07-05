@@ -98,6 +98,7 @@ GameObject:
   - 33: {fileID: 19143093}
   - 23: {fileID: 19143092}
   - 114: {fileID: 19143094}
+  - 64: {fileID: 19143095}
   m_Layer: 0
   m_Name: RightUnknown
   m_TagString: BrainPart
@@ -161,6 +162,149 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 473725250}
+--- !u!64 &19143095
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 19143090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 74f8c6d98cba00c43923f4b019b390cd, type: 3}
+--- !u!1 &24302724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 24302725}
+  - 222: {fileID: 24302730}
+  - 114: {fileID: 24302729}
+  - 114: {fileID: 24302728}
+  - 114: {fileID: 24302727}
+  - 114: {fileID: 24302726}
+  m_Layer: 5
+  m_Name: UpsideDownStateButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &24302725
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24302724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 701921866}
+  m_Father: {fileID: 903012280}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 0, y: .110000007}
+  m_AnchorMax: {x: 1, y: .410000026}
+  m_AnchoredPosition: {x: 1.90734863e-06, y: -1}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &24302726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24302724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6791623f06a98a542a463b29d251e7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brainState: 2
+--- !u!114 &24302727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24302724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41eaa6dd8262ec24b99c82c1f0e63407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 903012279}
+--- !u!114 &24302728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24302724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_ColorMultiplier: 1
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 24302729}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &24302729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24302724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .388235301, g: .607843161, b: .945098042, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &24302730
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24302724}
 --- !u!1 &31739281
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +334,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 149745110}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -246,6 +390,7 @@ GameObject:
   - 33: {fileID: 35350847}
   - 23: {fileID: 35350846}
   - 114: {fileID: 35350848}
+  - 64: {fileID: 35350849}
   m_Layer: 0
   m_Name: RightTemporalPole
   m_TagString: BrainPart
@@ -309,6 +454,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &35350849
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 35350844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 462b93af7bb15de4ca493cb07727063c, type: 3}
 --- !u!1 &44042830
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,6 +544,7 @@ GameObject:
   - 33: {fileID: 50895675}
   - 23: {fileID: 50895674}
   - 114: {fileID: 50895676}
+  - 64: {fileID: 50895677}
   m_Layer: 0
   m_Name: LeftLateralOccipital
   m_TagString: BrainPart
@@ -449,6 +608,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 1785720416}
+--- !u!64 &50895677
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50895672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: edcb893cb6447004ea55b63979714373, type: 3}
 --- !u!1 &51407383
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +632,7 @@ GameObject:
   - 33: {fileID: 51407386}
   - 23: {fileID: 51407385}
   - 114: {fileID: 51407387}
+  - 64: {fileID: 51407388}
   m_Layer: 0
   m_Name: RightBankssts
   m_TagString: BrainPart
@@ -523,6 +696,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &51407388
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 51407383}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: f2f748238fe3c764b8f999fe24603a99, type: 3}
+--- !u!1 &84167130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 84167131}
+  - 222: {fileID: 84167133}
+  - 114: {fileID: 84167132}
+  m_Layer: 5
+  m_Name: BrainStateLabel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &84167131
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84167130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 238167286}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &84167132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84167130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Normal
+--- !u!222 &84167133
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 84167130}
 --- !u!1 &87067247
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +1026,7 @@ GameObject:
   - 33: {fileID: 117766760}
   - 23: {fileID: 117766759}
   - 114: {fileID: 117766761}
+  - 64: {fileID: 117766762}
   m_Layer: 0
   m_Name: LeftEntorhinal
   m_TagString: BrainPart
@@ -837,6 +1090,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &117766762
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 117766757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: c81b29a97dbcaf34aa1b12702636ee4d, type: 3}
 --- !u!1001 &128301033
 Prefab:
   m_ObjectHideFlags: 0
@@ -891,6 +1157,123 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: c2c7f313c7eb721479abd348642c7451, type: 3}
   m_PrefabInternal: {fileID: 128301033}
+--- !u!1 &131801581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 131801582}
+  - 222: {fileID: 131801585}
+  - 114: {fileID: 131801584}
+  - 114: {fileID: 131801583}
+  - 114: {fileID: 131801586}
+  m_Layer: 5
+  m_Name: BrainStateButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &131801582
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131801581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1775872312}
+  m_Father: {fileID: 1102918096}
+  m_RootOrder: 3
+  m_AnchorMin: {x: .524337292, y: .0995655879}
+  m_AnchorMax: {x: .603273392, y: .140416965}
+  m_AnchoredPosition: {x: -.201999664, y: -.699996948}
+  m_SizeDelta: {x: .5, y: 1.0019989}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &131801583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131801581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: .388235301, g: .607843161, b: .945098042, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_ColorMultiplier: 1
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 131801584}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &131801584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131801581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &131801585
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131801581}
+--- !u!114 &131801586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131801581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e88bc006733da42adece8a8f98b0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 903012279}
 --- !u!1 &138388916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,6 +1435,7 @@ RectTransform:
   - {fileID: 623780741}
   - {fileID: 927724248}
   - {fileID: 1102918096}
+  - {fileID: 903012280}
   - {fileID: 232009526}
   - {fileID: 278825882}
   - {fileID: 1366855648}
@@ -1760,7 +2144,7 @@ RectTransform:
   - {fileID: 1426184022}
   - {fileID: 469838753}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_AnchorMin: {x: .779000044, y: 0}
   m_AnchorMax: {x: 1, y: .906250775}
   m_AnchoredPosition: {x: .50012207, y: 1.41177368}
@@ -1804,6 +2188,7 @@ GameObject:
   - 33: {fileID: 236258175}
   - 23: {fileID: 236258174}
   - 114: {fileID: 236258176}
+  - 64: {fileID: 236258177}
   m_Layer: 0
   m_Name: LeftRostralMiddleFrontal
   m_TagString: BrainPart
@@ -1867,6 +2252,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &236258177
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 236258172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 37e8bab054137644f8b8921db27cb26c, type: 3}
 --- !u!1001 &237785373
 Prefab:
   m_ObjectHideFlags: 0
@@ -1921,6 +2319,110 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 1a33aacb3e6663642983e0873056d238, type: 3}
   m_PrefabInternal: {fileID: 237785373}
+--- !u!1 &238167285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 238167286}
+  - 222: {fileID: 238167289}
+  - 114: {fileID: 238167288}
+  - 114: {fileID: 238167287}
+  m_Layer: 5
+  m_Name: NormalStateButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &238167286
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238167285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 84167131}
+  m_Father: {fileID: 1102918096}
+  m_RootOrder: 4
+  m_AnchorMin: {x: .0705903172, y: .0995655879}
+  m_AnchorMax: {x: .524337292, y: .140416965}
+  m_AnchoredPosition: {x: -.399999619, y: -.199999809}
+  m_SizeDelta: {x: 1, y: .100000381}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &238167287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238167285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_ColorMultiplier: 1
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 238167288}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &238167288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238167285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .388235301, g: .607843161, b: .945098042, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &238167289
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238167285}
 --- !u!1001 &264206201
 Prefab:
   m_ObjectHideFlags: 0
@@ -2128,7 +2630,7 @@ RectTransform:
   - {fileID: 1970572501}
   - {fileID: 1065235113}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_AnchorMin: {x: .779000044, y: 0}
   m_AnchorMax: {x: 1, y: .906250775}
   m_AnchoredPosition: {x: .50012207, y: 1.41177368}
@@ -2334,12 +2836,142 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 149745110}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: .988382518}
   m_AnchoredPosition: {x: -.00241119997, y: 4}
   m_SizeDelta: {x: .00451660017, y: 7}
   m_Pivot: {x: .5, y: .5}
+--- !u!1 &295649166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 295649167}
+  - 222: {fileID: 295649172}
+  - 114: {fileID: 295649171}
+  - 114: {fileID: 295649170}
+  - 114: {fileID: 295649169}
+  - 114: {fileID: 295649168}
+  m_Layer: 5
+  m_Name: NormalStateButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &295649167
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295649166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 468509394}
+  m_Father: {fileID: 903012280}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: .700000048}
+  m_AnchorMax: {x: .97722441, y: 1}
+  m_AnchoredPosition: {x: 1.5, y: 0}
+  m_SizeDelta: {x: 3, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &295649168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295649166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6791623f06a98a542a463b29d251e7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brainState: 0
+--- !u!114 &295649169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295649166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41eaa6dd8262ec24b99c82c1f0e63407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 903012279}
+--- !u!114 &295649170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295649166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_ColorMultiplier: 1
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 295649171}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &295649171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295649166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .388235301, g: .607843161, b: .945098042, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &295649172
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295649166}
 --- !u!1 &302464717
 GameObject:
   m_ObjectHideFlags: 0
@@ -2983,6 +3615,7 @@ GameObject:
   - 33: {fileID: 342944207}
   - 23: {fileID: 342944206}
   - 114: {fileID: 342944208}
+  - 64: {fileID: 342944209}
   m_Layer: 0
   m_Name: RightCaudalAnteriorCingulate
   m_TagString: BrainPart
@@ -3046,6 +3679,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &342944209
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342944204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 02520cbab27c27e4fb3840ad9f5d3dda, type: 3}
 --- !u!1 &344028046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3075,7 +3721,7 @@ RectTransform:
   m_Children:
   - {fileID: 696971722}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_AnchorMin: {x: .529053152, y: .0850000009}
   m_AnchorMax: {x: .779000044, y: .482611001}
   m_AnchoredPosition: {x: .5, y: -.67199707}
@@ -3739,6 +4385,7 @@ GameObject:
   - 33: {fileID: 391382726}
   - 23: {fileID: 391382725}
   - 114: {fileID: 391382727}
+  - 64: {fileID: 391382728}
   m_Layer: 0
   m_Name: RightLateralOrbitoFrontal
   m_TagString: BrainPart
@@ -3802,6 +4449,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &391382728
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 391382723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 40c557cd000d44b44924c86d22fa521e, type: 3}
 --- !u!1 &402263419
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,6 +4473,7 @@ GameObject:
   - 33: {fileID: 402263422}
   - 23: {fileID: 402263421}
   - 114: {fileID: 402263423}
+  - 64: {fileID: 402263424}
   m_Layer: 0
   m_Name: LeftSuperiorFrontal
   m_TagString: BrainPart
@@ -3876,6 +4537,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &402263424
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 402263419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: ed00b87afcb29bf4d92b8bb84d416e3a, type: 3}
 --- !u!1001 &418006871
 Prefab:
   m_ObjectHideFlags: 0
@@ -4016,7 +4690,7 @@ RectTransform:
   - {fileID: 965097851}
   - {fileID: 1150908399}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4078,7 +4752,7 @@ RectTransform:
   m_Children:
   - {fileID: 674583113}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_AnchorMin: {x: .577348709, y: .359931827}
   m_AnchorMax: {x: .788480401, y: .768726826}
   m_AnchoredPosition: {x: 0, y: -.500007629}
@@ -4122,6 +4796,7 @@ GameObject:
   - 33: {fileID: 455757209}
   - 23: {fileID: 455757208}
   - 114: {fileID: 455757210}
+  - 64: {fileID: 455757211}
   m_Layer: 0
   m_Name: RightMedialOrbitoFrontal
   m_TagString: BrainPart
@@ -4185,6 +4860,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &455757211
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 455757206}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 7f31c592b13a2f64c82aad22cefffce8, type: 3}
+--- !u!1 &468509393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 468509394}
+  - 222: {fileID: 468509396}
+  - 114: {fileID: 468509395}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &468509394
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468509393}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 295649167}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &468509395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468509393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Normal
+--- !u!222 &468509396
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 468509393}
 --- !u!1 &469838752
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,6 +5292,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctStage: 1
+--- !u!1 &482052221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 482052222}
+  - 222: {fileID: 482052224}
+  - 114: {fileID: 482052223}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &482052222
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482052221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1102918096}
+  m_RootOrder: 2
+  m_AnchorMin: {x: .0961279571, y: .160750136}
+  m_AnchorMax: {x: .640000045, y: .221732661}
+  m_AnchoredPosition: {x: -.0340003967, y: -.5}
+  m_SizeDelta: {x: -.839996338, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &482052223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482052221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Brain State
+--- !u!222 &482052224
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 482052221}
 --- !u!1 &491878414
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,7 +5654,7 @@ RectTransform:
   - {fileID: 767380115}
   - {fileID: 491878415}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: .00913047791}
@@ -5071,6 +5891,7 @@ GameObject:
   - 33: {fileID: 542168179}
   - 23: {fileID: 542168178}
   - 114: {fileID: 542168180}
+  - 64: {fileID: 542168181}
   m_Layer: 0
   m_Name: RightFrontalPole
   m_TagString: BrainPart
@@ -5134,6 +5955,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &542168181
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542168176}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 872706aa009419546a7ce21ffdbb6673, type: 3}
 --- !u!1 &560529444
 GameObject:
   m_ObjectHideFlags: 0
@@ -5320,6 +6154,136 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 62b4e492a55b2e941857bf382df65889, type: 3}
   m_PrefabInternal: {fileID: 565372267}
+--- !u!1 &578721819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 578721820}
+  - 222: {fileID: 578721825}
+  - 114: {fileID: 578721824}
+  - 114: {fileID: 578721823}
+  - 114: {fileID: 578721822}
+  - 114: {fileID: 578721821}
+  m_Layer: 5
+  m_Name: SplitStateButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &578721820
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578721819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1412235218}
+  m_Father: {fileID: 903012280}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0, y: .410000026}
+  m_AnchorMax: {x: 1, y: .700000048}
+  m_AnchoredPosition: {x: 0, y: -.5}
+  m_SizeDelta: {x: 0, y: 1}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &578721821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578721819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6791623f06a98a542a463b29d251e7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brainState: 1
+--- !u!114 &578721822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578721819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41eaa6dd8262ec24b99c82c1f0e63407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 903012279}
+--- !u!114 &578721823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578721819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_ColorMultiplier: 1
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 578721824}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &578721824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578721819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .388235301, g: .607843161, b: .945098042, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &578721825
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578721819}
 --- !u!1 &582410256
 GameObject:
   m_ObjectHideFlags: 0
@@ -5331,6 +6295,7 @@ GameObject:
   - 33: {fileID: 582410259}
   - 23: {fileID: 582410258}
   - 114: {fileID: 582410260}
+  - 64: {fileID: 582410261}
   m_Layer: 0
   m_Name: LeftFusiform
   m_TagString: BrainPart
@@ -5394,6 +6359,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &582410261
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 582410256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: e7d378ab3e190d749b513c70184afde1, type: 3}
 --- !u!1 &586445531
 GameObject:
   m_ObjectHideFlags: 0
@@ -5493,7 +6471,7 @@ RectTransform:
   - {fileID: 658861146}
   - {fileID: 1837361000}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_AnchorMin: {x: .779000044, y: 0}
   m_AnchorMax: {x: 1, y: .906250775}
   m_AnchoredPosition: {x: .50012207, y: 1.41177368}
@@ -6012,6 +6990,7 @@ GameObject:
   - 33: {fileID: 623500504}
   - 23: {fileID: 623500503}
   - 114: {fileID: 623500505}
+  - 64: {fileID: 623500506}
   m_Layer: 0
   m_Name: RightRostralMiddleFrontal
   m_TagString: BrainPart
@@ -6075,6 +7054,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &623500506
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 623500501}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: ab8a3a8bb3c48a24891db5382c433d97, type: 3}
 --- !u!1 &623780740
 GameObject:
   m_ObjectHideFlags: 0
@@ -6389,6 +7381,7 @@ GameObject:
   - 33: {fileID: 660886518}
   - 23: {fileID: 660886517}
   - 114: {fileID: 660886519}
+  - 64: {fileID: 660886520}
   m_Layer: 0
   m_Name: LeftInsula
   m_TagString: BrainPart
@@ -6452,6 +7445,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &660886520
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660886515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: dce799b5c4ce1d6489bce670485fd063, type: 3}
 --- !u!1 &662207730
 GameObject:
   m_ObjectHideFlags: 0
@@ -6463,6 +7469,7 @@ GameObject:
   - 33: {fileID: 662207733}
   - 23: {fileID: 662207732}
   - 114: {fileID: 662207734}
+  - 64: {fileID: 662207735}
   m_Layer: 0
   m_Name: LeftMedialOrbitoFrontal
   m_TagString: BrainPart
@@ -6526,6 +7533,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &662207735
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662207730}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 62b4e492a55b2e941857bf382df65889, type: 3}
 --- !u!1001 &664502740
 Prefab:
   m_ObjectHideFlags: 0
@@ -7169,6 +8189,72 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 701074566}
+--- !u!1 &701921865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 701921866}
+  - 222: {fileID: 701921868}
+  - 114: {fileID: 701921867}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &701921866
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 701921865}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 24302725}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &701921867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 701921865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Upside-Down
+--- !u!222 &701921868
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 701921865}
 --- !u!1 &715611398
 GameObject:
   m_ObjectHideFlags: 0
@@ -7180,6 +8266,7 @@ GameObject:
   - 33: {fileID: 715611401}
   - 23: {fileID: 715611400}
   - 114: {fileID: 715611402}
+  - 64: {fileID: 715611403}
   m_Layer: 0
   m_Name: RightFusiform
   m_TagString: BrainPart
@@ -7243,6 +8330,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &715611403
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 715611398}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 8f23d49063703294084277f7de1c54ec, type: 3}
 --- !u!1 &717561655
 GameObject:
   m_ObjectHideFlags: 0
@@ -7273,7 +8373,7 @@ RectTransform:
   - {fileID: 881296498}
   - {fileID: 2146879610}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_AnchorMin: {x: .710647464, y: .523593962}
   m_AnchorMax: {x: .980161667, y: .861000061}
   m_AnchoredPosition: {x: -.0009765625, y: 1.24261475}
@@ -7317,6 +8417,7 @@ GameObject:
   - 33: {fileID: 735244580}
   - 23: {fileID: 735244579}
   - 114: {fileID: 735244581}
+  - 64: {fileID: 735244582}
   m_Layer: 0
   m_Name: RightInferiorParietal
   m_TagString: BrainPart
@@ -7380,6 +8481,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &735244582
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735244577}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 9244db1bdc8546d4eaefb43db9355943, type: 3}
 --- !u!1 &746719624
 GameObject:
   m_ObjectHideFlags: 0
@@ -7391,6 +8505,7 @@ GameObject:
   - 33: {fileID: 746719627}
   - 23: {fileID: 746719626}
   - 114: {fileID: 746719628}
+  - 64: {fileID: 746719629}
   m_Layer: 0
   m_Name: RightTranserseTemporal
   m_TagString: BrainPart
@@ -7454,6 +8569,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &746719629
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 746719624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: af12c174646498f4aaa5e6757781ca07, type: 3}
 --- !u!1 &749291071
 GameObject:
   m_ObjectHideFlags: 0
@@ -7465,6 +8593,7 @@ GameObject:
   - 33: {fileID: 749291074}
   - 23: {fileID: 749291073}
   - 114: {fileID: 749291075}
+  - 64: {fileID: 749291076}
   m_Layer: 0
   m_Name: LeftFrontalPole
   m_TagString: BrainPart
@@ -7528,6 +8657,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &749291076
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749291071}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 433811d56954ec844a8cf3d52cc861e7, type: 3}
 --- !u!1 &767380114
 GameObject:
   m_ObjectHideFlags: 0
@@ -7659,6 +8801,7 @@ GameObject:
   - 33: {fileID: 778215380}
   - 23: {fileID: 778215379}
   - 114: {fileID: 778215381}
+  - 64: {fileID: 778215382}
   m_Layer: 0
   m_Name: RightParstriangularis
   m_TagString: BrainPart
@@ -7722,6 +8865,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &778215382
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 778215377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: dfa31d72918a6af4f90217a59e56e1c6, type: 3}
 --- !u!1001 &780796462
 Prefab:
   m_ObjectHideFlags: 0
@@ -7902,6 +9058,7 @@ GameObject:
   - 33: {fileID: 805944514}
   - 23: {fileID: 805944513}
   - 114: {fileID: 805944515}
+  - 64: {fileID: 805944516}
   m_Layer: 0
   m_Name: RightIsThmuscingulate
   m_TagString: BrainPart
@@ -7965,6 +9122,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &805944516
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 805944511}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: fe20053d734ad2f45a6bf1fe51d72c24, type: 3}
 --- !u!1001 &808771573
 Prefab:
   m_ObjectHideFlags: 0
@@ -8030,6 +9200,7 @@ GameObject:
   - 33: {fileID: 813103292}
   - 23: {fileID: 813103291}
   - 114: {fileID: 813103293}
+  - 64: {fileID: 813103294}
   m_Layer: 0
   m_Name: LeftParsopercularis
   m_TagString: BrainPart
@@ -8093,6 +9264,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &813103294
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 813103289}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: c2c7f313c7eb721479abd348642c7451, type: 3}
 --- !u!1 &813720029
 GameObject:
   m_ObjectHideFlags: 0
@@ -8104,6 +9288,7 @@ GameObject:
   - 33: {fileID: 813720032}
   - 23: {fileID: 813720031}
   - 114: {fileID: 813720033}
+  - 64: {fileID: 813720034}
   m_Layer: 0
   m_Name: RightCuneus
   m_TagString: BrainPart
@@ -8167,6 +9352,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 1785720416}
+--- !u!64 &813720034
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 813720029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 85feabf0fd1f7de499c720928e10a962, type: 3}
 --- !u!1 &814511947
 GameObject:
   m_ObjectHideFlags: 0
@@ -8178,6 +9376,7 @@ GameObject:
   - 33: {fileID: 814511950}
   - 23: {fileID: 814511949}
   - 114: {fileID: 814511951}
+  - 64: {fileID: 814511952}
   m_Layer: 0
   m_Name: RightPostCentral
   m_TagString: BrainPart
@@ -8241,6 +9440,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &814511952
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814511947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: d28174abe28e16a4dbcb78356f0e4ea5, type: 3}
 --- !u!1 &833755671
 GameObject:
   m_ObjectHideFlags: 0
@@ -8318,6 +9530,7 @@ GameObject:
   - 33: {fileID: 834410874}
   - 23: {fileID: 834410873}
   - 114: {fileID: 834410875}
+  - 64: {fileID: 834410876}
   m_Layer: 0
   m_Name: RightSuperiorTemporal
   m_TagString: BrainPart
@@ -8381,6 +9594,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &834410876
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834410871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 5f95e9ed8005445479d2f9cae3804a9d, type: 3}
 --- !u!1 &835027076
 GameObject:
   m_ObjectHideFlags: 0
@@ -8392,6 +9618,7 @@ GameObject:
   - 33: {fileID: 835027079}
   - 23: {fileID: 835027078}
   - 114: {fileID: 835027080}
+  - 64: {fileID: 835027081}
   m_Layer: 0
   m_Name: RightSuperiorFrontal
   m_TagString: BrainPart
@@ -8455,6 +9682,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &835027081
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 835027076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 4e9d233ccdc9a27478930308b3ed8e2d, type: 3}
 --- !u!1 &848636698
 GameObject:
   m_ObjectHideFlags: 0
@@ -8466,6 +9706,7 @@ GameObject:
   - 33: {fileID: 848636701}
   - 23: {fileID: 848636700}
   - 114: {fileID: 848636702}
+  - 64: {fileID: 848636703}
   m_Layer: 0
   m_Name: LeftCaudalmiddleFrontal
   m_TagString: BrainPart
@@ -8529,6 +9770,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &848636703
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 848636698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 61e1ce8813649654daba410e4a18bdd1, type: 3}
 --- !u!1001 &849542133
 Prefab:
   m_ObjectHideFlags: 0
@@ -8702,6 +9956,7 @@ GameObject:
   - 33: {fileID: 878844732}
   - 23: {fileID: 878844731}
   - 114: {fileID: 878844733}
+  - 64: {fileID: 878844734}
   m_Layer: 0
   m_Name: LeftInferiorParietal
   m_TagString: BrainPart
@@ -8765,6 +10020,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &878844734
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 878844729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 95c72344ef656bc4aae53b37a7070bdb, type: 3}
 --- !u!1 &881296497
 GameObject:
   m_ObjectHideFlags: 0
@@ -8952,6 +10220,7 @@ GameObject:
   - 33: {fileID: 899422688}
   - 23: {fileID: 899422687}
   - 114: {fileID: 899422689}
+  - 64: {fileID: 899422690}
   m_Layer: 0
   m_Name: LeftInferiorTemporal
   m_TagString: BrainPart
@@ -9015,6 +10284,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 329039376}
+--- !u!64 &899422690
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899422685}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: d34b3d12cb40ef84fba6b577137d0265, type: 3}
+--- !u!1 &903012279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 903012280}
+  m_Layer: 5
+  m_Name: BrainStateDropDownPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &903012280
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903012279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 295649167}
+  - {fileID: 578721820}
+  - {fileID: 24302725}
+  m_Father: {fileID: 149745110}
+  m_RootOrder: 5
+  m_AnchorMin: {x: .0146138649, y: .117000006}
+  m_AnchorMax: {x: .121281423, y: .226000011}
+  m_AnchoredPosition: {x: 0, y: .0999908447}
+  m_SizeDelta: {x: -2, y: .200000003}
+  m_Pivot: {x: .5, y: .5}
 --- !u!1 &913810522
 GameObject:
   m_ObjectHideFlags: 0
@@ -9026,6 +10343,7 @@ GameObject:
   - 33: {fileID: 913810525}
   - 23: {fileID: 913810524}
   - 114: {fileID: 913810526}
+  - 64: {fileID: 913810527}
   m_Layer: 0
   m_Name: LeftTemporalPole
   m_TagString: BrainPart
@@ -9089,6 +10407,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &913810527
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 913810522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 7112a8f6a9531494a879ade4c3d1070d, type: 3}
 --- !u!1 &927724247
 GameObject:
   m_ObjectHideFlags: 0
@@ -9219,6 +10550,7 @@ GameObject:
   - 33: {fileID: 942301169}
   - 23: {fileID: 942301168}
   - 114: {fileID: 942301170}
+  - 64: {fileID: 942301171}
   m_Layer: 0
   m_Name: LeftPrecentral
   m_TagString: BrainPart
@@ -9282,6 +10614,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 329039376}
+--- !u!64 &942301171
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942301166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: c3102e62bb2b7de4c8d1a7d64fc91b2a, type: 3}
 --- !u!1 &946266601
 GameObject:
   m_ObjectHideFlags: 0
@@ -9293,6 +10638,7 @@ GameObject:
   - 33: {fileID: 946266604}
   - 23: {fileID: 946266603}
   - 114: {fileID: 946266605}
+  - 64: {fileID: 946266606}
   m_Layer: 0
   m_Name: RightParsorbitalis
   m_TagString: BrainPart
@@ -9356,6 +10702,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &946266606
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 946266601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 69b0cd0b50582d44eb3ae38e65d598fb, type: 3}
 --- !u!1001 &951070615
 Prefab:
   m_ObjectHideFlags: 0
@@ -9602,6 +10961,7 @@ GameObject:
   - 33: {fileID: 1012738945}
   - 23: {fileID: 1012738944}
   - 114: {fileID: 1012738946}
+  - 64: {fileID: 1012738947}
   m_Layer: 0
   m_Name: LeftLingual
   m_TagString: BrainPart
@@ -9665,6 +11025,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 1785720416}
+--- !u!64 &1012738947
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012738942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 7cf4a57eac7b0a347a07212b1f2189de, type: 3}
 --- !u!1 &1023515848
 GameObject:
   m_ObjectHideFlags: 0
@@ -9676,6 +11049,7 @@ GameObject:
   - 33: {fileID: 1023515851}
   - 23: {fileID: 1023515850}
   - 114: {fileID: 1023515852}
+  - 64: {fileID: 1023515853}
   m_Layer: 0
   m_Name: LeftSupraMarginal
   m_TagString: BrainPart
@@ -9739,6 +11113,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1023515853
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1023515848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: c7b782b5beb0bc747b62c6af2dc34037, type: 3}
 --- !u!1 &1038227381
 GameObject:
   m_ObjectHideFlags: 0
@@ -9750,6 +11137,7 @@ GameObject:
   - 33: {fileID: 1038227384}
   - 23: {fileID: 1038227383}
   - 114: {fileID: 1038227385}
+  - 64: {fileID: 1038227386}
   m_Layer: 0
   m_Name: RightParsoPercularis
   m_TagString: BrainPart
@@ -9813,6 +11201,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1038227386
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1038227381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 5265e3bed9938894db1ef782d9414461, type: 3}
 --- !u!1 &1061597993
 GameObject:
   m_ObjectHideFlags: 0
@@ -9951,6 +11352,7 @@ GameObject:
   - 33: {fileID: 1071428460}
   - 23: {fileID: 1071428459}
   - 114: {fileID: 1071428461}
+  - 64: {fileID: 1071428462}
   m_Layer: 0
   m_Name: RightSupramarginal
   m_TagString: BrainPart
@@ -10014,6 +11416,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1071428462
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071428457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 4e48a69a973691e458741916f8d42fe2, type: 3}
 --- !u!1 &1083104035
 GameObject:
   m_ObjectHideFlags: 0
@@ -10025,6 +11440,7 @@ GameObject:
   - 33: {fileID: 1083104038}
   - 23: {fileID: 1083104037}
   - 114: {fileID: 1083104039}
+  - 64: {fileID: 1083104040}
   m_Layer: 0
   m_Name: LeftPrecuneus
   m_TagString: BrainPart
@@ -10088,6 +11504,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1083104040
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1083104035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: b895b57f7cfe3f740823b6de2eb23e51, type: 3}
 --- !u!1 &1099471294
 GameObject:
   m_ObjectHideFlags: 0
@@ -10099,6 +11528,7 @@ GameObject:
   - 33: {fileID: 1099471297}
   - 23: {fileID: 1099471296}
   - 114: {fileID: 1099471298}
+  - 64: {fileID: 1099471299}
   m_Layer: 0
   m_Name: RightRostralAnteriorCingulate
   m_TagString: BrainPart
@@ -10162,6 +11592,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1099471299
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1099471294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: c52ce6750dcf20c489f2278f3aaa5e0f, type: 3}
 --- !u!1 &1102918095
 GameObject:
   m_ObjectHideFlags: 0
@@ -10191,12 +11634,15 @@ RectTransform:
   m_Children:
   - {fileID: 1724520648}
   - {fileID: 2006364094}
+  - {fileID: 482052222}
+  - {fileID: 131801582}
+  - {fileID: 238167286}
   m_Father: {fileID: 149745110}
   m_RootOrder: 4
-  m_AnchorMin: {x: 0, y: .0850000009}
-  m_AnchorMax: {x: .245363146, y: .906250775}
-  m_AnchoredPosition: {x: .328256845, y: .700000763}
-  m_SizeDelta: {x: .700000048, y: 4.90000153}
+  m_AnchorMin: {x: 0, y: .150843069}
+  m_AnchorMax: {x: .227967605, y: .906250775}
+  m_AnchoredPosition: {x: 2.32825685, y: 1.70000076}
+  m_SizeDelta: {x: 4.69999981, y: 2.90000153}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1102918097
 MonoBehaviour:
@@ -10460,6 +11906,7 @@ GameObject:
   - 33: {fileID: 1141266901}
   - 23: {fileID: 1141266900}
   - 114: {fileID: 1141266902}
+  - 64: {fileID: 1141266903}
   m_Layer: 0
   m_Name: LeftSuperiorTemporal
   m_TagString: BrainPart
@@ -10523,6 +11970,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1141266903
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1141266898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: e713115963ff8eb48a175f5db57dd08c, type: 3}
 --- !u!1 &1150908398
 GameObject:
   m_ObjectHideFlags: 0
@@ -10651,6 +12111,7 @@ GameObject:
   - 33: {fileID: 1152458064}
   - 23: {fileID: 1152458063}
   - 114: {fileID: 1152458065}
+  - 64: {fileID: 1152458066}
   m_Layer: 0
   m_Name: RightParahippocampal
   m_TagString: BrainPart
@@ -10714,6 +12175,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1152458066
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1152458061}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: fd6b61bec1999ba4691482be577bfa82, type: 3}
 --- !u!1001 &1170206243
 Prefab:
   m_ObjectHideFlags: 0
@@ -10973,6 +12447,7 @@ GameObject:
   - 33: {fileID: 1204153447}
   - 23: {fileID: 1204153446}
   - 114: {fileID: 1204153448}
+  - 64: {fileID: 1204153449}
   m_Layer: 0
   m_Name: RightEntorhinal
   m_TagString: BrainPart
@@ -11036,6 +12511,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1204153449
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1204153444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 7f7e9b6cac8f3f642baeaeb2fe01c0af, type: 3}
 --- !u!1 &1229490745
 GameObject:
   m_ObjectHideFlags: 0
@@ -11217,6 +12705,7 @@ GameObject:
   - 33: {fileID: 1240488150}
   - 23: {fileID: 1240488149}
   - 114: {fileID: 1240488151}
+  - 64: {fileID: 1240488152}
   m_Layer: 0
   m_Name: RightPrecuneus
   m_TagString: BrainPart
@@ -11280,6 +12769,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1240488152
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240488147}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 8fc2855114eb5a241a64d3a29442939d, type: 3}
 --- !u!1001 &1241199097
 Prefab:
   m_ObjectHideFlags: 0
@@ -11345,6 +12847,7 @@ GameObject:
   - 33: {fileID: 1271565302}
   - 23: {fileID: 1271565301}
   - 114: {fileID: 1271565303}
+  - 64: {fileID: 1271565304}
   m_Layer: 0
   m_Name: LeftLateralorbitofrontal
   m_TagString: BrainPart
@@ -11408,6 +12911,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1271565304
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1271565299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 109382a9b787ec34b8840f1c536684d6, type: 3}
 --- !u!1 &1283820036
 GameObject:
   m_ObjectHideFlags: 0
@@ -11740,6 +13256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
 --- !u!64 &1314599742
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11914,6 +13431,7 @@ GameObject:
   - 33: {fileID: 1323794464}
   - 23: {fileID: 1323794463}
   - 114: {fileID: 1323794465}
+  - 64: {fileID: 1323794466}
   m_Layer: 0
   m_Name: RightInferiorTemporal
   m_TagString: BrainPart
@@ -11977,6 +13495,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 329039376}
+--- !u!64 &1323794466
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323794461}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 7ecfdfa1ccee4894d83fb7c37ac5a512, type: 3}
 --- !u!1 &1324155605
 GameObject:
   m_ObjectHideFlags: 0
@@ -12165,7 +13696,7 @@ RectTransform:
   - {fileID: 2007002988}
   - {fileID: 671229301}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_AnchorMin: {x: .779000044, y: 0}
   m_AnchorMax: {x: 1, y: .906250775}
   m_AnchoredPosition: {x: .50012207, y: 1.41177368}
@@ -12227,7 +13758,7 @@ RectTransform:
   m_Children:
   - {fileID: 2042855997}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_AnchorMin: {x: .258420825, y: .448605388}
   m_AnchorMax: {x: .454176307, y: .85132885}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -12337,6 +13868,7 @@ GameObject:
   - 33: {fileID: 1388705776}
   - 23: {fileID: 1388705775}
   - 114: {fileID: 1388705777}
+  - 64: {fileID: 1388705778}
   m_Layer: 0
   m_Name: LeftParacentral
   m_TagString: BrainPart
@@ -12400,6 +13932,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1388705778
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388705773}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 574feee7dccf9d749b0386bc0f16f732, type: 3}
 --- !u!1001 &1393058205
 Prefab:
   m_ObjectHideFlags: 0
@@ -12520,6 +14065,72 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1394684243}
+--- !u!1 &1412235217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1412235218}
+  - 222: {fileID: 1412235220}
+  - 114: {fileID: 1412235219}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1412235218
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412235217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578721820}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1412235219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412235217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Split
+--- !u!222 &1412235220
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412235217}
 --- !u!1001 &1413198129
 Prefab:
   m_ObjectHideFlags: 0
@@ -12585,6 +14196,7 @@ GameObject:
   - 33: {fileID: 1415402236}
   - 23: {fileID: 1415402235}
   - 114: {fileID: 1415402237}
+  - 64: {fileID: 1415402238}
   m_Layer: 0
   m_Name: RightInsula
   m_TagString: BrainPart
@@ -12648,6 +14260,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1415402238
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1415402233}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 1a33aacb3e6663642983e0873056d238, type: 3}
 --- !u!1001 &1421345021
 Prefab:
   m_ObjectHideFlags: 0
@@ -12795,7 +14420,7 @@ RectTransform:
   m_Father: {fileID: 149745110}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: .781000018, y: .0850000009}
+  m_AnchorMax: {x: .781000018, y: .150843069}
   m_AnchoredPosition: {x: .400024414, y: 3.05175781e-05}
   m_SizeDelta: {x: -.0999755859, y: 1}
   m_Pivot: {x: .5, y: .5}
@@ -12891,6 +14516,7 @@ GameObject:
   - 33: {fileID: 1438486545}
   - 23: {fileID: 1438486544}
   - 114: {fileID: 1438486546}
+  - 64: {fileID: 1438486547}
   m_Layer: 0
   m_Name: LeftUnknown
   m_TagString: BrainPart
@@ -12954,6 +14580,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 473725250}
+--- !u!64 &1438486547
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438486542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: ffe26d3c530890b4ea75b7d4203ba721, type: 3}
 --- !u!1 &1438859133
 GameObject:
   m_ObjectHideFlags: 0
@@ -13039,6 +14678,7 @@ GameObject:
   - 33: {fileID: 1442490730}
   - 23: {fileID: 1442490729}
   - 114: {fileID: 1442490731}
+  - 64: {fileID: 1442490732}
   m_Layer: 0
   m_Name: LeftTransverseTemporal
   m_TagString: BrainPart
@@ -13102,6 +14742,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1442490732
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1442490727}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 8bea43e231f78434c937c91fca99803c, type: 3}
 --- !u!1 &1463820166
 GameObject:
   m_ObjectHideFlags: 0
@@ -13271,6 +14924,7 @@ GameObject:
   - 33: {fileID: 1523359610}
   - 23: {fileID: 1523359609}
   - 114: {fileID: 1523359611}
+  - 64: {fileID: 1523359612}
   m_Layer: 0
   m_Name: LeftIsthmuscingulate
   m_TagString: BrainPart
@@ -13334,6 +14988,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1523359612
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1523359607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 77b409d1157318b429de75bd0eb37777, type: 3}
 --- !u!1 &1524757621
 GameObject:
   m_ObjectHideFlags: 0
@@ -13366,7 +15033,7 @@ RectTransform:
   - {fileID: 513566335}
   - {fileID: 315254434}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -13429,7 +15096,7 @@ RectTransform:
   - {fileID: 1755518873}
   - {fileID: 359760122}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_AnchorMin: {x: .710647464, y: .523593962}
   m_AnchorMax: {x: .980161667, y: .861000061}
   m_AnchoredPosition: {x: -.0009765625, y: 1.24255371}
@@ -13527,6 +15194,7 @@ GameObject:
   - 33: {fileID: 1533509281}
   - 23: {fileID: 1533509280}
   - 114: {fileID: 1533509282}
+  - 64: {fileID: 1533509283}
   m_Layer: 0
   m_Name: LeftMiddleTemporal
   m_TagString: BrainPart
@@ -13590,6 +15258,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1533509283
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1533509278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: e6dbdbf1cc010bc4f97b7f60c906dc1d, type: 3}
 --- !u!1 &1548536305
 GameObject:
   m_ObjectHideFlags: 0
@@ -13794,6 +15475,7 @@ GameObject:
   - 33: {fileID: 1584169162}
   - 23: {fileID: 1584169161}
   - 114: {fileID: 1584169163}
+  - 64: {fileID: 1584169164}
   m_Layer: 0
   m_Name: LeftParstriangularis
   m_TagString: BrainPart
@@ -13857,6 +15539,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1584169164
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1584169159}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 8d58b8ed9b9bf434ebfadf7f1c9bc56e, type: 3}
 --- !u!1 &1585788899
 GameObject:
   m_ObjectHideFlags: 0
@@ -13868,6 +15563,7 @@ GameObject:
   - 33: {fileID: 1585788902}
   - 23: {fileID: 1585788901}
   - 114: {fileID: 1585788903}
+  - 64: {fileID: 1585788904}
   m_Layer: 0
   m_Name: LeftParahippocampal
   m_TagString: BrainPart
@@ -13931,6 +15627,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1585788904
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585788899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 32f0192a95684a8488b9114c51b580d0, type: 3}
 --- !u!1001 &1597496681
 Prefab:
   m_ObjectHideFlags: 0
@@ -14533,6 +16242,7 @@ GameObject:
   - 33: {fileID: 1691786755}
   - 23: {fileID: 1691786754}
   - 114: {fileID: 1691786756}
+  - 64: {fileID: 1691786757}
   m_Layer: 0
   m_Name: LeftCuneus
   m_TagString: BrainPart
@@ -14596,6 +16306,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 1785720416}
+--- !u!64 &1691786757
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1691786752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: cf9eaf2010122564e92e251cbc6f584c, type: 3}
 --- !u!1001 &1696816980
 Prefab:
   m_ObjectHideFlags: 0
@@ -14833,7 +16556,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BrainMenu
+  m_Text: Brain Menu
 --- !u!222 &1724520650
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14851,6 +16574,7 @@ GameObject:
   - 33: {fileID: 1733964763}
   - 23: {fileID: 1733964762}
   - 114: {fileID: 1733964764}
+  - 64: {fileID: 1733964765}
   m_Layer: 0
   m_Name: LeftPostriorCingulate
   m_TagString: BrainPart
@@ -14914,6 +16638,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1733964765
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1733964760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 7781b9dbe55f90b4b97627e6c39762ed, type: 3}
 --- !u!1 &1734111774
 GameObject:
   m_ObjectHideFlags: 0
@@ -15145,7 +16882,7 @@ RectTransform:
   - {fileID: 655388926}
   - {fileID: 1394684244}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: .781000018, y: .0850000009}
   m_AnchoredPosition: {x: .400001526, y: 0}
@@ -15243,6 +16980,7 @@ GameObject:
   - 33: {fileID: 1767982012}
   - 23: {fileID: 1767982011}
   - 114: {fileID: 1767982013}
+  - 64: {fileID: 1767982014}
   m_Layer: 0
   m_Name: RightPrecentral
   m_TagString: BrainPart
@@ -15306,6 +17044,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 329039376}
+--- !u!64 &1767982014
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767982009}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 4e9157e2bb2a85742a09c433a7a09717, type: 3}
 --- !u!1 &1770500558
 GameObject:
   m_ObjectHideFlags: 0
@@ -15317,6 +17068,7 @@ GameObject:
   - 33: {fileID: 1770500561}
   - 23: {fileID: 1770500560}
   - 114: {fileID: 1770500562}
+  - 64: {fileID: 1770500563}
   m_Layer: 0
   m_Name: LeftRostralAnteriorCingulate
   m_TagString: BrainPart
@@ -15380,6 +17132,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1770500563
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1770500558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 48cacd0bc311b7949974788c0b2c6d2c, type: 3}
 --- !u!1 &1770726699
 GameObject:
   m_ObjectHideFlags: 0
@@ -15391,6 +17156,7 @@ GameObject:
   - 33: {fileID: 1770726701}
   - 23: {fileID: 1770726700}
   - 114: {fileID: 1770726703}
+  - 64: {fileID: 1770726704}
   m_Layer: 0
   m_Name: RightMiddleTemporal
   m_TagString: BrainPart
@@ -15454,6 +17220,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1770726704
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1770726699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 43620f0d8190d6f4aa0278f1f2f28769, type: 3}
+--- !u!1 &1775872311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1775872312}
+  - 222: {fileID: 1775872316}
+  - 114: {fileID: 1775872315}
+  m_Layer: 5
+  m_Name: ArrowIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1775872312
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1775872311}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 131801582}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -.300000191}
+  m_SizeDelta: {x: -4, y: -3.39999962}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1775872315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1775872311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: d5696a008a4715e4d88ce87eb3fd7b19, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 0
+  m_FillOrigin: 0
+--- !u!222 &1775872316
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1775872311}
 --- !u!1001 &1777008188
 Prefab:
   m_ObjectHideFlags: 0
@@ -16039,6 +17879,7 @@ GameObject:
   - 33: {fileID: 1831286163}
   - 23: {fileID: 1831286162}
   - 114: {fileID: 1831286164}
+  - 64: {fileID: 1831286165}
   m_Layer: 0
   m_Name: LeftBankssts
   m_TagString: BrainPart
@@ -16102,6 +17943,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1831286165
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1831286160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: a9947e868d91f7f49a3608f4862eb2ec, type: 3}
 --- !u!1 &1836787452
 GameObject:
   m_ObjectHideFlags: 0
@@ -16113,6 +17967,7 @@ GameObject:
   - 33: {fileID: 1836787455}
   - 23: {fileID: 1836787454}
   - 114: {fileID: 1836787456}
+  - 64: {fileID: 1836787457}
   m_Layer: 0
   m_Name: RightPosteriorCingulate
   m_TagString: BrainPart
@@ -16176,6 +18031,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1836787457
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836787452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 7c31631d8009d424bb53a06cbde89afd, type: 3}
 --- !u!1 &1837360999
 GameObject:
   m_ObjectHideFlags: 0
@@ -16356,6 +18224,7 @@ GameObject:
   - 33: {fileID: 1865606413}
   - 23: {fileID: 1865606412}
   - 114: {fileID: 1865606414}
+  - 64: {fileID: 1865606415}
   m_Layer: 0
   m_Name: RightParacentral
   m_TagString: BrainPart
@@ -16419,6 +18288,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1865606415
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1865606410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 88a364269cd9f484fb878ee470cae8bb, type: 3}
 --- !u!1 &1866027406
 GameObject:
   m_ObjectHideFlags: 0
@@ -16496,6 +18378,7 @@ GameObject:
   - 33: {fileID: 1877417587}
   - 23: {fileID: 1877417586}
   - 114: {fileID: 1877417588}
+  - 64: {fileID: 1877417589}
   m_Layer: 0
   m_Name: RightLingual
   m_TagString: BrainPart
@@ -16559,6 +18442,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 1785720416}
+--- !u!64 &1877417589
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877417584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: e5ca1ec256f71384584b081d0a26f748, type: 3}
 --- !u!1 &1890172973
 GameObject:
   m_ObjectHideFlags: 0
@@ -16571,6 +18467,7 @@ GameObject:
   - 23: {fileID: 1890172975}
   - 114: {fileID: 1890172977}
   - 114: {fileID: 1890172979}
+  - 64: {fileID: 1890172978}
   m_Layer: 0
   m_Name: LeftSuperiorParietal
   m_TagString: BrainPart
@@ -16634,6 +18531,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1890172978
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890172973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 056431fe3f8539e44be5ba58a70899b7, type: 3}
 --- !u!114 &1890172979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16645,6 +18555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
 --- !u!1 &1892519527
 GameObject:
   m_ObjectHideFlags: 0
@@ -16964,6 +18875,7 @@ GameObject:
   - 33: {fileID: 1952173668}
   - 23: {fileID: 1952173667}
   - 114: {fileID: 1952173669}
+  - 64: {fileID: 1952173670}
   m_Layer: 0
   m_Name: RightSuperiorParietal
   m_TagString: BrainPart
@@ -17027,6 +18939,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1952173670
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952173665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 556749a628a098b4aac19a62d479d92d, type: 3}
 --- !u!1 &1953344354
 GameObject:
   m_ObjectHideFlags: 0
@@ -17038,6 +18963,7 @@ GameObject:
   - 33: {fileID: 1953344357}
   - 23: {fileID: 1953344356}
   - 114: {fileID: 1953344358}
+  - 64: {fileID: 1953344359}
   m_Layer: 0
   m_Name: RightLateralOccipital
   m_TagString: BrainPart
@@ -17101,6 +19027,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 1785720416}
+--- !u!64 &1953344359
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1953344354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 868159eb3d5c82049adc3083f9da361b, type: 3}
 --- !u!1 &1954832127
 GameObject:
   m_ObjectHideFlags: 0
@@ -17244,6 +19183,7 @@ GameObject:
   - 33: {fileID: 1956895376}
   - 23: {fileID: 1956895375}
   - 114: {fileID: 1956895377}
+  - 64: {fileID: 1956895378}
   m_Layer: 0
   m_Name: RightCaudalMiddleFrontal
   m_TagString: BrainPart
@@ -17307,6 +19247,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &1956895378
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1956895373}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: fae43d017b3c9c54c962663bbad1bac5, type: 3}
 --- !u!1001 &1964734637
 Prefab:
   m_ObjectHideFlags: 0
@@ -17584,7 +19537,7 @@ RectTransform:
   - {fileID: 329039370}
   m_Father: {fileID: 1102918096}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: .234440893}
   m_AnchorMax: {x: 1, y: .906240702}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -17823,6 +19776,7 @@ GameObject:
   - 33: {fileID: 2033209091}
   - 23: {fileID: 2033209090}
   - 114: {fileID: 2033209092}
+  - 64: {fileID: 2033209093}
   m_Layer: 0
   m_Name: LeftPostCentral
   m_TagString: BrainPart
@@ -17886,6 +19840,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &2033209093
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2033209088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: de094106cd0d1b34abde0f82114cfc01, type: 3}
 --- !u!1 &2034236215
 GameObject:
   m_ObjectHideFlags: 0
@@ -18192,6 +20159,7 @@ GameObject:
   - 33: {fileID: 2046463506}
   - 23: {fileID: 2046463505}
   - 114: {fileID: 2046463507}
+  - 64: {fileID: 2046463508}
   m_Layer: 0
   m_Name: LeftPreicalcarine
   m_TagString: BrainPart
@@ -18255,6 +20223,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &2046463508
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2046463503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 12c9c3a1968be7b4d87e1b30047dc8ca, type: 3}
 --- !u!1 &2092464770
 GameObject:
   m_ObjectHideFlags: 0
@@ -18266,6 +20247,7 @@ GameObject:
   - 33: {fileID: 2092464773}
   - 23: {fileID: 2092464772}
   - 114: {fileID: 2092464774}
+  - 64: {fileID: 2092464775}
   m_Layer: 0
   m_Name: LeftCaudalanteriorcingulate
   m_TagString: BrainPart
@@ -18329,6 +20311,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &2092464775
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2092464770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: fadc961d62de5d64693047b2cd31d467, type: 3}
 --- !u!1 &2109507556
 GameObject:
   m_ObjectHideFlags: 0
@@ -18510,6 +20505,7 @@ GameObject:
   - 33: {fileID: 2119591879}
   - 23: {fileID: 2119591878}
   - 114: {fileID: 2119591881}
+  - 64: {fileID: 2119591882}
   m_Layer: 0
   m_Name: RightPericalcarine
   m_TagString: BrainPart
@@ -18573,6 +20569,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &2119591882
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119591877}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: fb8c96730cb78234da51b658fe08cd09, type: 3}
 --- !u!1 &2130047754
 GameObject:
   m_ObjectHideFlags: 0
@@ -18584,6 +20593,7 @@ GameObject:
   - 33: {fileID: 2130047757}
   - 23: {fileID: 2130047756}
   - 114: {fileID: 2130047758}
+  - 64: {fileID: 2130047759}
   m_Layer: 0
   m_Name: LeftParsorbitalis
   m_TagString: BrainPart
@@ -18647,6 +20657,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainNode: {fileID: 0}
+--- !u!64 &2130047759
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130047754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 88e81821612dc9142a72b5980e2018f6, type: 3}
 --- !u!1 &2146879609
 GameObject:
   m_ObjectHideFlags: 0
