@@ -9,6 +9,7 @@ public class PathNode : MonoBehaviour {
     public GameObject previousArrow, nextArrow; //References to previous and next arrows
     public GameObject previousNode, nextNode; //References to the previous and next PathNodes
 
+    public string name;
     
     public Sprite yellowArrow, greenArrow; //References to the yellow and green arrow images
     private static Sprite _yellowArrow, _greenArrow; 
@@ -40,6 +41,8 @@ public class PathNode : MonoBehaviour {
         colors.normalColor = Color.green;
         colors.disabledColor = Color.green;
         button.colors = colors;
+
+        GetComponentInChildren<Text>().text = name;
 
         if (nextArrow) { nextArrow.GetComponent<Image>().sprite = yellowArrow; }
         if (previousArrow) { previousArrow.GetComponent<Image>().sprite = greenArrow; }

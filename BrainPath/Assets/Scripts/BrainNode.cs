@@ -12,6 +12,8 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public bool isNew;
     private bool isVisited;
 
+    public PathNode pathNode; //Reference to the path node on the bottom of the UI;
+
     public System.Collections.Generic.Dictionary<GameObject, int> outboundNodes; //HashTable of nodes that are connected to this one
     [Serializable]
     public struct OutboundEdge
@@ -97,6 +99,11 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 Refresh();
         }
         }
+    }
+
+    public void MarkCorrectPathNode()
+    {
+        if(pathNode) pathNode.MarkCorrect();
     }
 
     public void OnPointerEnter(PointerEventData eventData)

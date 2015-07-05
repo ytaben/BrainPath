@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class ActionButton : MonoBehaviour
 {
+    public BrainNode brainNode; //The brain node that this action button belongs to
 
     public int correctState; //Number of the correct stage when this button should be pressed
     public int actionCost; //Cost of this action in milliseconds
@@ -55,7 +56,7 @@ public class ActionButton : MonoBehaviour
         }
         else
         {
-            if (isCorrect) { gameController.IncrementStage(); gameController.DisplayMessage(correctMessage, Color.green); }
+            if (isCorrect) { gameController.IncrementStage(); gameController.DisplayMessage(correctMessage, Color.green); brainNode.MarkCorrectPathNode(); }
             else
             {
                 gameController.DisplayMessage(correctMessage, Color.red);
