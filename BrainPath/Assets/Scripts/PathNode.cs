@@ -22,7 +22,7 @@ public class PathNode : MonoBehaviour {
 
         //This is a hack to allow specifying images only in one object
         if (yellowArrow) { _yellowArrow = yellowArrow; } 
-        if (_greenArrow) { _greenArrow = greenArrow; }
+        if (greenArrow) { _greenArrow = greenArrow; }
     }
 
 	// Use this for initialization
@@ -44,8 +44,8 @@ public class PathNode : MonoBehaviour {
 
         GetComponentInChildren<Text>().text = name;
 
-        if (nextArrow) { nextArrow.GetComponent<Image>().sprite = yellowArrow; }
-        if (previousArrow) { previousArrow.GetComponent<Image>().sprite = greenArrow; }
+        if (nextArrow) { nextArrow.SetActive(true);  nextArrow.GetComponent<Image>().sprite = _yellowArrow; }
+        if (previousArrow) { previousArrow.GetComponent<Image>().sprite = _greenArrow; }
 
         if (nextNode)
         {
