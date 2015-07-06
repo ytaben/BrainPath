@@ -76,7 +76,7 @@ public class GameController : MonoBehaviour
         //activeNodeScript.isActive = true;
         //currentAnimationState = activeNodeScript.BrainState;
         //SetCurrentAnimation();
-       // activeNodeScript.Refresh();
+        activeNodeScript.Refresh();
         //activeNodeScript.ExploreOutboundObjects();
        // activeNodeScript.nodeMenu.SetActive(true);
         UpdateTimeText();
