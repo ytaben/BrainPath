@@ -10881,9 +10881,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd0c32d3be0803b4bb00af41eb5132c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousArrow: {fileID: 0}
+  previousArrow: {fileID: 951802384}
   nextArrow: {fileID: 0}
-  previousNode: {fileID: 0}
+  previousNode: {fileID: 1099642948}
   nextNode: {fileID: 0}
   name: Primary Motor Cortex
   yellowArrow: {fileID: 0}
@@ -12043,10 +12043,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd0c32d3be0803b4bb00af41eb5132c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousArrow: {fileID: 0}
-  nextArrow: {fileID: 0}
-  previousNode: {fileID: 0}
-  nextNode: {fileID: 0}
+  previousArrow: {fileID: 1926623553}
+  nextArrow: {fileID: 951802384}
+  previousNode: {fileID: 1520652344}
+  nextNode: {fileID: 943387676}
   name: Visual Cortex
   yellowArrow: {fileID: 0}
   greenArrow: {fileID: 0}
@@ -15547,9 +15547,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousArrow: {fileID: 0}
-  nextArrow: {fileID: 0}
+  nextArrow: {fileID: 1926623553}
   previousNode: {fileID: 0}
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 1099642948}
   name: Thalamus
   yellowArrow: {fileID: 21300000, guid: 83acda484772b454f9028ea329d6a071, type: 3}
   greenArrow: {fileID: 21300000, guid: a0fbf72457f145b4080ba6df2180a788, type: 3}
