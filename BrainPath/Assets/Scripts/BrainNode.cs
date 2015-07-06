@@ -166,6 +166,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
                 {
                     treeNode.AddChild(child);
                     childScript.isExplored = true;
+                    childScript.Refresh();
                 }
             }
             treeNode.Expand();
