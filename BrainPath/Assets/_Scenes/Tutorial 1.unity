@@ -878,7 +878,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -1114,7 +1114,7 @@ RectTransform:
   m_Father: {fileID: 1895180716}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: .793036282}
+  m_AnchorMax: {x: 1, y: .899762392}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
@@ -5040,10 +5040,10 @@ RectTransform:
   - {fileID: 560529445}
   m_Father: {fileID: 623780741}
   m_RootOrder: 3
-  m_AnchorMin: {x: .828671992, y: .276000023}
-  m_AnchorMax: {x: .89241004, y: .733240366}
-  m_AnchoredPosition: {x: .859574318, y: 3.00219035}
-  m_SizeDelta: {x: 4.2527771, y: 2.7784934}
+  m_AnchorMin: {x: .826338172, y: .276000023}
+  m_AnchorMax: {x: .896841407, y: .834833562}
+  m_AnchoredPosition: {x: -.140425682, y: -.497809649}
+  m_SizeDelta: {x: .2527771, y: -.221506596}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &376030157
 MonoBehaviour:
@@ -5210,10 +5210,10 @@ RectTransform:
   - {fileID: 1747182742}
   m_Father: {fileID: 623780741}
   m_RootOrder: 0
-  m_AnchorMin: {x: .921000063, y: .276000023}
-  m_AnchorMax: {x: .988210261, y: .733240366}
-  m_AnchoredPosition: {x: -1.25610065, y: 3.12359762}
-  m_SizeDelta: {x: .146174431, y: 2.77411938}
+  m_AnchorMin: {x: .919477165, y: .276000023}
+  m_AnchorMax: {x: .986733139, y: .834833562}
+  m_AnchoredPosition: {x: -.256100655, y: -.376402378}
+  m_SizeDelta: {x: .146174431, y: -.225880623}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &386118949
 MonoBehaviour:
@@ -7230,8 +7230,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 376030156}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: .113192759}
+  m_AnchorMax: {x: 1, y: .910796762}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -7252,7 +7252,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -7296,8 +7296,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2034236216}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: .0439359099, y: .163830131}
+  m_AnchorMax: {x: .97559166, y: .868936241}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -7318,7 +7318,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -8720,7 +8720,7 @@ MonoBehaviour:
 
 
     Try to access Thalamus now by either using the brain menu or by changing brain
-    state and clicking.'
+    state to split and clicking on the Thalamus.'
 --- !u!222 &656339803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10045,8 +10045,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1895180716}
   m_RootOrder: 1
-  m_AnchorMin: {x: .164699048, y: .830534756}
-  m_AnchorMax: {x: .879596949, y: .969487727}
+  m_AnchorMin: {x: .164699048, y: .899762392}
+  m_AnchorMax: {x: .881290853, y: .969487727}
   m_AnchoredPosition: {x: .5, y: 1}
   m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -15848,9 +15848,9 @@ RectTransform:
   m_Father: {fileID: 623780741}
   m_RootOrder: 5
   m_AnchorMin: {x: .588091731, y: .276000023}
-  m_AnchorMax: {x: .689180017, y: .733240366}
-  m_AnchoredPosition: {x: 1.45495605, y: 1.72491455}
-  m_SizeDelta: {x: 3.86623383, y: 2.77472305}
+  m_AnchorMax: {x: .693611383, y: .834833562}
+  m_AnchoredPosition: {x: -.0450439453, y: .224914551}
+  m_SizeDelta: {x: .866233826, y: -.225276947}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1282899102
 MonoBehaviour:
@@ -21499,8 +21499,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 386118948}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: .0331426188, y: .107071832}
+  m_AnchorMax: {x: .966854692, y: .928617597}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -21521,7 +21521,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -25301,9 +25301,9 @@ RectTransform:
   m_Father: {fileID: 623780741}
   m_RootOrder: 1
   m_AnchorMin: {x: .711746275, y: .276000023}
-  m_AnchorMax: {x: .797589421, y: .733240366}
-  m_AnchoredPosition: {x: 1.45502329, y: 1.72490168}
-  m_SizeDelta: {x: 3.86622906, y: 2.77472401}
+  m_AnchorMax: {x: .803477168, y: .834833562}
+  m_AnchoredPosition: {x: -.544976711, y: .224901676}
+  m_SizeDelta: {x: -.133770943, y: -.225275993}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2034236217
 MonoBehaviour:
