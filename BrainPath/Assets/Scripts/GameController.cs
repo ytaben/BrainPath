@@ -197,7 +197,7 @@ public class GameController : MonoBehaviour
         {
             case BrainNode.AnimationChoice.Split:
                 brainAnimator.SetBool("IsSeparated", true);
-                stateLabel.text = "Separated";
+                stateLabel.text = "Split";
                 break;
             case BrainNode.AnimationChoice.UpsideDown:
                 brainAnimator.SetBool("IsUpsideDown", true);
