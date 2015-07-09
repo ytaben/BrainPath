@@ -5040,7 +5040,7 @@ RectTransform:
   - {fileID: 560529445}
   m_Father: {fileID: 623780741}
   m_RootOrder: 3
-  m_AnchorMin: {x: .826338172, y: .276000023}
+  m_AnchorMin: {x: .82683605, y: .276000023}
   m_AnchorMax: {x: .896841407, y: .834833562}
   m_AnchoredPosition: {x: -.140425682, y: -.497809649}
   m_SizeDelta: {x: .2527771, y: -.221506596}
@@ -18204,8 +18204,8 @@ MonoBehaviour:
     signal as quickly as possible. You can see what happens if you fail on the right.
 
 
-    In this tutorial you will learn how to accompish this task, as well as other basics
-    of the gameplay.
+    In this tutorial you will learn how to accomplish  this task, as well as other
+    basics of the gameplay.
 
     Click Begin when ready.'
 --- !u!222 &1438859135
@@ -25301,9 +25301,9 @@ RectTransform:
   m_Father: {fileID: 623780741}
   m_RootOrder: 1
   m_AnchorMin: {x: .711746275, y: .276000023}
-  m_AnchorMax: {x: .803477168, y: .834833562}
-  m_AnchoredPosition: {x: -.544976711, y: .224901676}
-  m_SizeDelta: {x: -.133770943, y: -.225275993}
+  m_AnchorMax: {x: .802000046, y: .834833562}
+  m_AnchoredPosition: {x: -.0449767113, y: .224901676}
+  m_SizeDelta: {x: .866229057, y: -.225275993}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2034236217
 MonoBehaviour:
