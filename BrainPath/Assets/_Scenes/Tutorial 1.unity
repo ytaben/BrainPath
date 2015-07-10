@@ -1984,7 +1984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &157402848
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2251,7 +2251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0249f2cdabf6c674f9123ff21db3b57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalStages: 15
+  totalStages: 14
   currentStage: 0
   helpScreens:
   - {fileID: 1525276401}
@@ -21159,7 +21159,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1585572877}
   m_LocalRotation: {x: 1.42108547e-14, y: 1.42108547e-14, z: -.707106709, w: .707106829}
-  m_LocalPosition: {x: -74, y: -259.997467, z: 34.9998894}
+  m_LocalPosition: {x: -74, y: -259.997467, z: 242}
   m_LocalScale: {x: 289.155731, y: 193.421967, z: .561869562}
   m_Children: []
   m_Father: {fileID: 157402848}
