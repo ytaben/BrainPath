@@ -17,6 +17,11 @@ public class TutorialButton : MonoBehaviour {
 	
 	}
 
+    void OnMouseDown()
+    {
+        if (tutorialController.currentStage == correctStage) tutorialController.IncrementStage();
+    }
+
     public void OnClick() {
         if (tutorialController.currentStage == correctStage) tutorialController.IncrementStage();
     }
