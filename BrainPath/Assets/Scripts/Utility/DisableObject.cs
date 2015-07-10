@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class ReturnToMapButton : MonoBehaviour {
+public class DisableObject : MonoBehaviour {
 
     public GameObject canvas; //The parent canvas that holds this window
 	// Use this for initialization
