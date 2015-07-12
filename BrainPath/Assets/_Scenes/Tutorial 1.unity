@@ -6977,7 +6977,7 @@ GameObject:
   - 222: {fileID: 482052224}
   - 114: {fileID: 482052223}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: BrainViewText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7025,7 +7025,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Brain State
+  m_Text: Brain View
 --- !u!222 &482052224
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19658,6 +19658,7 @@ GameObject:
   - 224: {fileID: 1444364285}
   - 222: {fileID: 1444364287}
   - 114: {fileID: 1444364286}
+  - 114: {fileID: 1444364288}
   m_Layer: 5
   m_Name: HelpNavigation1
   m_TagString: Untagged
@@ -19710,6 +19711,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1444364284}
+--- !u!114 &1444364288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444364284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70dfe83e8c302ad458b01317635b6cbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  timeout: 5
 --- !u!1 &1463820166
 GameObject:
   m_ObjectHideFlags: 0
