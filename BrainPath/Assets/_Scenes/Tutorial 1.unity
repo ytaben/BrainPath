@@ -3236,6 +3236,7 @@ GameObject:
   - 222: {fileID: 238167289}
   - 114: {fileID: 238167288}
   - 114: {fileID: 238167287}
+  - 114: {fileID: 238167290}
   m_Layer: 5
   m_Name: NormalStateButton
   m_TagString: Untagged
@@ -3329,6 +3330,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 238167285}
+--- !u!114 &238167290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238167285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e88bc006733da42adece8a8f98b0c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 903012279}
 --- !u!1 &247803600
 GameObject:
   m_ObjectHideFlags: 0
