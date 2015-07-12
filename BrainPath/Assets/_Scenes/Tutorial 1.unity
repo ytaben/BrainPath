@@ -795,7 +795,7 @@ RectTransform:
   - {fileID: 1319651833}
   m_Father: {fileID: 149745110}
   m_RootOrder: 22
-  m_AnchorMin: {x: .572061598, y: .388553292}
+  m_AnchorMin: {x: .561373591, y: .388553292}
   m_AnchorMax: {x: .77400744, y: .752567768}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -1}
@@ -9593,11 +9593,13 @@ MonoBehaviour:
 
     A few final notes about navigation:
 
-    - Unexplored nodes cannot be visited and are transparent
+    - Unexplored nodes cannot be visited and are transparent in 3D model
+
 
     - All explored nodes are shown in Brain Navigation
 
-    - Visiting a node reveals all immediatelly connected nodes'
+
+    - New nodes are found by visiting known nodes'
 --- !u!222 &656339803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14428,7 +14430,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 54381454}
   m_RootOrder: 0
-  m_AnchorMin: {x: .0481019318, y: .218940884}
+  m_AnchorMin: {x: .0481019318, y: .224854335}
   m_AnchorMax: {x: .95934695, y: .946568191}
   m_AnchoredPosition: {x: 2, y: .5}
   m_SizeDelta: {x: 0, y: -2}
@@ -14458,9 +14460,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Actions are used to progress throughout the game by triggering correct parts
-    of the brain in the correct sequence. For example, visual cortex can't process
-    visual information if did not arrive from Thalamus.
+  m_Text: '- Actions are used for triggering parts of the brain.
+
+
+    - Only correct actions and in correct sequence trigger brain parts
+
+
+    - I.E. Thalamus has to be triggered before visual cortex
+
+
+    - Performing actions displays a message with valuable information'
 --- !u!222 &976043464
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19957,7 +19966,7 @@ RectTransform:
   m_Father: {fileID: 1626590966}
   m_RootOrder: 0
   m_AnchorMin: {x: .0481019318, y: .0370014198}
-  m_AnchorMax: {x: .976131022, y: .946568191}
+  m_AnchorMax: {x: 1, y: .946568191}
   m_AnchoredPosition: {x: 2, y: .5}
   m_SizeDelta: {x: 0, y: -2}
   m_Pivot: {x: .5, y: .5}
@@ -19986,10 +19995,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Excellent!
-
-    Now let''t try to visit Thalamus. You can do it either by <b>clicking Thalamus
-    in the Navigation menu</b> or on the <b>3D model of the brain.</b>'
+  m_Text: "Excellent!\nNow let't try to visit Thalamus. \n\nYou can do it either by
+    <b>clicking Thalamus in the Navigation menu</b> or on the <b>3D model of the brain.</b>"
 --- !u!222 &1473091124
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21847,7 +21854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1626590966
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21862,7 +21869,7 @@ RectTransform:
   m_Father: {fileID: 149745110}
   m_RootOrder: 25
   m_AnchorMin: {x: .238544524, y: .537912905}
-  m_AnchorMax: {x: .431014657, y: .808353364}
+  m_AnchorMax: {x: .440043658, y: .808353364}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: .5, y: .5}
@@ -27652,7 +27659,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'There are two ways to navigate around the brain.
 
+
     The first way is to simply click on a node in the brain menu.
+
 
     The second way is to click the part of the brain you want to visit using the 3D
     model.'
