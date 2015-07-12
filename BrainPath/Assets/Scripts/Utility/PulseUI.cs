@@ -9,6 +9,11 @@ using UnityEngine.UI;
 public class PulseUI : MonoBehaviour {
 
     public GameObject[] elements;
+
+    //Stop pulsing after this time, unless it's zero or negative
+    public float timeout;
+
+    private float stopTime; //Time when we must stop pulsing
     private bool isPulsing;
 
 	// Use this for initialization
@@ -25,11 +30,15 @@ public class PulseUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (timeout <= 0 && Time.time > stopTime) isPulsing = false; //Stop if we have a timeout and it has passed
 
-        foreach (GameObject element in elements)
+        if (isPulsing)
         {
-            CanvasGroup cg = element.GetComponent<CanvasGroup>();
-            cg.alpha = Mathf.PingPong(cg.alpha, Time.time);
+            foreach (GameObject element in elements)
+            {
+                CanvasGroup cg = element.GetComponent<CanvasGroup>();
+                cg.alpha = Mathf.PingPong(cg.alpha, Time.time);
+            }
         }
 	}
 
@@ -38,6 +47,7 @@ public class PulseUI : MonoBehaviour {
     void OnEnable()
     {
         isPulsing = true;
+        stopTime = Time.time + timeout;
     }
 
     void OnDisable()
