@@ -2189,6 +2189,7 @@ GameObject:
   - 4: {fileID: 182287096}
   - 114: {fileID: 182287097}
   - 114: {fileID: 182287098}
+  - 114: {fileID: 182287099}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -2268,6 +2269,22 @@ MonoBehaviour:
   - {fileID: 1507522692}
   - {fileID: 2042131314}
   - {fileID: 452725536}
+--- !u!114 &182287099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 182287095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880b4b8748044944ea52c4f8483db96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjects:
+  - {fileID: 1524757621}
+  - {fileID: 438667656}
+  - {fileID: 31739281}
+  - {fileID: 1745767633}
 --- !u!1 &183621533
 GameObject:
   m_ObjectHideFlags: 0
@@ -23054,7 +23071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1745767634
 RectTransform:
   m_ObjectHideFlags: 0
