@@ -17881,6 +17881,7 @@ GameObject:
   - 224: {fileID: 1322148170}
   - 222: {fileID: 1322148172}
   - 114: {fileID: 1322148171}
+  - 114: {fileID: 1322148173}
   m_Layer: 5
   m_Name: HelpProgress1
   m_TagString: Untagged
@@ -17934,6 +17935,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1322148169}
+--- !u!114 &1322148173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1322148169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70dfe83e8c302ad458b01317635b6cbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - {fileID: 612724227}
+  - {fileID: 586445531}
+  timeout: 4
 --- !u!1 &1323794461
 GameObject:
   m_ObjectHideFlags: 0
@@ -20062,9 +20078,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The role of Thalamus in this task is to transfer visual information. Try
-    to trigger Thalamus by clicking the appropriate action in the menu on the right.
-    Doing so correctly will display a message.
+  m_Text: "The role of Thalamus in this task is to transfer visual information. \n\nTry
+    to <b>trigger Thalamus by clicking the appropriate action in the menu on the right.</b>\n\nDoing
+    so correctly will display a message."
 --- !u!222 &1503738612
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21549,6 +21565,7 @@ GameObject:
   - 224: {fileID: 1609397526}
   - 222: {fileID: 1609397528}
   - 114: {fileID: 1609397527}
+  - 114: {fileID: 1609397529}
   m_Layer: 5
   m_Name: HelpInfoMenu2
   m_TagString: Untagged
@@ -21601,6 +21618,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1609397525}
+--- !u!114 &1609397529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609397525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70dfe83e8c302ad458b01317635b6cbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements:
+  - {fileID: 611856101}
+  timeout: 3
 --- !u!1001 &1610264076
 Prefab:
   m_ObjectHideFlags: 0
@@ -21854,7 +21885,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1626590966
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27950,10 +27981,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time determines how many more visits and actions you can perform. You have
-    to complete the level before you run out of time.\nNote how triggering thalamus
-    cost 25 ms. \nTransfering between nodes and performing actions both cost time.\nAny
-    remaining time will be added as bonus score."
+  m_Text: '- You must complete the level before time runs out
+
+
+    - Transfering between nodes and performing actions require time
+
+
+    - Any remaining time will be added as bonus score'
 --- !u!222 &2058331773
 CanvasRenderer:
   m_ObjectHideFlags: 0
