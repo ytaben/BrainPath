@@ -9653,7 +9653,7 @@ MonoBehaviour:
 
 
     You can split the two hemispheres of the brain or turn it upside-down by using
-    the "Brain State" drop down menu one the left. Try splitting the brain now.'
+    the "Brain View" drop down menu one the left. <b>Try splitting the brain now.</b>'
 --- !u!222 &658281339
 CanvasRenderer:
   m_ObjectHideFlags: 0
