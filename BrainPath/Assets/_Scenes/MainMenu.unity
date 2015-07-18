@@ -1385,9 +1385,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "But in reality, our brain is a mechanism where all parts work together
-    to achieve the required task. Information and signals travel continuously travels
-    between different parts of the brain in order to be processed correctly. \n\nThis
-    game will teach you about how different parts of the brain work together to process
+    to achieve the required task. Information and signals travel continuously between
+    different parts of the brain in order to be processed correctly. \n\nThis game
+    will teach you about how different parts of the brain work together to process
     and transfer information."
 --- !u!222 &1449232478
 CanvasRenderer:
