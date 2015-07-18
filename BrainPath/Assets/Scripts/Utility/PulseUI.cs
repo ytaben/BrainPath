@@ -34,8 +34,13 @@ public class PulseUI : MonoBehaviour
     void Update()
     {
         if (timeout > 0 && Time.time > stopTime) isPulsing = false; //Stop if we have a timeout and it has passed
+        Pulse();
 
+        
 
+    }
+
+    private void Pulse() {
         foreach (GameObject element in elements)
         {
             CanvasGroup cg = element.GetComponent<CanvasGroup>();
@@ -45,9 +50,7 @@ public class PulseUI : MonoBehaviour
             }
             else cg.alpha = 1;
         }
-
     }
-
 
     //This may be somewhat redundant, but we can make it just in case
     void OnEnable()
@@ -59,5 +62,6 @@ public class PulseUI : MonoBehaviour
     void OnDisable()
     {
         isPulsing = false;
+        Pulse();
     }
 }
