@@ -8,11 +8,11 @@ public class UITracker : MonoBehaviour {
     private RectTransform rect;
 	// Use this for initialization
 	void Start () {
-        rect = GetComponent<RectTransform>();
 	}
 	
 	public void SetPosition(Vector3 position)
     {
+        if (!rect) { rect = GetComponent<RectTransform>(); }
         rect.transform.position = position;
     }
 }
