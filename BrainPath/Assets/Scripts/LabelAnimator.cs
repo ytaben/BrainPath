@@ -158,7 +158,7 @@ public class LabelAnimator : MonoBehaviour
 
     public bool Busy()
     {
-        return state != State.Collapsed;
+        return state != State.Collapsed && state != State.Expanded;
     }
 
     private Queue messageQueue = new Queue();
