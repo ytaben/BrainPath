@@ -14,6 +14,8 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public PathNode pathNode; //Reference to the path node on the bottom of the UI;
 
+    public string name; //Name of the given node
+
     public System.Collections.Generic.Dictionary<GameObject, int> outboundNodes; //HashTable of nodes that are connected to this one
     [Serializable]
     public struct OutboundEdge
