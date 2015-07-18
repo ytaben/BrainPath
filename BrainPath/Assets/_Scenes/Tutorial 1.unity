@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 473725250}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &19143095
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -510,6 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &35350849
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -664,6 +666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &50895677
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -752,6 +755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &51407388
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1532,6 +1536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &117766762
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2971,7 +2976,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &232009526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3098,6 +3103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &236258177
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4647,6 +4653,7 @@ MonoBehaviour:
   isExplored: 0
   isNew: 0
   pathNode: {fileID: 0}
+  name: Inferior Temporal Cortex
   outboundEdges:
   - destination: {fileID: 1785720409}
     cost: 50
@@ -4871,6 +4878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &342944209
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5758,6 +5766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &391382728
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5846,6 +5855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &402263424
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6485,6 +6495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &455757211
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6898,6 +6909,7 @@ MonoBehaviour:
   isExplored: 0
   isNew: 0
   pathNode: {fileID: 1520652349}
+  name: Thalamus
   outboundEdges:
   - destination: {fileID: 1785720409}
     cost: 50
@@ -7643,6 +7655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &542168181
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8258,6 +8271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &582410261
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9054,6 +9068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &623500506
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9819,6 +9834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &660886520
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9907,6 +9923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &662207735
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10942,6 +10959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &715611403
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11159,6 +11177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &735244582
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11247,6 +11266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &746719629
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11335,6 +11355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &749291076
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11543,6 +11564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &778215382
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11866,6 +11888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &805944516
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12008,6 +12031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &813103294
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12096,6 +12120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &813720034
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12184,6 +12209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &814511952
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12404,6 +12430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &834410876
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12492,6 +12519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &835027081
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12580,6 +12608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &848636703
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13034,6 +13063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &878844734
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13298,6 +13328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 329039376}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &899422690
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13548,6 +13579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &913810527
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13755,6 +13787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 329039376}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &942301171
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13966,6 +13999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &946266606
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14552,6 +14586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1012738947
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14640,6 +14675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1023515853
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14728,6 +14764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1038227386
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14943,6 +14980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1071428462
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15031,6 +15069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1083104040
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15119,6 +15158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1099471299
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15749,6 +15789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1141266903
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15954,6 +15995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1152458066
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16430,6 +16472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1204153449
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16762,6 +16805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1240488152
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16965,6 +17009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1271565304
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17584,6 +17629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 0}
 --- !u!64 &1314599742
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18032,6 +18078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 329039376}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1323794466
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18679,6 +18726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1388705778
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19089,6 +19137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1415402238
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19482,6 +19531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 473725250}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1438486547
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19697,6 +19747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1442490732
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20409,6 +20460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1523359612
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20811,6 +20863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1533509283
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21214,6 +21267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1584169164
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21375,6 +21429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1585788904
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22429,6 +22484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1691786757
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23085,6 +23141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1733964765
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23526,6 +23583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 329039376}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1767982014
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23730,6 +23788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1770500563
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -23818,6 +23877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1770726704
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24166,6 +24226,7 @@ MonoBehaviour:
   isExplored: 0
   isNew: 0
   pathNode: {fileID: 943387681}
+  name: Primary Motor Cortex
   outboundEdges:
   - destination: {fileID: 1785720409}
     cost: 50
@@ -24384,6 +24445,7 @@ MonoBehaviour:
   isExplored: 0
   isNew: 0
   pathNode: {fileID: 1099642953}
+  name: Visual Cortex
   outboundEdges:
   - destination: {fileID: 473725243}
     cost: 50
@@ -24738,6 +24800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1831286165
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24826,6 +24889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1836787457
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25083,6 +25147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1865606415
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25237,6 +25302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1877417589
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25399,6 +25465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1890172978
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -25423,6 +25490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 0}
 --- !u!1 &1890204358
 GameObject:
   m_ObjectHideFlags: 0
@@ -26149,6 +26217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1952173670
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26237,6 +26306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1953344359
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26459,6 +26529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &1956895378
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27335,6 +27406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &2033209093
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27784,6 +27856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &2046463508
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28302,6 +28375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &2092464775
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28560,6 +28634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &2119591882
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28648,6 +28723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
+  labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
 --- !u!64 &2130047759
 MeshCollider:
   m_ObjectHideFlags: 0
