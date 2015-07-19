@@ -5449,8 +5449,8 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .82683605, y: .276000023}
   m_AnchorMax: {x: .896841407, y: .834833562}
-  m_AnchoredPosition: {x: -.140380859, y: .224894166}
-  m_SizeDelta: {x: .300000012, y: -.225291044}
+  m_AnchoredPosition: {x: -.0449767113, y: .224894166}
+  m_SizeDelta: {x: .866228998, y: -.225291044}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &376030157
 MonoBehaviour:
@@ -5619,8 +5619,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .919477165, y: .276000023}
   m_AnchorMax: {x: .986733139, y: .834833562}
-  m_AnchoredPosition: {x: -.256100655, y: .224901676}
-  m_SizeDelta: {x: .146174431, y: -.225275993}
+  m_AnchoredPosition: {x: -.0449766964, y: .224901676}
+  m_SizeDelta: {x: .866229057, y: -.225275993}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &386118949
 MonoBehaviour:
@@ -24595,7 +24595,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Visual Stimuli
+  m_Text: '<b>Visual Stimuli</b>
 
 '
 --- !u!222 &1803636240
