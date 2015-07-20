@@ -2327,6 +2327,7 @@ GameObject:
   - 114: {fileID: 182287097}
   - 114: {fileID: 182287098}
   - 114: {fileID: 182287099}
+  - 114: {fileID: 182287100}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -2422,6 +2423,22 @@ MonoBehaviour:
   - {fileID: 438667656}
   - {fileID: 31739281}
   - {fileID: 1745767633}
+--- !u!114 &182287100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 182287095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf7f8049c5218c4a98531586d3cab1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleText: {fileID: 36696657}
+  messageText: {fileID: 1242365502}
+  okButton: {fileID: 1580808758}
+  cancelButton: {fileID: 1102266207}
+  modalPanelObject: {fileID: 284916279}
 --- !u!1 &183621533
 GameObject:
   m_ObjectHideFlags: 0
@@ -4068,7 +4085,6 @@ GameObject:
   - 224: {fileID: 284916280}
   - 222: {fileID: 284916282}
   - 114: {fileID: 284916281}
-  - 114: {fileID: 284916283}
   m_Layer: 5
   m_Name: ModalPanel
   m_TagString: Untagged
@@ -4122,22 +4138,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 284916279}
---- !u!114 &284916283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 284916279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caf7f8049c5218c4a98531586d3cab1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleText: {fileID: 36696657}
-  messageText: {fileID: 1242365502}
-  okButton: {fileID: 1580808758}
-  cancelButton: {fileID: 1102266207}
-  modalPanelObject: {fileID: 284916279}
 --- !u!1 &289933058
 GameObject:
   m_ObjectHideFlags: 0
