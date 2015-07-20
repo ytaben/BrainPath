@@ -22,7 +22,7 @@ public class ModalPanel : MonoBehaviour {
         {
             modalPanel = FindObjectOfType(typeof(ModalPanel)) as ModalPanel;
         }
-        else Debug.Log("Modal Panel Instance Not found");
+        if (!modalPanel) Debug.Log("Modal Panel Instance Not found");
 
         return modalPanel;
     }
