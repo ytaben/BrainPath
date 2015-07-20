@@ -42,6 +42,10 @@ public class ModalPanel : MonoBehaviour {
         okButton.onClick.RemoveAllListeners();
         okButton.onClick.AddListener(okAction);
         okButton.onClick.AddListener(() => { modalPanelObject.SetActive(false); brainBlock.SetActive(false); });
+        
+        //Hack to proceed in tutorials
+        GameObject cancelBlock = GameObject.Find("cancelBlock");
+        if (cancelBlock) okButton.onClick.AddListener(() => cancelBlock.SetActive(false));
 
         cancelButton.onClick.RemoveAllListeners();
         cancelButton.onClick.AddListener(cancelAction);
