@@ -9664,8 +9664,8 @@ MonoBehaviour:
     to access it.
 
 
-    <b>Try to split the brain now. Choose "Split" from the Brain View drop down menu
-    on the left</b>'
+    <color=blue><b>Try to split the brain now. Choose "Split" from the Brain View
+    drop down menu on the left</b></color>'
 --- !u!222 &658281339
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19981,7 +19981,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Excellent!
 
-    Now simply <b>click on thalamus.</b> It''s located in the "middle" of the brain.'
+    Now simply <color=blue><b>click on thalamus.</b></color> It''s located in the
+    "middle" of the brain.'
 --- !u!222 &1473091124
 CanvasRenderer:
   m_ObjectHideFlags: 0
