@@ -1090,10 +1090,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2146879610}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: .0500000007, y: .150000006}
+  m_AnchorMax: {x: .949999988, y: .839999974}
+  m_AnchoredPosition: {x: .5, y: 0}
+  m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &90646120
 MonoBehaviour:
@@ -2349,7 +2349,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The first thing we have to learn is how to actually navigate our brain.
+  m_Text: In order to trigger parts of the brain, we have to visit them first, so
+    let's learn how to navigate the brain!
 --- !u!222 &183621536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2806,10 +2807,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1344788522}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: .0500000007, y: .150000006}
+  m_AnchorMax: {x: .949999988, y: .839999974}
+  m_AnchoredPosition: {x: .5, y: 0}
+  m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &221454049
 MonoBehaviour:
@@ -5040,7 +5041,7 @@ RectTransform:
   m_Father: {fileID: 1525276402}
   m_RootOrder: 1
   m_AnchorMin: {x: .585142255, y: .0570000038}
-  m_AnchorMax: {x: .972476244, y: .177915081}
+  m_AnchorMax: {x: .972476244, y: .19708553}
   m_AnchoredPosition: {x: -.599998474, y: -.300003052}
   m_SizeDelta: {x: 2.5, y: 3}
   m_Pivot: {x: .5, y: .5}
@@ -5938,7 +5939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &420700578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5953,8 +5954,8 @@ RectTransform:
   - {fileID: 1344788522}
   m_Father: {fileID: 149745110}
   m_RootOrder: 24
-  m_AnchorMin: {x: .238544524, y: .444662184}
-  m_AnchorMax: {x: .431014657, y: .808353364}
+  m_AnchorMin: {x: .238544524, y: .443124801}
+  m_AnchorMax: {x: .439178765, y: .808353364}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: .5, y: .5}
@@ -8053,7 +8054,6 @@ GameObject:
   - 114: {fileID: 578721822}
   - 114: {fileID: 578721821}
   - 114: {fileID: 578721826}
-  - 114: {fileID: 578721827}
   m_Layer: 5
   m_Name: SplitStateButton
   m_TagString: Untagged
@@ -8183,18 +8183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctStage: 4
---- !u!114 &578721827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 578721819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41eaa6dd8262ec24b99c82c1f0e63407, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 474113354}
 --- !u!1 &582410256
 GameObject:
   m_ObjectHideFlags: 0
@@ -8405,7 +8393,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &588064302
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9606,15 +9594,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Nice!
 
-    A few final notes about navigation:
-
-    - Unexplored nodes cannot be visited and are transparent in 3D model
-
-
-    - All explored nodes are shown in Brain Navigation
-
-
-    - New nodes are found by visiting known nodes'
+    We found a connection to visual cortex. But before we go there, let''s trigger
+    thalamus, since it''s the first step in processing visual information.'
 --- !u!222 &656339803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9672,7 +9653,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 5b28bcbda11212e4a8dafe8b0c3971a5, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -9680,12 +9661,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Some parts of the brain, such as Thalamus, are hidden inside. But there
-    is a way to access them.
+  m_Text: 'Since thalamus is not on the surface, we have to split the two hemispheres
+    to access it.
 
 
-    You can split the two hemispheres of the brain or turn it upside-down by using
-    the "Brain View" drop down menu one the left. <b>Try splitting the brain now.</b>'
+    <b>Try to split the brain now. Choose "Split" from the Brain View drop down menu
+    on the left</b>'
 --- !u!222 &658281339
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11003,7 +10984,7 @@ RectTransform:
   - {fileID: 2146879610}
   m_Father: {fileID: 149745110}
   m_RootOrder: 29
-  m_AnchorMin: {x: .710647464, y: .562273264}
+  m_AnchorMin: {x: .710647464, y: .615323186}
   m_AnchorMax: {x: .948388815, y: .861000061}
   m_AnchoredPosition: {x: -.0009765625, y: 1.24261475}
   m_SizeDelta: {x: -1.99908447, y: .226257324}
@@ -12878,10 +12859,10 @@ RectTransform:
   - {fileID: 1469911007}
   m_Father: {fileID: 1437918187}
   m_RootOrder: 1
-  m_AnchorMin: {x: .589721084, y: .0570000038}
-  m_AnchorMax: {x: .972476244, y: .244101733}
-  m_AnchoredPosition: {x: -.599914551, y: -.300018311}
-  m_SizeDelta: {x: 2.5, y: 3.00000381}
+  m_AnchorMin: {x: .585142255, y: .0570000038}
+  m_AnchorMax: {x: .972476244, y: .19708553}
+  m_AnchoredPosition: {x: -.599998474, y: -.300003052}
+  m_SizeDelta: {x: 2.5, y: 3}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &874406878
 MonoBehaviour:
@@ -13135,9 +13116,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: In order to accomplish your objectives, you will have to perform actions
-    in the correct parts of the brain and in the correct sequence, before the time
-    runs out.
+  m_Text: In order to win, you have to build a path from the stimuli or input information
+    to the reaction or the output information
 --- !u!222 &881296500
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13466,10 +13446,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 261069869}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: .0500000007, y: .150000006}
+  m_AnchorMax: {x: .949999988, y: .839999974}
+  m_AnchoredPosition: {x: .5, y: 0}
+  m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &911674800
 MonoBehaviour:
@@ -18552,7 +18532,7 @@ RectTransform:
   - {fileID: 261069869}
   m_Father: {fileID: 149745110}
   m_RootOrder: 27
-  m_AnchorMin: {x: .238544524, y: .388553292}
+  m_AnchorMin: {x: .238544524, y: .344098121}
   m_AnchorMax: {x: .458256572, y: .734143078}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -1}
@@ -19421,7 +19401,7 @@ RectTransform:
   - {fileID: 874406877}
   m_Father: {fileID: 149745110}
   m_RootOrder: 28
-  m_AnchorMin: {x: .710647464, y: .686673105}
+  m_AnchorMin: {x: .710647464, y: .615323186}
   m_AnchorMax: {x: .948388815, y: .861000061}
   m_AnchoredPosition: {x: -.000854492188, y: 1.24261475}
   m_SizeDelta: {x: -1.99908447, y: .226257324}
@@ -19838,7 +19818,7 @@ MonoBehaviour:
   - {fileID: 238167285}
   - {fileID: 482052221}
   - {fileID: 131801581}
-  timeout: 5
+  timeout: 0
 --- !u!1 &1463820166
 GameObject:
   m_ObjectHideFlags: 0
@@ -19972,10 +19952,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 874406877}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: .0500000007, y: .150000006}
+  m_AnchorMax: {x: .949999988, y: .839999974}
+  m_AnchoredPosition: {x: .5, y: 0}
+  m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1469911008
 MonoBehaviour:
@@ -20068,8 +20048,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Excellent!\nNow let't try to visit Thalamus. \n\nYou can do it either by
-    <b>clicking Thalamus in the Navigation menu</b> or on the <b>3D model of the brain.</b>"
+  m_Text: 'Excellent!
+
+    Now simply <b>click on thalamus.</b> It''s located in the "middle" of the brain.'
 --- !u!222 &1473091124
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21960,8 +21941,8 @@ RectTransform:
   - {fileID: 1473091122}
   m_Father: {fileID: 149745110}
   m_RootOrder: 25
-  m_AnchorMin: {x: .238544524, y: .537912905}
-  m_AnchorMax: {x: .440043658, y: .808353364}
+  m_AnchorMin: {x: .238544524, y: .636307836}
+  m_AnchorMax: {x: .439178765, y: .808353364}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: .5, y: .5}
@@ -23350,7 +23331,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1525276402}
   m_RootOrder: 0
-  m_AnchorMin: {x: .0664586723, y: .223010674}
+  m_AnchorMin: {x: .0493383408, y: .223010674}
   m_AnchorMax: {x: .950026035, y: .922347009}
   m_AnchoredPosition: {x: 1, y: .299999237}
   m_SizeDelta: {x: 0, y: 1.5}
@@ -25920,10 +25901,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 359760122}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: .0500000007, y: .150000006}
+  m_AnchorMax: {x: .949999988, y: .839999974}
+  m_AnchoredPosition: {x: .5, y: 0}
+  m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1909225700
 MonoBehaviour:
@@ -27758,7 +27739,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 5b28bcbda11212e4a8dafe8b0c3971a5, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -27766,14 +27747,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'There are two ways to navigate around the brain.
-
-
-    The first way is to simply click on a node in the brain menu.
-
-
-    The second way is to click the part of the brain you want to visit using the 3D
-    model.'
+  m_Text: "You can visit different parts of the brain (also called nodes) using either
+    <b>Brain Navigation</b> menu on left, or by clicking a node on the 3D model. \n\nLet's
+    try the second way"
 --- !u!222 &2042855999
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28768,10 +28744,10 @@ RectTransform:
   - {fileID: 90646119}
   m_Father: {fileID: 717561656}
   m_RootOrder: 1
-  m_AnchorMin: {x: .58226192, y: .0570000038}
-  m_AnchorMax: {x: .972476244, y: .181661129}
-  m_AnchoredPosition: {x: -.599914551, y: -.300018311}
-  m_SizeDelta: {x: 2.5, y: 3.00000381}
+  m_AnchorMin: {x: .585142255, y: .0570000038}
+  m_AnchorMax: {x: .972476244, y: .19708553}
+  m_AnchoredPosition: {x: -.599998474, y: -.300003052}
+  m_SizeDelta: {x: 2.5, y: 3}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2146879611
 MonoBehaviour:
