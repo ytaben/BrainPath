@@ -10,6 +10,7 @@ public class ModalPanel : MonoBehaviour {
     public Button okButton;
     public Button cancelButton;
     public GameObject modalPanelObject;
+    public GameObject brainBlock; //An object to block clicks on the brain
 
 
     //Make modal panel singleton
@@ -40,12 +41,13 @@ public class ModalPanel : MonoBehaviour {
 
         okButton.onClick.RemoveAllListeners();
         okButton.onClick.AddListener(okAction);
-        okButton.onClick.AddListener(() => modalPanelObject.SetActive(false));
+        okButton.onClick.AddListener(() => { modalPanelObject.SetActive(false); brainBlock.SetActive(false); });
 
         cancelButton.onClick.RemoveAllListeners();
         cancelButton.onClick.AddListener(cancelAction);
-        cancelButton.onClick.AddListener(() => modalPanelObject.SetActive(false));
+        cancelButton.onClick.AddListener(() => { modalPanelObject.SetActive(false); brainBlock.SetActive(false); });
 
         modalPanelObject.SetActive(true);
+        brainBlock.SetActive(true);
     }
 }
