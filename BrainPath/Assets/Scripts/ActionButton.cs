@@ -41,6 +41,10 @@ public class ActionButton : MonoBehaviour
     */
     public void OnClick()
     {
+        ModalPanel.Instance().Prompt("Confirm Action", "This action will cost " + actionCost.ToString() + "ms", () => PerformAction(), () => { });
+    }
+    public void PerformAction()
+    {
         gameController.IncreaseTime(actionCost);
         if (gameController.currentStage > correctState)
         {
