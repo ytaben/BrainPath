@@ -10,6 +10,7 @@ public class ModalPanel : MonoBehaviour {
     public Button okButton;
     public Button cancelButton;
     public GameObject modalPanelObject;
+    public GameObject cancelBlock;
     public GameObject brainBlock; //An object to block clicks on the brain
 
 
@@ -41,11 +42,7 @@ public class ModalPanel : MonoBehaviour {
 
         okButton.onClick.RemoveAllListeners();
         okButton.onClick.AddListener(okAction);
-        okButton.onClick.AddListener(() => { modalPanelObject.SetActive(false); brainBlock.SetActive(false); });
-        
-        //Hack to proceed in tutorials
-        GameObject cancelBlock = GameObject.Find("cancelBlock");
-        if (cancelBlock) okButton.onClick.AddListener(() => cancelBlock.SetActive(false));
+        okButton.onClick.AddListener(() => { modalPanelObject.SetActive(false); brainBlock.SetActive(false); cancelBlock.SetActive(false); });
 
         cancelButton.onClick.RemoveAllListeners();
         cancelButton.onClick.AddListener(cancelAction);
