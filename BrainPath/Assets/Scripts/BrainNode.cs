@@ -31,7 +31,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
 
     //A drop down menu to choose which animation should be triggered upon being active or hovering over this node
-    public enum AnimationChoice {Normal, Split, UpsideDown}
+    public enum AnimationChoice { Normal, Split, UpsideDown }
     public AnimationChoice BrainState;
 
     // private CanvasGroup canvasGroup; //Useful to control alpha of the element
@@ -42,7 +42,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     // Use this for initialization
     void Awake()
     {
-        
+
         button = GetComponent<Button>();
         button.onClick.AddListener(OnClickBrainNode); //Add an onClick listener 
         outboundNodes = new System.Collections.Generic.Dictionary<GameObject, int>();
@@ -65,7 +65,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public void Refresh()
     {
-        
+
         if (!isExplored)
         {
             SetColor(Color.black);
@@ -80,7 +80,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             SetColor(Color.yellow);
             SetMaterial(materialController.outboundMaterial);
         }
-        
+
         if (isActive)
         {
             SetColor(Color.green);
@@ -94,18 +94,19 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         foreach (BrainNode.OutboundEdge brainNode in outboundEdges)
         {
-            if (true) {//!brainNode.destination.activeSelf) { 
-            brainNode.destination.SetActive(true);
-            BrainNode script = brainNode.destination.GetComponent<BrainNode>();
-            script.isNew = true; script.isExplored = true; script.Refresh();
+            if (true)
+            {//!brainNode.destination.activeSelf) { 
+                brainNode.destination.SetActive(true);
+                BrainNode script = brainNode.destination.GetComponent<BrainNode>();
+                script.isNew = true; script.isExplored = true; script.Refresh();
                 Refresh();
-        }
+            }
         }
     }
 
     public void MarkCorrectPathNode()
     {
-        if(pathNode) pathNode.MarkCorrect();
+        if (pathNode) pathNode.MarkCorrect();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -120,7 +121,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         SetColor(Color.yellow);
         SetMaterial(materialController.highlitedMaterial);
         GetComponent<Text>().fontStyle = FontStyle.Bold;
-        
+
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -131,12 +132,12 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
     public void OnPointerExit()
     {
-        
+
         GetComponent<Text>().fontStyle = FontStyle.Normal;
         Refresh();
         gameController.RefreshActive();
     }
-    
+
     private void SetColor(Color color)
     {
         ColorBlock buttonColors;
@@ -158,6 +159,25 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     //On Click - notify gameController using the Transition method
     public void OnClickBrainNode()
     {
+
+
+        //if (isActive) { nodeMenu.gameObject.SetActive(enabled); return; } //We open menus automatically now
+        Dictionary<GameObject, int> costs = FindCost(gameObject);
+        int cost = costs[gameController.activeNode];
+        //If cost is greater than 0 - pop a window asking for confirmation
+        if (cost > 0)
+        {
+            //Prompt a modal panel to confirm navigation
+            ModalPanel modalPanel = ModalPanel.Instance();
+            if (!modalPanel) Debug.Log("Modal Panel not found");
+            modalPanel.Prompt("Navigation Confirmation", "Confirm Navigation.\nCost: " + cost.ToString() + "ms",
+                () => { gameController.Transition(gameObject, cost); ExploreNode(); }, () => { });
+        }
+        else { gameController.Transition(gameObject, cost); ExploreNode(); }//TODO: SET APPROPRIATE COST
+    }
+
+    public void ExploreNode()
+    {
         if (!isVisited)
         {
             isVisited = true;
@@ -174,18 +194,6 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             treeNode.Expand();
         }
         Refresh();
-        
-        //if (isActive) { nodeMenu.gameObject.SetActive(enabled); return; } //We open menus automatically now
-        Dictionary<GameObject, int> costs = FindCost(gameObject);
-        int cost = costs[gameController.activeNode];
-        //If cost is greater than 0 - pop a window asking for confirmation
-        if (cost > 0) {
-
-            ModalPanel modalPanel = ModalPanel.Instance();
-            if (!modalPanel) Debug.Log("Modal Panel not found");
-            modalPanel.Prompt("Navigation Confirmation", "Confirm Navigation.\nCost: " + cost.ToString() + "ms", () => gameController.Transition(gameObject, cost), () => { });
-        }
-        else gameController.Transition(gameObject, cost); //TODO: SET APPROPRIATE COST
     }
 
     public static Dictionary<GameObject, int> FindCost(GameObject source)
@@ -194,7 +202,7 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         Dictionary<GameObject, int> distance = new Dictionary<GameObject, int>();
         Dictionary<GameObject, bool> marked = new Dictionary<GameObject, bool>();
         GameObject[] allNodes = GameController.getInstance().allBrainNodes;
-        foreach (GameObject node in allNodes) { distance[node] = -1; marked[node] = false;} //Initialize the "graph"
+        foreach (GameObject node in allNodes) { distance[node] = -1; marked[node] = false; } //Initialize the "graph"
 
         distance[source] = 0;
         marked[source] = true;
@@ -216,5 +224,5 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         }
         return distance;
     }
-    
+
 }
