@@ -177,7 +177,15 @@ public class BrainNode : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         
         //if (isActive) { nodeMenu.gameObject.SetActive(enabled); return; } //We open menus automatically now
         Dictionary<GameObject, int> costs = FindCost(gameObject);
-        gameController.Transition(gameObject, costs[gameController.activeNode]); //TODO: SET APPROPRIATE COST
+        int cost = costs[gameController.activeNode];
+        //If cost is greater than 0 - pop a window asking for confirmation
+        if (cost > 0) {
+
+            ModalPanel modalPanel = ModalPanel.Instance();
+            if (!modalPanel) Debug.Log("Modal Panel not found");
+            modalPanel.Prompt("Navigation Confirmation", "Confirm Navigation.\nCost: " + cost.ToString() + "ms", () => gameController.Transition(gameObject, cost), () => { });
+        }
+        else gameController.Transition(gameObject, cost); //TODO: SET APPROPRIATE COST
     }
 
     public static Dictionary<GameObject, int> FindCost(GameObject source)
