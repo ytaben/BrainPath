@@ -799,7 +799,7 @@ RectTransform:
   - {fileID: 1319651833}
   m_Father: {fileID: 149745110}
   m_RootOrder: 22
-  m_AnchorMin: {x: .561373591, y: .388553292}
+  m_AnchorMin: {x: .56635499, y: .482611001}
   m_AnchorMax: {x: .77400744, y: .752567768}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -1}
@@ -2043,7 +2043,7 @@ RectTransform:
   - {fileID: 570085541}
   m_Father: {fileID: 149745110}
   m_RootOrder: 21
-  m_AnchorMin: {x: .572061598, y: .388553292}
+  m_AnchorMin: {x: .56635499, y: .51273644}
   m_AnchorMax: {x: .77400744, y: .752567768}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -1}
@@ -7954,10 +7954,10 @@ RectTransform:
   - {fileID: 189863612}
   m_Father: {fileID: 165188937}
   m_RootOrder: 1
-  m_AnchorMin: {x: .423550874, y: .0573478639}
-  m_AnchorMax: {x: .95934695, y: .191304818}
-  m_AnchoredPosition: {x: .894683838, y: -1.31018066}
-  m_SizeDelta: {x: 1.78942871, y: 2.62036514}
+  m_AnchorMin: {x: .575806141, y: .0570000038}
+  m_AnchorMax: {x: .972476244, y: .218940884}
+  m_AnchoredPosition: {x: -.599998474, y: -.300003052}
+  m_SizeDelta: {x: 2.5, y: 3}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &570085542
 MonoBehaviour:
@@ -14412,16 +14412,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Actions are used for triggering parts of the brain.
-
-
-    - Only correct actions and in correct sequence trigger brain parts
-
-
-    - I.E. Thalamus has to be triggered before visual cortex
-
-
-    - Performing actions displays a message with valuable information'
+  m_Text: "Actions are especially important: they can trigger brain parts, and you
+    need that to win the game. \nIn this case there is only one action, so you can't
+    go wrong."
 --- !u!222 &976043464
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17690,10 +17683,10 @@ RectTransform:
   - {fileID: 834403339}
   m_Father: {fileID: 54381454}
   m_RootOrder: 1
-  m_AnchorMin: {x: .423550874, y: .0573478639}
-  m_AnchorMax: {x: .95934695, y: .191304818}
-  m_AnchoredPosition: {x: .894683838, y: -1.31018066}
-  m_SizeDelta: {x: 1.78942871, y: 2.62036514}
+  m_AnchorMin: {x: .557430506, y: .0570000038}
+  m_AnchorMax: {x: .972476244, y: .224854335}
+  m_AnchoredPosition: {x: -.599998474, y: -.300003052}
+  m_SizeDelta: {x: 2.5, y: 3}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1319651834
 MonoBehaviour:
@@ -18829,7 +18822,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: d8aebe311dceeaa4495f11256a632b3f, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -20024,7 +20017,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1609397526}
   m_RootOrder: 0
-  m_AnchorMin: {x: .0481019318, y: .218940884}
+  m_AnchorMin: {x: .0481019318, y: .0645106137}
   m_AnchorMax: {x: .95934695, y: .946568191}
   m_AnchoredPosition: {x: 2, y: .5}
   m_SizeDelta: {x: 0, y: -2}
@@ -20046,7 +20039,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: d8aebe311dceeaa4495f11256a632b3f, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -20054,9 +20047,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The role of Thalamus in this task is to transfer visual information. \n\nTry
-    to <b>trigger Thalamus by clicking the appropriate action in the menu on the right.</b>\n\nDoing
-    so correctly will display a message."
+  m_Text: "The role of Thalamus in this task is to transfer visual information. \n\n<color=blue><b>Trigger
+    Thalamus by clicking the appropriate action in the menu on the right.</b></color>"
 --- !u!222 &1503738612
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21566,7 +21558,7 @@ RectTransform:
   - {fileID: 1503738610}
   m_Father: {fileID: 149745110}
   m_RootOrder: 23
-  m_AnchorMin: {x: .572061598, y: .388553292}
+  m_AnchorMin: {x: .572061598, y: .5}
   m_AnchorMax: {x: .77400744, y: .752567768}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -1}
