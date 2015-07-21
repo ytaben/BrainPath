@@ -16846,7 +16846,6 @@ GameObject:
   - 224: {fileID: 1186059586}
   - 222: {fileID: 1186059589}
   - 114: {fileID: 1186059588}
-  - 114: {fileID: 1186059587}
   m_Layer: 5
   m_Name: HelpVisualCortex1
   m_TagString: Untagged
@@ -16873,20 +16872,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: .5, y: .5}
---- !u!114 &1186059587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1186059585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70dfe83e8c302ad458b01317635b6cbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elements:
-  - {fileID: 1785720409}
-  timeout: 0
 --- !u!114 &1186059588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21039,7 +21024,6 @@ GameObject:
   - 224: {fileID: 1494499371}
   - 222: {fileID: 1494499374}
   - 114: {fileID: 1494499373}
-  - 114: {fileID: 1494499372}
   m_Layer: 5
   m_Name: HelpVisualCortex0
   m_TagString: Untagged
@@ -21065,20 +21049,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -1}
   m_Pivot: {x: .5, y: .5}
---- !u!114 &1494499372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1494499370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70dfe83e8c302ad458b01317635b6cbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elements:
-  - {fileID: 1785720409}
-  timeout: 0
 --- !u!114 &1494499373
 MonoBehaviour:
   m_ObjectHideFlags: 0
