@@ -10139,7 +10139,7 @@ MonoBehaviour:
   m_Text: 'Nice!
 
     We found a connection to visual cortex. But before we go there, let''s trigger
-    thalamus, since it''s the first step in processing visual information.'
+    the thalamus, since it''s the first step in processing visual information.'
 --- !u!222 &656339803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10205,7 +10205,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Since thalamus is not on the surface, we have to split the two hemispheres
+  m_Text: 'Since the thalamus is not on the surface, we have to split the two hemispheres
     to access it.
 
 
@@ -13726,8 +13726,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: In order to win, you have to build a path from the stimuli or input information
-    to the reaction or the output information
+  m_Text: In order to win, you have to build a path from the stimuli or the input
+    information to the reaction or the output information
 --- !u!222 &881296500
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21402,7 +21402,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Excellent!
 
-    Now simply <color><b>click on thalamus.</b></color> It''s located in the "middle"
+    Now simply <color><b>click on the thalamus.</b></color> It''s located in the "middle"
     of the brain.'
 --- !u!222 &1473091124
 CanvasRenderer:
