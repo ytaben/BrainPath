@@ -2949,6 +2949,22 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: -.200000763
       objectReference: {fileID: 0}
+    - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
+      propertyPath: m_Color.r
+      value: .113725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
+      propertyPath: m_Color.r
+      value: .113725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
   m_IsPrefabParent: 0
@@ -10238,8 +10254,8 @@ MonoBehaviour:
     to access it.
 
 
-    <color=white><b>Try to split the brain now. Choose "Split" from the Brain View
-    drop down menu on the left</b></color>'
+    <color=#1DFF00FF><b>Try to split the brain now. Choose "Split" from the Brain
+    View drop down menu on the left</b></color>'
 --- !u!222 &658281339
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12362,31 +12378,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22466080, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -14.3701782
+      value: 1.12982178
       objectReference: {fileID: 0}
     - target: {fileID: 22466080, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_SizeDelta.x
-      value: -16.4930344
+      value: -18.4930344
       objectReference: {fileID: 0}
     - target: {fileID: 22466080, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_SizeDelta.y
-      value: -7.8717041
+      value: -10.8717041
       objectReference: {fileID: 0}
     - target: {fileID: 22466080, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_AnchorMin.x
-      value: .971480429
+      value: .96473521
       objectReference: {fileID: 0}
     - target: {fileID: 22466080, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_AnchorMin.y
-      value: -.894783378
+      value: -1.02600002
       objectReference: {fileID: 0}
     - target: {fileID: 22466080, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1.2397598
+      value: 1.24514806
       objectReference: {fileID: 0}
     - target: {fileID: 22466080, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_AnchorMax.y
-      value: -.52456665
+      value: -.632586896
       objectReference: {fileID: 0}
     - target: {fileID: 22466080, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Pivot.x
@@ -12426,7 +12442,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.g
@@ -12434,7 +12450,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 128892, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Name
@@ -12442,11 +12458,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.r
-      value: 1
+      value: .113725491
       objectReference: {fileID: 0}
     - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.r
-      value: 1
+      value: .113725491
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
@@ -17652,7 +17668,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.r
-      value: 1
+      value: .113725491
       objectReference: {fileID: 0}
     - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.g
@@ -17660,11 +17676,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.r
-      value: 1
+      value: .113725491
       objectReference: {fileID: 0}
     - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.g
@@ -17672,7 +17688,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
       propertyPath: m_Color.a
@@ -22014,8 +22030,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Excellent!
 
-    Now simply <color><b>click on the thalamus.</b></color> It''s located in the "middle"
-    of the brain.'
+    Now simply <color=#1DFF00FF><b>click on the thalamus.</b></color> It''s located
+    in the "middle" of the brain.'
 --- !u!222 &1473091124
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22143,7 +22159,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The role of Thalamus in this task is to transfer visual information. \n\n<color><b>Trigger
+  m_Text: "The role of Thalamus in this task is to transfer visual information. \n\n<color=#1DFF00FF><b>Trigger
     Thalamus by clicking the appropriate action in the menu on the right.</b></color>"
 --- !u!222 &1503738612
 CanvasRenderer:
@@ -28154,6 +28170,30 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: -.200000763
       objectReference: {fileID: 0}
+    - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
+      propertyPath: m_Color.r
+      value: .113725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11438940, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
+      propertyPath: m_Color.r
+      value: .113725491
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11466532, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c8073d0eca51084687e62f4c4e51a76, type: 2}
   m_IsPrefabParent: 0
@@ -30684,7 +30724,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Now that we've learned the basics, let's try to trigger another node. \n<color>Travel
+  m_Text: "Now that we've learned the basics, let's try to trigger another node. \n<color=#1DFF00FF>Travel
     to <b>Visual Cortex.</b> This time, use the <b>Brain Navigation</b> menu on the
     left.</color>"
 --- !u!222 &2048086950
