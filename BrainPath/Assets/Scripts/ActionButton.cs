@@ -51,19 +51,19 @@ public class ActionButton : MonoBehaviour
             if (isCorrect) { gameController.DisplayMessage(LateMessage, Color.yellow); }
             else
             {
-                gameController.DisplayMessage(LateMessage, Color.red);
+                gameController.DisplayMessage(LateMessage, Color.yellow);
             }
         }
         else if (gameController.currentStage < correctState)
         {
-            gameController.DisplayMessage(earlyMessage, Color.red);
+            gameController.DisplayMessage(earlyMessage, Color.yellow);
         }
         else
         {
             if (isCorrect) { gameController.IncrementStage(); gameController.DisplayMessage(correctMessage, Color.green); brainNode.MarkCorrectPathNode(); }
             else
             {
-                gameController.DisplayMessage(correctMessage, Color.red);
+                gameController.DisplayMessage(correctMessage, Color.yellow);
             }
         }
     }
