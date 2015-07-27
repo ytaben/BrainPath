@@ -53,18 +53,18 @@ public class ActionButton : MonoBehaviour
         if (gameController.currentStage > correctState)
         {
             if (isCorrect) { //TOO LATE ANSWER ON RIGHT NODE
-                gameController.DisplayMessage(LateMessage, Color.yellow);
+                gameController.DisplayMessage(LateMessage, Color.white);
                 mainAudioSource.PlayOneShot(soundManager.wrongActionSound);
             }
             else
             { //TOO LATE ANSWER ON WRONG NODE
-                gameController.DisplayMessage(LateMessage, Color.yellow);
+                gameController.DisplayMessage(LateMessage, Color.white);
                 mainAudioSource.PlayOneShot(soundManager.wrongActionSound);
             }
         }
         else if (gameController.currentStage < correctState)
         { //TOO EARLY ANSWER
-            gameController.DisplayMessage(earlyMessage, Color.yellow);
+            gameController.DisplayMessage(earlyMessage, Color.white);
             mainAudioSource.PlayOneShot(soundManager.wrongActionSound);
         }
         else
@@ -77,7 +77,7 @@ public class ActionButton : MonoBehaviour
             }
             else
             { //CORRECT TIME BUT WRONG NODE
-                gameController.DisplayMessage(correctMessage, Color.yellow);
+                gameController.DisplayMessage(correctMessage, Color.white);
                 mainAudioSource.PlayOneShot(soundManager.wrongActionSound);
             }
         }
