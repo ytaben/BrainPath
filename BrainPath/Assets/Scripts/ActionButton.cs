@@ -48,21 +48,26 @@ public class ActionButton : MonoBehaviour
         gameController.IncreaseTime(actionCost);
         if (gameController.currentStage > correctState)
         {
-            if (isCorrect) { gameController.DisplayMessage(LateMessage, Color.yellow); }
+            if (isCorrect) { //TOO LATE ANSWER ON RIGHT NODE
+                gameController.DisplayMessage(LateMessage, Color.yellow);
+            }
             else
-            {
+            { //TOO LATE ANSWER ON WRONG NODE
                 gameController.DisplayMessage(LateMessage, Color.yellow);
             }
         }
         else if (gameController.currentStage < correctState)
-        {
+        { //TOO EARLY ANSWER
             gameController.DisplayMessage(earlyMessage, Color.yellow);
         }
         else
         {
-            if (isCorrect) { gameController.IncrementStage(); gameController.DisplayMessage(correctMessage, Color.green); brainNode.MarkCorrectPathNode(); }
+            if (isCorrect) { // CORRECT ANSWER AT RIGHT TIME
+                gameController.IncrementStage();
+                gameController.DisplayMessage(correctMessage, Color.green);
+                brainNode.MarkCorrectPathNode(); }
             else
-            {
+            { //CORRECT TIME BUT WRONG NODE
                 gameController.DisplayMessage(correctMessage, Color.yellow);
             }
         }
