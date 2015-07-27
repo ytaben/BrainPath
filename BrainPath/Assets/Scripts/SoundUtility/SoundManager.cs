@@ -4,6 +4,8 @@ using System.Collections;
 public class SoundManager : MonoBehaviour {
     public AudioClip mouseOverSound;
     public AudioClip mouseClickSound;
+    public AudioClip correctActionSound;
+    public AudioClip wrongActionSound;
 
     private static SoundManager instance;
 
