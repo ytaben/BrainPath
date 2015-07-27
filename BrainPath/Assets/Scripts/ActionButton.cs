@@ -14,12 +14,16 @@ public class ActionButton : MonoBehaviour
     public string LateMessage; //Message to display if the button was presesd too late in the game
 
     private GameController gameController;
+    private SoundManager soundManager;
+    private AudioSource mainAudioSource;
 
     // Use this for initialization
     void Start()
     {
         //Keep an instance of GameController handy
         gameController = GameController.getInstance();
+        soundManager = SoundManager.Instance();
+        mainAudioSource = Camera.main.GetComponent<AudioSource>();
 
         //Attach OnClick delegate to the button's onClick
         Button button = GetComponent<Button>();
@@ -50,25 +54,31 @@ public class ActionButton : MonoBehaviour
         {
             if (isCorrect) { //TOO LATE ANSWER ON RIGHT NODE
                 gameController.DisplayMessage(LateMessage, Color.yellow);
+                mainAudioSource.PlayOneShot(soundManager.wrongActionSound);
             }
             else
             { //TOO LATE ANSWER ON WRONG NODE
                 gameController.DisplayMessage(LateMessage, Color.yellow);
+                mainAudioSource.PlayOneShot(soundManager.wrongActionSound);
             }
         }
         else if (gameController.currentStage < correctState)
         { //TOO EARLY ANSWER
             gameController.DisplayMessage(earlyMessage, Color.yellow);
+            mainAudioSource.PlayOneShot(soundManager.wrongActionSound);
         }
         else
         {
             if (isCorrect) { // CORRECT ANSWER AT RIGHT TIME
                 gameController.IncrementStage();
                 gameController.DisplayMessage(correctMessage, Color.green);
-                brainNode.MarkCorrectPathNode(); }
+                brainNode.MarkCorrectPathNode();
+                mainAudioSource.PlayOneShot(soundManager.correctActionSound);
+            }
             else
             { //CORRECT TIME BUT WRONG NODE
                 gameController.DisplayMessage(correctMessage, Color.yellow);
+                mainAudioSource.PlayOneShot(soundManager.wrongActionSound);
             }
         }
     }
