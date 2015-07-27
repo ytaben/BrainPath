@@ -4230,6 +4230,7 @@ GameObject:
   - 224: {fileID: 284916280}
   - 222: {fileID: 284916282}
   - 114: {fileID: 284916281}
+  - 114: {fileID: 284916283}
   m_Layer: 5
   m_Name: ModalPanel
   m_TagString: Untagged
@@ -4283,6 +4284,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 284916279}
+--- !u!114 &284916283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284916279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e182e9ab4728de429eb75005f6fd372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 4d402f8006cbff14cb672f56e8fd1acb, type: 3}
 --- !u!1 &289933058
 GameObject:
   m_ObjectHideFlags: 0
