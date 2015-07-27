@@ -2524,6 +2524,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseOverSound: {fileID: 8300000, guid: a97839d855142a544a11e26f58e555f7, type: 3}
   mouseClickSound: {fileID: 8300000, guid: a97839d855142a544a11e26f58e555f7, type: 3}
+  correctActionSound: {fileID: 8300000, guid: fe9965ca4c98ba94bbd23a73b97c8685, type: 3}
+  wrongActionSound: {fileID: 8300000, guid: 7222cf196950f56498f8d7b345949e5d, type: 3}
 --- !u!1 &183621533
 GameObject:
   m_ObjectHideFlags: 0
