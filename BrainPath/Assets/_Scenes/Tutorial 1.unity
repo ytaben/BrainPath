@@ -244,6 +244,7 @@ GameObject:
   - 114: {fileID: 24302728}
   - 114: {fileID: 24302727}
   - 114: {fileID: 24302726}
+  - 114: {fileID: 24302731}
   m_Layer: 5
   m_Name: UpsideDownStateButton
   m_TagString: Untagged
@@ -361,6 +362,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 24302724}
+--- !u!114 &24302731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24302724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &31739281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1425,7 @@ GameObject:
   - 114: {fileID: 109077275}
   - 114: {fileID: 109077277}
   - 114: {fileID: 109077276}
+  - 114: {fileID: 109077278}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1554,6 +1567,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1341850899}
+--- !u!114 &109077278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 109077269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &114908664
 Prefab:
   m_ObjectHideFlags: 0
@@ -1764,6 +1788,7 @@ GameObject:
   - 114: {fileID: 131801583}
   - 114: {fileID: 131801586}
   - 114: {fileID: 131801587}
+  - 114: {fileID: 131801588}
   m_Layer: 5
   m_Name: BrainStateButton
   m_TagString: Untagged
@@ -1878,6 +1903,17 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d7760df75fd6544ba0a63298ccbd5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &131801588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131801581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &138388916
@@ -3570,6 +3606,7 @@ GameObject:
   - 114: {fileID: 238167287}
   - 114: {fileID: 238167290}
   - 114: {fileID: 238167291}
+  - 114: {fileID: 238167292}
   m_Layer: 5
   m_Name: NormalStateButton
   m_TagString: Untagged
@@ -3686,6 +3723,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d7760df75fd6544ba0a63298ccbd5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &238167292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 238167285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &247803600
 GameObject:
   m_ObjectHideFlags: 0
@@ -3766,6 +3814,7 @@ GameObject:
   - 114: {fileID: 261069871}
   - 114: {fileID: 261069870}
   - 114: {fileID: 261069874}
+  - 114: {fileID: 261069875}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3883,6 +3932,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 449829362}
+--- !u!114 &261069875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 261069868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &264206201
 Prefab:
   m_ObjectHideFlags: 0
@@ -4460,6 +4520,7 @@ GameObject:
   - 114: {fileID: 295649170}
   - 114: {fileID: 295649169}
   - 114: {fileID: 295649168}
+  - 114: {fileID: 295649173}
   m_Layer: 5
   m_Name: NormalStateButton
   m_TagString: Untagged
@@ -4577,6 +4638,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 295649166}
+--- !u!114 &295649173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295649166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &302464717
 GameObject:
   m_ObjectHideFlags: 0
@@ -4736,6 +4808,7 @@ GameObject:
   - 114: {fileID: 315254437}
   - 114: {fileID: 315254436}
   - 114: {fileID: 315254435}
+  - 114: {fileID: 315254439}
   m_Layer: 5
   m_Name: BeginButton
   m_TagString: Untagged
@@ -4841,6 +4914,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 315254433}
+--- !u!114 &315254439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315254433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &324403589
 GameObject:
   m_ObjectHideFlags: 0
@@ -4921,6 +5005,7 @@ GameObject:
   - 114: {fileID: 329039371}
   - 114: {fileID: 329039375}
   - 114: {fileID: 329039376}
+  - 114: {fileID: 329039377}
   m_Layer: 5
   m_Name: InferiorTemporalCortexNode
   m_TagString: BrainNode
@@ -5071,6 +5156,17 @@ MonoBehaviour:
   - {fileID: 1323794461}
   nodeMenu: {fileID: 588064301}
   BrainState: 2
+--- !u!114 &329039377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329039369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &331747918
 GameObject:
   m_ObjectHideFlags: 0
@@ -5428,6 +5524,7 @@ GameObject:
   - 114: {fileID: 359760124}
   - 114: {fileID: 359760123}
   - 114: {fileID: 359760126}
+  - 114: {fileID: 359760127}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5533,6 +5630,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctStage: 0
+--- !u!114 &359760127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359760121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &362243228
 Prefab:
   m_ObjectHideFlags: 0
@@ -5722,6 +5830,7 @@ GameObject:
   - 114: {fileID: 373548988}
   - 114: {fileID: 373548990}
   - 114: {fileID: 373548989}
+  - 114: {fileID: 373548991}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -5863,6 +5972,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1810369460}
+--- !u!114 &373548991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 373548982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &376030155
 GameObject:
   m_ObjectHideFlags: 0
@@ -5875,6 +5995,7 @@ GameObject:
   - 114: {fileID: 376030158}
   - 114: {fileID: 376030157}
   - 114: {fileID: 376030160}
+  - 114: {fileID: 376030161}
   m_Layer: 0
   m_Name: QuitButton
   m_TagString: Untagged
@@ -5980,6 +6101,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: MainMenu
+--- !u!114 &376030161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 376030155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &376671204
 Prefab:
   m_ObjectHideFlags: 0
@@ -7396,6 +7528,7 @@ GameObject:
   - 114: {fileID: 473725249}
   - 114: {fileID: 473725250}
   - 114: {fileID: 473725251}
+  - 114: {fileID: 473725252}
   m_Layer: 5
   m_Name: ThalamusNode
   m_TagString: BrainNode
@@ -7558,6 +7691,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctStage: 5
+--- !u!114 &473725252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 473725243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &474113354
 GameObject:
   m_ObjectHideFlags: 0
@@ -8562,6 +8706,7 @@ GameObject:
   - 114: {fileID: 570085544}
   - 114: {fileID: 570085543}
   - 114: {fileID: 570085542}
+  - 114: {fileID: 570085546}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -8667,6 +8812,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 570085540}
+--- !u!114 &570085546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 570085540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &578721819
 GameObject:
   m_ObjectHideFlags: 0
@@ -8681,6 +8837,7 @@ GameObject:
   - 114: {fileID: 578721822}
   - 114: {fileID: 578721821}
   - 114: {fileID: 578721826}
+  - 114: {fileID: 578721827}
   m_Layer: 5
   m_Name: SplitStateButton
   m_TagString: Untagged
@@ -8810,6 +8967,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctStage: 4
+--- !u!114 &578721827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578721819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &582410256
 GameObject:
   m_ObjectHideFlags: 0
@@ -10068,6 +10236,7 @@ GameObject:
   - 114: {fileID: 655388928}
   - 114: {fileID: 655388927}
   - 114: {fileID: 655388930}
+  - 114: {fileID: 655388931}
   m_Layer: 0
   m_Name: CloseButton
   m_TagString: Untagged
@@ -10173,6 +10342,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1757820213}
+--- !u!114 &655388931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655388925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &656339800
 GameObject:
   m_ObjectHideFlags: 0
@@ -14077,6 +14257,7 @@ GameObject:
   - 114: {fileID: 874406878}
   - 114: {fileID: 874406882}
   - 114: {fileID: 874406883}
+  - 114: {fileID: 874406884}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -14206,6 +14387,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 157402847}
+--- !u!114 &874406884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 874406876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &878844729
 GameObject:
   m_ObjectHideFlags: 0
@@ -16712,6 +16904,7 @@ GameObject:
   - 222: {fileID: 1102266209}
   - 114: {fileID: 1102266208}
   - 114: {fileID: 1102266207}
+  - 114: {fileID: 1102266210}
   m_Layer: 5
   m_Name: CancelButton
   m_TagString: Untagged
@@ -16805,6 +16998,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1102266205}
+--- !u!114 &1102266210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1102266205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1102918095
 GameObject:
   m_ObjectHideFlags: 0
@@ -17325,6 +17529,7 @@ GameObject:
   - 114: {fileID: 1150908401}
   - 114: {fileID: 1150908400}
   - 114: {fileID: 1150908403}
+  - 114: {fileID: 1150908404}
   m_Layer: 5
   m_Name: BeginButton
   m_TagString: Untagged
@@ -17430,6 +17635,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 438667656}
+--- !u!114 &1150908404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150908398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1152458061
 GameObject:
   m_ObjectHideFlags: 0
@@ -19002,6 +19218,7 @@ GameObject:
   - 114: {fileID: 1278544394}
   - 114: {fileID: 1278544400}
   - 114: {fileID: 1278544399}
+  - 114: {fileID: 1278544398}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -19107,6 +19324,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1278544392}
+--- !u!114 &1278544398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1278544392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1278544399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19143,6 +19371,7 @@ GameObject:
   - 114: {fileID: 1282899104}
   - 114: {fileID: 1282899103}
   - 114: {fileID: 1282899102}
+  - 114: {fileID: 1282899106}
   m_Layer: 0
   m_Name: HowToPlayButton
   m_TagString: Untagged
@@ -19248,6 +19477,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1282899100}
+--- !u!114 &1282899106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282899100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1283820036
 GameObject:
   m_ObjectHideFlags: 0
@@ -19705,6 +19945,7 @@ GameObject:
   - 114: {fileID: 1319651835}
   - 114: {fileID: 1319651834}
   - 114: {fileID: 1319651838}
+  - 114: {fileID: 1319651839}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -19822,6 +20063,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1793485191}
+--- !u!114 &1319651839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319651832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1322037887
 Prefab:
   m_ObjectHideFlags: 0
@@ -20330,6 +20582,7 @@ GameObject:
   - 114: {fileID: 1344788528}
   - 114: {fileID: 1344788527}
   - 114: {fileID: 1344788526}
+  - 114: {fileID: 1344788529}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -20459,6 +20712,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 583143744}
+--- !u!114 &1344788529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344788521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1363629556
 GameObject:
   m_ObjectHideFlags: 0
@@ -22058,6 +22322,7 @@ GameObject:
   - 114: {fileID: 1454601903}
   - 114: {fileID: 1454601902}
   - 114: {fileID: 1454601907}
+  - 114: {fileID: 1454601908}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -22187,6 +22452,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1890204358}
+--- !u!114 &1454601908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1454601900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1463820166
 GameObject:
   m_ObjectHideFlags: 0
@@ -25688,6 +25964,7 @@ GameObject:
   - 114: {fileID: 1725721798}
   - 114: {fileID: 1725721797}
   - 114: {fileID: 1725721801}
+  - 114: {fileID: 1725721802}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -25805,6 +26082,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 637981651}
+--- !u!114 &1725721802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1725721795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1727315903
 GameObject:
   m_ObjectHideFlags: 0
@@ -26966,6 +27254,7 @@ GameObject:
   - 114: {fileID: 1781105294}
   - 114: {fileID: 1781105295}
   - 114: {fileID: 1781105296}
+  - 114: {fileID: 1781105297}
   m_Layer: 5
   m_Name: PrimaryMotorCortexNode
   m_TagString: BrainNode
@@ -27116,6 +27405,17 @@ MonoBehaviour:
   - {fileID: 1767982009}
   nodeMenu: {fileID: 1366855647}
   BrainState: 0
+--- !u!114 &1781105297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781105289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1781621965
 Prefab:
   m_ObjectHideFlags: 0
@@ -27185,6 +27485,7 @@ GameObject:
   - 114: {fileID: 1785720415}
   - 114: {fileID: 1785720416}
   - 114: {fileID: 1785720417}
+  - 114: {fileID: 1785720418}
   m_Layer: 5
   m_Name: VisualCortexNode
   m_TagString: BrainNode
@@ -27356,6 +27657,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctStage: 14
+--- !u!114 &1785720418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785720409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1793485191
 GameObject:
   m_ObjectHideFlags: 0
@@ -29798,6 +30110,7 @@ GameObject:
   - 114: {fileID: 1968286459}
   - 114: {fileID: 1968286458}
   - 114: {fileID: 1968286457}
+  - 114: {fileID: 1968286461}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -29903,6 +30216,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1968286455}
+--- !u!114 &1968286461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1968286455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1970572500
 GameObject:
   m_ObjectHideFlags: 0
@@ -30560,6 +30884,7 @@ GameObject:
   - 114: {fileID: 2034236218}
   - 114: {fileID: 2034236217}
   - 114: {fileID: 2034236220}
+  - 114: {fileID: 2034236221}
   m_Layer: 0
   m_Name: RestartButton
   m_TagString: Untagged
@@ -30665,6 +30990,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: Tutorial 1
+--- !u!114 &2034236221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2034236215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2041421000
 Prefab:
   m_ObjectHideFlags: 0
@@ -32008,6 +32344,7 @@ GameObject:
   - 114: {fileID: 2146879612}
   - 114: {fileID: 2146879611}
   - 114: {fileID: 2146879614}
+  - 114: {fileID: 2146879615}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -32113,3 +32450,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctStage: 1
+--- !u!114 &2146879615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2146879609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
