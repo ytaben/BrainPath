@@ -2447,6 +2447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allBrainNodes: []
+  currentAnimationState: 0
   levelName: 'Tutorial 1: Motor Reaction'
   startNode: {fileID: 473725243}
   TimeLimit: 450
@@ -22091,8 +22092,8 @@ MonoBehaviour:
   labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
   labelPosition: {fileID: 246248256}
   labelNormal: 0
-  labelSplit: 0
-  labelUpsideDown: 0
+  labelSplit: 1
+  labelUpsideDown: 1
 --- !u!64 &1438486547
 MeshCollider:
   m_ObjectHideFlags: 0
