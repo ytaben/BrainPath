@@ -20,10 +20,13 @@ public class BrainNode3D : MonoBehaviour {
     private bool needLabelDespawn;
     private bool needLabelSpawn;
 
+    private GameController gameController;
+
     MaterialController materialController;
 	// Use this for initialization
 	void Start () {
         materialController = MaterialController.getInstance();
+        gameController = GameController.getInstance();
 	}
 
     void Update()
@@ -34,23 +37,23 @@ public class BrainNode3D : MonoBehaviour {
 
     void OnMouseOver()
     {
-        if (brainNode &&  brainNode.isExplored)
-        {
-            brainNode.OnPointerEnter();
+        //if (brainNode &&  brainNode.isExplored)
+        //{
+        //    brainNode.OnPointerEnter();
 
-            SpawnLabel();
-            needLabelDespawn = false;
-        }
+        //    SpawnLabel();
+        //    needLabelDespawn = false;
+        //}
     }
 
     void OnMouseExit()
     {
-        if (brainNode && brainNode.isExplored)
-        {
-            brainNode.OnPointerExit();
-            DespawnLabel();
-            needLabelSpawn = false;
-        }
+        //if (brainNode && brainNode.isExplored)
+        //{
+        //    brainNode.OnPointerExit();
+        //    DespawnLabel();
+        //    needLabelSpawn = false;
+        //}
     }
 
     void OnMouseDown()
@@ -72,7 +75,7 @@ public class BrainNode3D : MonoBehaviour {
         labelText.text = brainNode.name;
 
         if (!labelPositioner) labelPositioner = label.GetComponent<UITracker>();
-        labelPositioner.SetPosition(Input.mousePosition);
+        labelPositioner.SetPosition(Camera.main.WorldToScreenPoint(labelPosition.position));
 
         if (!labelAnimator) labelAnimator = label.GetComponent<LabelAnimator>();
         labelAnimator.labelText = brainNode.name;
@@ -86,6 +89,28 @@ public class BrainNode3D : MonoBehaviour {
         {
             if (labelAnimator.Busy()) needLabelDespawn = true;
             else labelAnimator.Collapse();
+        }
+    }
+
+    public void UpdateLabel()
+    {
+        if (!labelPosition) return;
+        if (!brainNode.isExplored) return;
+        
+        if (gameController.currentAnimationState == BrainNode.AnimationChoice.Normal)
+        { 
+            needLabelSpawn = labelNormal;
+            needLabelDespawn = !needLabelSpawn;
+        }
+        if (gameController.currentAnimationState == BrainNode.AnimationChoice.Split)
+        {
+            needLabelSpawn = labelSplit;
+            needLabelDespawn = !needLabelSpawn;
+        }
+        if (gameController.currentAnimationState == BrainNode.AnimationChoice.UpsideDown)
+        {
+            needLabelSpawn = labelUpsideDown;
+            needLabelDespawn = !needLabelSpawn;
         }
     }
 
