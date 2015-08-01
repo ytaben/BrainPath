@@ -37,23 +37,18 @@ public class BrainNode3D : MonoBehaviour {
 
     void OnMouseOver()
     {
-        //if (brainNode &&  brainNode.isExplored)
-        //{
-        //    brainNode.OnPointerEnter();
-
-        //    SpawnLabel();
-        //    needLabelDespawn = false;
-        //}
+        if (brainNode && brainNode.isExplored)
+        {
+            brainNode.OnPointerEnter();
+        }
     }
 
     void OnMouseExit()
     {
-        //if (brainNode && brainNode.isExplored)
-        //{
-        //    brainNode.OnPointerExit();
-        //    DespawnLabel();
-        //    needLabelSpawn = false;
-        //}
+        if (brainNode && brainNode.isExplored)
+        {
+            brainNode.OnPointerExit();
+        }
     }
 
     void OnMouseDown()
