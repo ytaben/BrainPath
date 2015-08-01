@@ -194,6 +194,7 @@ public class GameController : MonoBehaviour
     public void SetBrainAnimation(BrainNode.AnimationChoice animation)
     {
         ResetBrainAnimation();
+        currentAnimationState = animation;
         switch (animation)
         {
             case BrainNode.AnimationChoice.Split:
@@ -211,9 +212,10 @@ public class GameController : MonoBehaviour
 
     public void updateLabels()
     {
-        foreach (BrainNode3D brainNode in FindObjectsOfType<BrainNode3D>())
+        foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("BrainPart"))
         {
-            brainNode.UpdateLabel();
+            BrainNode3D brainNode = gameObject.GetComponent<BrainNode3D>();
+            if (brainNode) { brainNode.UpdateLabel(); }
         }
     }
 
