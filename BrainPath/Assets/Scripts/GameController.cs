@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
 
     //Brain animator controller
     Animator brainAnimator;
-    BrainNode.AnimationChoice currentAnimationState; //Current state is used to go back after hovering mouse over an element
+    public BrainNode.AnimationChoice currentAnimationState; //Current state is used to go back after hovering mouse over an element
     Text stateLabel; //Label used to indicate current brain state
 
     public string levelName;
