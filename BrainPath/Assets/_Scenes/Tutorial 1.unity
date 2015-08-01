@@ -8686,6 +8686,33 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 563682846}
+--- !u!1 &564489369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 564489370}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &564489370
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 564489369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -46.8400002, y: 3.05999994, z: 38.6699982}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1767982010}
+  m_RootOrder: 0
 --- !u!1001 &565372267
 Prefab:
   m_ObjectHideFlags: 0
@@ -26853,7 +26880,8 @@ Transform:
   m_LocalRotation: {x: -.707106829, y: .707106709, z: 1.15202326e-07, w: -1.15202312e-07}
   m_LocalPosition: {x: -99.8495789, y: -18.5221214, z: -23.6081886}
   m_LocalScale: {x: .5, y: .600000024, z: .5}
-  m_Children: []
+  m_Children:
+  - {fileID: 564489370}
   m_Father: {fileID: 138388917}
   m_RootOrder: 26
 --- !u!23 &1767982011
@@ -26902,8 +26930,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brainNode: {fileID: 329039376}
   labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
-  labelPosition: {fileID: 0}
-  labelNormal: 0
+  labelPosition: {fileID: 564489370}
+  labelNormal: 1
   labelSplit: 0
   labelUpsideDown: 0
 --- !u!64 &1767982014
