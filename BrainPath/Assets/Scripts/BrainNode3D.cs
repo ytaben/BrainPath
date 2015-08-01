@@ -65,6 +65,7 @@ public class BrainNode3D : MonoBehaviour {
         {
             label = Instantiate(labelPrefab) as GameObject;
             label.transform.SetParent(GameObject.Find("Canvas").transform);
+            label.transform.SetAsFirstSibling();
         }
         if (!labelText) labelText = label.GetComponentInChildren<Text>();
         labelText.text = brainNode.name;
