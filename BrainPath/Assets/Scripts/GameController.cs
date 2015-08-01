@@ -194,7 +194,6 @@ public class GameController : MonoBehaviour
     public void SetBrainAnimation(BrainNode.AnimationChoice animation)
     {
         ResetBrainAnimation();
-        currentAnimationState = animation;
         switch (animation)
         {
             case BrainNode.AnimationChoice.Split:

@@ -27,6 +27,7 @@ public class SetBrainState : MonoBehaviour {
     public void OnClick()
     {
         gameController.SetBrainAnimation(brainState);
+        gameController.currentAnimationState = brainState;
     }
 
 }
