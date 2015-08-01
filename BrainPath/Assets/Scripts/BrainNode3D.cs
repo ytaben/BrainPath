@@ -6,6 +6,7 @@ public class BrainNode3D : MonoBehaviour {
 
     public BrainNode brainNode; //Reference to the actual brain node that controlls this script
     public GameObject labelPrefab; //Prefab for the animated label
+    public Transform labelPosition;
 
     private GameObject label; //Track if we already have a label created
     Text labelText;
