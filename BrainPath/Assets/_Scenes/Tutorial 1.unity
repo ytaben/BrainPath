@@ -13412,9 +13412,9 @@ MonoBehaviour:
   brainNode: {fileID: 1785720416}
   labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
   labelPosition: {fileID: 1500242313}
-  labelNormal: 1
-  labelSplit: 1
-  labelUpsideDown: 1
+  labelNormal: 0
+  labelSplit: 0
+  labelUpsideDown: 0
 --- !u!64 &813720034
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17368,6 +17368,33 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7f7e9b6cac8f3f642baeaeb2fe01c0af, type: 3}
   m_PrefabInternal: {fileID: 1131209968}
+--- !u!1 &1131360048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1131360049}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131360049
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1131360048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.70000005, y: -58.2999992, z: -2.9000001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1877417585}
+  m_RootOrder: 0
 --- !u!1 &1131890171
 GameObject:
   m_ObjectHideFlags: 0
@@ -28862,7 +28889,8 @@ Transform:
   m_LocalRotation: {x: -.707106829, y: .707106709, z: 1.15202326e-07, w: -1.15202312e-07}
   m_LocalPosition: {x: -99.8495789, y: -18.5221214, z: -23.6081886}
   m_LocalScale: {x: .5, y: .600000024, z: .5}
-  m_Children: []
+  m_Children:
+  - {fileID: 1131360049}
   m_Father: {fileID: 138388917}
   m_RootOrder: 25
 --- !u!23 &1877417586
@@ -28911,9 +28939,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
   labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
-  labelPosition: {fileID: 0}
+  labelPosition: {fileID: 1131360049}
   labelNormal: 0
-  labelSplit: 0
+  labelSplit: 1
   labelUpsideDown: 0
 --- !u!64 &1877417589
 MeshCollider:
