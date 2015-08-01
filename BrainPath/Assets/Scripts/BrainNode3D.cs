@@ -98,19 +98,19 @@ public class BrainNode3D : MonoBehaviour {
         if (!brainNode.isExplored) return;
         
         if (gameController.currentAnimationState == BrainNode.AnimationChoice.Normal)
-        { 
-            needLabelSpawn = labelNormal;
-            needLabelDespawn = !needLabelSpawn;
+        {
+            if (labelNormal) SpawnLabel();
+            else DespawnLabel();
         }
         if (gameController.currentAnimationState == BrainNode.AnimationChoice.Split)
         {
-            needLabelSpawn = labelSplit;
-            needLabelDespawn = !needLabelSpawn;
+            if (labelSplit) { SpawnLabel(); Debug.Log("Got here"); }
+            else DespawnLabel();
         }
         if (gameController.currentAnimationState == BrainNode.AnimationChoice.UpsideDown)
         {
-            needLabelSpawn = labelUpsideDown;
-            needLabelDespawn = !needLabelSpawn;
+            if (labelUpsideDown) SpawnLabel();
+            else DespawnLabel();
         }
     }
 
