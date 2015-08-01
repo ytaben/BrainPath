@@ -81,6 +81,7 @@ public class GameController : MonoBehaviour
        // activeNodeScript.nodeMenu.SetActive(true);
         UpdateTimeText();
         GameObject.Find("TimeLimitText").GetComponent<Text>().text = "Timelimit: " + TimeLimit.ToString() + " ms";
+        updateLabels();
     }
 
     //This function is used to notify GameController of a transition to another node
@@ -204,8 +205,17 @@ public class GameController : MonoBehaviour
                 stateLabel.text = "Upside-Down";
                 break;
         }
+        updateLabels();
     }
     public void SetCurrentAnimation() { SetBrainAnimation(currentAnimationState); }
+
+    public void updateLabels()
+    {
+        foreach (BrainNode3D brainNode in FindObjectsOfType<BrainNode3D>())
+        {
+            brainNode.UpdateLabel();
+        }
+    }
 
     public void IncreaseTime(int time)
     {
