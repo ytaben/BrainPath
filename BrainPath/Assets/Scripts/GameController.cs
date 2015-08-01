@@ -206,7 +206,6 @@ public class GameController : MonoBehaviour
                 stateLabel.text = "Upside-Down";
                 break;
         }
-        updateLabels();
     }
     public void SetCurrentAnimation() { SetBrainAnimation(currentAnimationState); }
 
