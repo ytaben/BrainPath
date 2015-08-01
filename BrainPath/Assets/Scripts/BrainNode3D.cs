@@ -8,6 +8,10 @@ public class BrainNode3D : MonoBehaviour {
     public GameObject labelPrefab; //Prefab for the animated label
     public Transform labelPosition;
 
+    public bool labelNormal;
+    public bool labelSplit;
+    public bool labelUpsideDown;
+
     private GameObject label; //Track if we already have a label created
     Text labelText;
     UITracker labelPositioner;
