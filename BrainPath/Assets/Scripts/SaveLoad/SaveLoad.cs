@@ -42,5 +42,27 @@ public static class SaveLoad  {
             file.Close();
         }
     }
+
+    public static void UpdateLevel(string name, int score, bool isWin)
+    {
+        Level level;
+
+        if (levelsDict.TryGetValue(name, out level)) //We already played this level
+        {
+            level.maxScore = score > level.maxScore ? score : level.maxScore;
+            level.isComplete = level.isComplete || isWin;
+        }
+
+        else //This is the first time
+        {
+            level.name = name;
+            level.maxScore = score;
+            level.isComplete = isWin;
+        }
+
+        levelsDict[name] = level;
+
+        SaveLevels();
+    }
 	
 }
