@@ -10,6 +10,8 @@ public static class SaveLoad  {
     public static List<Level> levels;
     public static Dictionary<string, Level> levelsDict;
 
+    public static string currentLevel; //store the name of the currently played level
+
     private const string savePath = "/GameStage.save";
 
     public static void Initialize()
