@@ -39,8 +39,12 @@ public static class SaveLoad  {
         if (File.Exists(Application.persistentDataPath + savePath))
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/savedGames.gd", FileMode.Open);
-            SaveLoad.levels = (List<Level>)bf.Deserialize(file);
+            FileStream file;
+            try {
+                 file = File.Open(Application.persistentDataPath + "/savedGames.gd", FileMode.Open);
+            }
+            catch (FileNotFoundException) { return; }
+            levels = (List<Level>)bf.Deserialize(file);
             file.Close();
         }
     }
