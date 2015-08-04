@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour {
 
     public Text nameText;
     public Image image;
-	}
+	
 }
 
 [System.Serializable]
