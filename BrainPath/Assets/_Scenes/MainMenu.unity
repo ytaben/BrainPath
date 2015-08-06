@@ -98,7 +98,7 @@ GameObject:
   - 222: {fileID: 3542405}
   - 114: {fileID: 3542404}
   m_Layer: 5
-  m_Name: Text (2)
+  m_Name: TotalScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -405,7 +405,7 @@ GameObject:
   - 222: {fileID: 340382118}
   - 114: {fileID: 340382117}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: LevelsCompletedText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1436,9 +1436,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Object Recognition
   levels: []
-  nameText: {fileID: 0}
-  levelsCompleteText: {fileID: 0}
-  totalScoreText: {fileID: 0}
+  nameText: {fileID: 1941565058}
+  levelsCompleteText: {fileID: 340382117}
+  totalScoreText: {fileID: 3542404}
 --- !u!114 &1069020450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2547,7 +2547,7 @@ GameObject:
   - 222: {fileID: 1941565059}
   - 114: {fileID: 1941565058}
   m_Layer: 5
-  m_Name: Text
+  m_Name: UnitNameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
