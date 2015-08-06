@@ -29,5 +29,8 @@ public class StageManager : MonoBehaviour {
         totalScoreText.text = "Total Score: " + totalScore.ToString();
     }
 
-
+    public void OnEnable()
+    {
+        UpdateView();
+    }
 }
