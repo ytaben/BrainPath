@@ -2085,7 +2085,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Process and send info using <b>Dorsal</b> stream
+  m_Text: Process and send info using <b>Ventral</b> stream
 --- !u!222 &142355163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3389,7 +3389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &232009526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8020,7 +8020,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Process and send info using <b>Ventral </b>stream
+  m_Text: Process and send info using <b>Dorsal </b>stream
 --- !u!222 &492626264
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25455,9 +25455,9 @@ MonoBehaviour:
 
     Two main visual streams are:
 
-    - Dorsal stream (known as "what" stream)
+    - Ventral stream (known as "what" stream)
 
-    - Ventral stream (known as "where" stream)'
+    - Dorsal stream (known as "where" stream)'
 --- !u!222 &1677810943
 CanvasRenderer:
   m_ObjectHideFlags: 0
