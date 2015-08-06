@@ -1318,10 +1318,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Object Recognition
-  image: {fileID: 0}
   levels: []
   nameText: {fileID: 0}
-  imageObject: {fileID: 0}
 --- !u!114 &1069020450
 MonoBehaviour:
   m_ObjectHideFlags: 0
