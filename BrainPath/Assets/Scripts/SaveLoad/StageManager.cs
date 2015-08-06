@@ -8,5 +8,8 @@ public class StageManager : MonoBehaviour {
     public LevelManager[] levels; //Levels that belong to this stage
 
     public Text nameText;
+    public Text levelsCompleteText;
+    public Text totalScoreText;
+
 
 }
