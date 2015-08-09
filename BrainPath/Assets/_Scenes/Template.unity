@@ -9903,8 +9903,8 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 23.8000183, y: -20.8999634}
-  m_SizeDelta: {x: 74.9000015, y: 17.8999996}
+  m_AnchoredPosition: {x: 23.7999992, y: -132.160004}
+  m_SizeDelta: {x: 157.699997, y: 17.8999996}
   m_Pivot: {x: 2.57045031e-07, y: .5}
 --- !u!114 &795514474
 MonoBehaviour:
@@ -10035,7 +10035,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thalamus
+  m_Text: Inferior Frontal Gyrus
 --- !u!222 &795514480
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23625,8 +23625,8 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 23.8000183, y: -20.8999634}
-  m_SizeDelta: {x: 74.9000015, y: 17.8999996}
+  m_AnchoredPosition: {x: 23.8000336, y: -35.5}
+  m_SizeDelta: {x: 119.18, y: 17.8999996}
   m_Pivot: {x: 2.57045031e-07, y: .5}
 --- !u!114 &2021105411
 MonoBehaviour:
@@ -23763,7 +23763,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thalamus
+  m_Text: CingulateCortex
 --- !u!222 &2021105417
 CanvasRenderer:
   m_ObjectHideFlags: 0
