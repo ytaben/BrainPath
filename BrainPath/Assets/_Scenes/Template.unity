@@ -4323,7 +4323,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tutorial 1: Motor Reaction'
+  m_Text: Fill In
 --- !u!222 &367723612
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6063,7 +6063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: fc6a433f4c0bd014a858d90a421ef2e1, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11867,7 +11867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: fc6a433f4c0bd014a858d90a421ef2e1, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14809,11 +14809,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'In this simple tutorial we will learn about motor reactions.
-
-
-    Reactions are slightly more complex than reflexes, because they involve brain
-    activity rather than only autonomous nervous system.'
+  m_Text: Fill In
 --- !u!222 &1286721496
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15689,7 +15685,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Tutorial 1: Motor Reaction'
+  m_Text: Fill In
 --- !u!222 &1382582794
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16552,15 +16548,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Imagine you have an object flying at you. There is only a split second
-    to react, so your brain has to process the visual information and send a motor
-    signal as quickly as possible. You can see what happens if you fail on the right.
-
-
-    In this tutorial you will learn how to accomplish  this task, as well as other
-    basics of the gameplay.
-
-    Click Begin when ready.'
+  m_Text: Fill In
 --- !u!222 &1438859135
 CanvasRenderer:
   m_ObjectHideFlags: 0
