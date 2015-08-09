@@ -1687,7 +1687,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Process and send info using <b>Ventral</b> stream
+  m_Text: Fill In
 --- !u!222 &142355163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1725,9 +1725,9 @@ RectTransform:
   - {fileID: 799445557}
   - {fileID: 1434900387}
   - {fileID: 623780741}
-  - {fileID: 927724248}
   - {fileID: 1102918096}
   - {fileID: 903012280}
+  - {fileID: 927724248}
   - {fileID: 232009526}
   - {fileID: 278825882}
   - {fileID: 1366855648}
@@ -3099,7 +3099,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Perform detailed analysis of visual info
+  m_Text: Fill In
 --- !u!222 &281393996
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5266,9 +5266,7 @@ GameObject:
   - 222: {fileID: 469838757}
   - 114: {fileID: 469838756}
   - 114: {fileID: 469838755}
-  - 114: {fileID: 469838758}
   - 114: {fileID: 469838754}
-  - 114: {fileID: 469838759}
   m_Layer: 5
   m_Name: VisualCortexButton0 (1)
   m_TagString: Untagged
@@ -5306,14 +5304,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
-  correctState: 1
-  actionCost: 25
-  isCorrect: 1
-  earlyMessage: We have not yet received information to decode
-  correctMessage: We have successfuly processed the spacial information about the
-    object. Now we can use it to avoid the object.
-  LateMessage: Visual information has already been decoded. Try using it in a different
-    cortex
+  correctState: 0
+  actionCost: 0
+  isCorrect: 0
+  earlyMessage: 
+  correctMessage: 
+  LateMessage: 
 --- !u!114 &469838755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5382,30 +5378,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 469838752}
---- !u!114 &469838758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 469838752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e46c7e2f15c23874e920f0986fd4c9ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1810369460}
---- !u!114 &469838759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 469838752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctStage: 15
 --- !u!1001 &472706065
 Prefab:
   m_ObjectHideFlags: 0
@@ -5835,7 +5807,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Process and send info using <b>Dorsal </b>stream
+  m_Text: Fill in
 --- !u!222 &492626264
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7335,9 +7307,7 @@ GameObject:
   - 222: {fileID: 611856106}
   - 114: {fileID: 611856105}
   - 114: {fileID: 611856104}
-  - 114: {fileID: 611856108}
   - 114: {fileID: 611856103}
-  - 114: {fileID: 611856107}
   m_Layer: 5
   m_Name: ThalamusButton0
   m_TagString: Untagged
@@ -7376,11 +7346,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brainNode: {fileID: 473725250}
   correctState: 0
-  actionCost: 25
-  isCorrect: 1
+  actionCost: 0
+  isCorrect: 0
   earlyMessage: 
-  correctMessage: Successfuly transfered visual information to Visual Cortex
-  LateMessage: We have already transfered information from Thalamus
+  correctMessage: 
+  LateMessage: 
 --- !u!114 &611856104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7449,30 +7419,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 611856101}
---- !u!114 &611856107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 611856101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01128a3827633fa4580f1bd2b75643be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctStage: 9
---- !u!114 &611856108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 611856101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e46c7e2f15c23874e920f0986fd4c9ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1810369460}
 --- !u!1 &612724227
 GameObject:
   m_ObjectHideFlags: 0
@@ -11112,7 +11058,7 @@ RectTransform:
   - {fileID: 578721820}
   - {fileID: 24302725}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_AnchorMin: {x: .0842387006, y: .170435518}
   m_AnchorMax: {x: .169521496, y: .287207931}
   m_AnchoredPosition: {x: 0, y: .0999908447}
@@ -11243,7 +11189,7 @@ RectTransform:
   - {fileID: 1988860118}
   - {fileID: 515771552}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: .393833071, y: .808353364}
   m_AnchoredPosition: {x: 648, y: 26.911787}
@@ -11813,7 +11759,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shield from incoming object
+  m_Text: 
 --- !u!222 &959236672
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12921,7 +12867,7 @@ RectTransform:
   - {fileID: 612724228}
   - {fileID: 586445532}
   m_Father: {fileID: 149745110}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_AnchorMin: {x: 0, y: .150843069}
   m_AnchorMax: {x: .227967605, y: .906250775}
   m_AnchoredPosition: {x: 2.32825685, y: 1.70000076}
@@ -14923,12 +14869,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 329039376}
-  correctState: 2
-  actionCost: 50
+  correctState: 0
+  actionCost: 0
   isCorrect: 0
-  earlyMessage: The visual information is not yet processed by the visual cortex
-  correctMessage: By the time we do that, we'll get struck in the face! We should
-    send a motor signal to shield ourselves ASAP!
+  earlyMessage: 
+  correctMessage: 
   LateMessage: 
 --- !u!114 &1306875664
 MonoBehaviour:
@@ -19071,7 +19016,6 @@ GameObject:
   - 222: {fileID: 1705456513}
   - 114: {fileID: 1705456512}
   - 114: {fileID: 1705456511}
-  - 114: {fileID: 1705456514}
   - 114: {fileID: 1705456510}
   m_Layer: 5
   m_Name: VisualCortexButton0
@@ -19110,14 +19054,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
-  correctState: 1
-  actionCost: 25
+  correctState: 0
+  actionCost: 0
   isCorrect: 0
-  earlyMessage: We have not yet received information to decode
-  correctMessage: The object turns out to be a soccer ball, but it doesn't help us
-    react to it. Try to find more useful information.
-  LateMessage: Visual information has already been decoded. Try using it in a different
-    cortex
+  earlyMessage: 
+  correctMessage: 
+  LateMessage: 
 --- !u!114 &1705456511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19186,18 +19128,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1705456508}
---- !u!114 &1705456514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1705456508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e46c7e2f15c23874e920f0986fd4c9ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1810369460}
 --- !u!1 &1724520647
 GameObject:
   m_ObjectHideFlags: 0
@@ -22019,11 +21949,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1781105296}
-  correctState: 2
-  actionCost: 25
-  isCorrect: 1
-  earlyMessage: We don't know where the object is and how fast it is moving!
-  correctMessage: We have successfuly reacted and shielded ourselves from danger
+  correctState: 0
+  actionCost: 0
+  isCorrect: 0
+  earlyMessage: 
+  correctMessage: 
   LateMessage: 
 --- !u!114 &1939140898
 MonoBehaviour:
@@ -22817,12 +22747,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 0}
-  correctState: 2
-  actionCost: 50
+  correctState: 0
+  actionCost: 0
   isCorrect: 0
-  earlyMessage: The visual information is not yet processed by the visual cortex
-  correctMessage: By the time we do that, we'll get struck in the face! We should
-    send a motor signal to shield ourselves ASAP!
+  earlyMessage: 
+  correctMessage: 
   LateMessage: 
 --- !u!114 &1988860120
 MonoBehaviour:
