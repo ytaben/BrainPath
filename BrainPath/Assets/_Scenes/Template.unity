@@ -4976,7 +4976,7 @@ GameObject:
   - 222: {fileID: 438667659}
   - 114: {fileID: 438667658}
   m_Layer: 5
-  m_Name: TutorialDescription1
+  m_Name: LevelDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17077,7 +17077,7 @@ GameObject:
   - 222: {fileID: 1524757624}
   - 114: {fileID: 1524757623}
   m_Layer: 5
-  m_Name: TutorialDescription2
+  m_Name: LevelDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
