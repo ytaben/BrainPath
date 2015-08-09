@@ -8404,6 +8404,33 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 62b4e492a55b2e941857bf382df65889, type: 3}
+--- !u!1 &664368755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 664368756}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &664368756
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 664368755}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -54.7000008, y: 35.5999985, z: 1.39999998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 778215378}
+  m_RootOrder: 0
 --- !u!1001 &664502740
 Prefab:
   m_ObjectHideFlags: 0
@@ -9681,7 +9708,8 @@ Transform:
   m_LocalRotation: {x: -.707106829, y: .707106709, z: 1.15202326e-07, w: -1.15202312e-07}
   m_LocalPosition: {x: -99.8495789, y: -18.5221214, z: -23.6081886}
   m_LocalScale: {x: .5, y: .600000024, z: .5}
-  m_Children: []
+  m_Children:
+  - {fileID: 664368756}
   m_Father: {fileID: 138388917}
   m_RootOrder: 23
 --- !u!23 &778215379
@@ -9728,10 +9756,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brainNode: {fileID: 0}
+  brainNode: {fileID: 795514476}
   labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
-  labelPosition: {fileID: 0}
-  labelNormal: 0
+  labelPosition: {fileID: 664368756}
+  labelNormal: 1
   labelSplit: 0
   labelUpsideDown: 0
 --- !u!64 &778215382
@@ -10379,7 +10407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brainNode: {fileID: 0}
+  brainNode: {fileID: 795514476}
   labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
   labelPosition: {fileID: 0}
   labelNormal: 0
@@ -12592,7 +12620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brainNode: {fileID: 0}
+  brainNode: {fileID: 795514476}
   labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
   labelPosition: {fileID: 0}
   labelNormal: 0
@@ -18200,7 +18228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53ebdac258bd6240b215f852e699233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brainNode: {fileID: 0}
+  brainNode: {fileID: 795514476}
   labelPrefab: {fileID: 194778, guid: f0b02c366ae10e84daa47ea0044c72ae, type: 2}
   labelPosition: {fileID: 0}
   labelNormal: 0
