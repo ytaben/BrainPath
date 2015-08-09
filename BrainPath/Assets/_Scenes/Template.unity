@@ -7192,7 +7192,7 @@ GameObject:
   - 222: {fileID: 604202520}
   - 114: {fileID: 604202519}
   m_Layer: 5
-  m_Name: ThalamusInArrow
+  m_Name: FirstNodeInArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7711,7 +7711,7 @@ GameObject:
   - 114: {fileID: 651572634}
   - 114: {fileID: 651572633}
   m_Layer: 5
-  m_Name: Button
+  m_Name: InputPathNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11382,7 +11382,7 @@ GameObject:
   - 114: {fileID: 943387678}
   - 114: {fileID: 943387681}
   m_Layer: 5
-  m_Name: PrimaryMotorPathNode
+  m_Name: ThirdPathNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12606,7 +12606,7 @@ GameObject:
   - 114: {fileID: 1099642950}
   - 114: {fileID: 1099642953}
   m_Layer: 5
-  m_Name: VisualCortexPathNode
+  m_Name: SecondPathNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16863,7 +16863,7 @@ GameObject:
   - 114: {fileID: 1520652346}
   - 114: {fileID: 1520652349}
   m_Layer: 5
-  m_Name: ThalamusPathNode
+  m_Name: FirstPathNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18316,7 +18316,7 @@ GameObject:
   - 222: {fileID: 1623932838}
   - 114: {fileID: 1623932837}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PathTrackerLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20663,7 +20663,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <b>Visual Stimuli</b>
+  m_Text: <b>Stimuli</b>
 --- !u!222 &1803636240
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21838,7 +21838,7 @@ GameObject:
   - 222: {fileID: 1926623556}
   - 114: {fileID: 1926623555}
   m_Layer: 5
-  m_Name: ThalamusOutArrow
+  m_Name: FirstNodeOutArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22821,7 +22821,7 @@ GameObject:
   - 114: {fileID: 1999033952}
   - 114: {fileID: 1999033951}
   m_Layer: 5
-  m_Name: MotorReactionButton
+  m_Name: ReactionPathNode
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23609,7 +23609,7 @@ GameObject:
   - 222: {fileID: 2047261036}
   - 114: {fileID: 2047261035}
   m_Layer: 5
-  m_Name: MotorReactionInButton
+  m_Name: ReactionInArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
