@@ -2070,7 +2070,7 @@ MonoBehaviour:
   allBrainNodes: []
   currentAnimationState: 0
   levelName: Fill In
-  startNode: {fileID: 0}
+  startNode: {fileID: 473725243}
   TimeLimit: 0
   BaseLevelScore: 0
   victoryMessage: Fill In
@@ -23669,7 +23669,7 @@ MonoBehaviour:
   isExplored: 0
   isNew: 0
   pathNode: {fileID: 1520652349}
-  name: Thalamus
+  name: Cingulate Cortex
   outboundEdges:
   - destination: {fileID: 473725243}
     cost: 25
