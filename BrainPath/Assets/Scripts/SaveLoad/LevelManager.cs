@@ -28,13 +28,15 @@ public class LevelManager : MonoBehaviour {
     public void UpdateView()
     {
         nameText.text = name;
-        level = SaveLoad.levelsDict[name];
-        if (level.isComplete)
+        if (SaveLoad.levelsDict.TryGetValue(name, out level))
         {
-            maxScoreText.text = "Max Score: " + level.maxScore.ToString();
+            if (level.isComplete)
+            {
+                maxScoreText.text = "Max Score: " + level.maxScore.ToString();
+            }
+            else
+                maxScoreText.text = "Max Score: 0";
         }
-        else
-            maxScoreText.text = "Max Score: 0";
     }
 
     public void OnEnable()
