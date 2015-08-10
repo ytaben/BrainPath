@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour {
     public int maxScore;
 
     public Text nameText;
+    public Text maxScoreText;
     public Image image;
 
     void Start()
@@ -22,6 +23,23 @@ public class LevelManager : MonoBehaviour {
     {
         SaveLoad.currentLevel = name;
         Application.LoadLevel(sceneName);
+    }
+
+    public void UpdateView()
+    {
+        nameText.text = name;
+        level = SaveLoad.levelsDict[name];
+        if (level.isComplete)
+        {
+            maxScoreText.text = "Max Score: " + level.maxScore.ToString();
+        }
+        else
+            maxScoreText.text = "Max Score: 0";
+    }
+
+    public void OnEnable()
+    {
+        UpdateView();
     }
 }
 
