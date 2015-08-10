@@ -18,11 +18,14 @@ public class StageManager : MonoBehaviour {
 
         foreach (LevelManager manager in levels)
         {
-            Level level = SaveLoad.levelsDict[manager.name];
+            Level level;
+            if (SaveLoad.levelsDict.TryGetValue(manager.name, out level))
+            {
 
-            if (level.isComplete) levelsComplete += 1;
+                if (level.isComplete) levelsComplete += 1;
 
-            if (level.maxScore > 0) totalScore += level.maxScore;
+                if (level.maxScore > 0) totalScore += level.maxScore;
+            }
         }
 
         levelsCompleteText.text = "Levels Completed: " + levelsComplete.ToString() + "/" + levels.Length.ToString();
