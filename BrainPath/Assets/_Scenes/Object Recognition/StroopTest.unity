@@ -18563,22 +18563,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'In this tutorial you will perform a stroop test on a non-confruent trial
-    (i.e. wort doesn''t match font color).
-
-
-    To complete the trial, you must do the following:
-
-
-    - Get information to visual cortex through thalamus.
-
-    - Analyze it to find out what the word and color is
-
-    - Decide whether there is a conflict
-
-    - Send an inhibiting signal to language processing
-
-    - Send the motor signal to press the correct button.'
+  m_Text: "In this tutorial you will perform a stroop test on a non-confruent trial
+    (i.e. wort doesn't match font color). \nThe visual stimuli is a word on a screen,
+    and the reaction is a motor response of pressing the button that corresponds to
+    the font color of the word.\n\nTo complete the trial, you must do the following:\n\n-
+    Get information to visual cortex through thalamus.\n- Analyze it to find out what
+    the word and color is\n- Decide whether there is a conflict\n- Send an inhibiting
+    signal to language processing\n- Send the motor signal to press the correct button."
 --- !u!222 &1438859135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19367,7 +19358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1524757622
 RectTransform:
   m_ObjectHideFlags: 0
