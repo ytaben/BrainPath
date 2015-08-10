@@ -344,7 +344,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -48.7000008, y: .5}
+  m_AnchoredPosition: {x: -86.3000031, y: .5}
   m_SizeDelta: {x: 16.6000004, y: 16.6049995}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &19798509
@@ -4570,7 +4570,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -48.7000008, y: .5}
+  m_AnchoredPosition: {x: -69, y: .5}
   m_SizeDelta: {x: 16.6000004, y: 16.6049995}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &346852877
@@ -5274,7 +5274,7 @@ GameObject:
   - 114: {fileID: 397226309}
   - 114: {fileID: 397226308}
   m_Layer: 5
-  m_Name: ThalamusButton0
+  m_Name: CingulateCortexButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5309,13 +5309,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brainNode: {fileID: 473725250}
-  correctState: 0
-  actionCost: 0
+  brainNode: {fileID: 2021105413}
+  correctState: 2
+  actionCost: 25
   isCorrect: 0
-  earlyMessage: 
-  correctMessage: 
-  LateMessage: 
+  earlyMessage: We are not detecting any information to analyze. Perhaps it was not
+    yet decoded.
+  correctMessage: This is a non-congruent trial. The word doesn't match the font color,
+    so we cannot use language processing.
+  LateMessage: We have already suggested a solution.
 --- !u!114 &397226309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5531,6 +5533,132 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e5ca1ec256f71384584b081d0a26f748, type: 3}
   m_PrefabInternal: {fileID: 418006871}
+--- !u!1 &421895927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 421895928}
+  - 222: {fileID: 421895932}
+  - 114: {fileID: 421895931}
+  - 114: {fileID: 421895930}
+  - 114: {fileID: 421895929}
+  m_Layer: 5
+  m_Name: CingulateCortexButton (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &421895928
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421895927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1251717494}
+  m_Father: {fileID: 2087382004}
+  m_RootOrder: 5
+  m_AnchorMin: {x: .068497926, y: .126396269}
+  m_AnchorMax: {x: .921899617, y: .187758505}
+  m_AnchoredPosition: {x: .693481445, y: .5}
+  m_SizeDelta: {x: -2.46899414, y: -2}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &421895929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421895927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brainNode: {fileID: 2021105413}
+  correctState: 2
+  actionCost: 25
+  isCorrect: 1
+  earlyMessage: We are not detecting any information to analyze. Perhaps it was not
+    yet decoded.
+  correctMessage: Using the font color instead of the semantic meaning should give
+    us the right answer. Now we have to inhibit the function we don't need to avoid
+    interference.
+  LateMessage: We have already suggested a solution.
+--- !u!114 &421895930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421895927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: .388235301, g: .607843161, b: .945098042, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_ColorMultiplier: 1
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 421895931}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &421895931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421895927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &421895932
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 421895927}
 --- !u!1001 &430346241
 Prefab:
   m_ObjectHideFlags: 0
@@ -9864,7 +9992,7 @@ MonoBehaviour:
     - Response inhibition
 
 
-    IGF is especially imporant in goal oriented tasks.'
+    IFG is especially imporant in goal oriented tasks.'
 --- !u!222 &735334488
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11664,6 +11792,130 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7cf4a57eac7b0a347a07212b1f2189de, type: 3}
   m_PrefabInternal: {fileID: 849542133}
+--- !u!1 &849754564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 849754565}
+  - 222: {fileID: 849754569}
+  - 114: {fileID: 849754568}
+  - 114: {fileID: 849754567}
+  - 114: {fileID: 849754566}
+  m_Layer: 5
+  m_Name: ThalamusButton0 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &849754565
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 849754564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 893203688}
+  m_Father: {fileID: 1390141016}
+  m_RootOrder: 5
+  m_AnchorMin: {x: .068497926, y: .128396273}
+  m_AnchorMax: {x: .921899617, y: .185637757}
+  m_AnchoredPosition: {x: .693481445, y: 1.5}
+  m_SizeDelta: {x: -2.46899414, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &849754566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 849754564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brainNode: {fileID: 795514476}
+  correctState: 3
+  actionCost: 25
+  isCorrect: 1
+  earlyMessage: To inhibit functions, we first have to detect a conflict.
+  correctMessage: The interference is cleared and there is no more conflict. Color
+    recognition clearly gives us answer YELLOW.
+  LateMessage: All inhibitions are in place. We are ready to respond.
+--- !u!114 &849754567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 849754564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: .388235301, g: .607843161, b: .945098042, a: 1}
+    m_HighlightedColor: {r: .960784316, g: .960784316, b: .960784316, a: 1}
+    m_PressedColor: {r: .784313738, g: .784313738, b: .784313738, a: 1}
+    m_DisabledColor: {r: .784313738, g: .784313738, b: .784313738, a: .501960814}
+    m_ColorMultiplier: 1
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 849754568}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &849754568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 849754564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &849754569
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 849754564}
 --- !u!1001 &853006061
 Prefab:
   m_ObjectHideFlags: 0
@@ -11919,6 +12171,72 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: f2f748238fe3c764b8f999fe24603a99, type: 3}
   m_PrefabInternal: {fileID: 883555423}
+--- !u!1 &893203687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 893203688}
+  - 222: {fileID: 893203690}
+  - 114: {fileID: 893203689}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &893203688
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893203687}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 849754565}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &893203689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893203687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: d8aebe311dceeaa4495f11256a632b3f, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Inhibit language processing
+--- !u!222 &893203690
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893203687}
 --- !u!1001 &895713050
 Prefab:
   m_ObjectHideFlags: 0
@@ -15821,6 +16139,72 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1242365500}
+--- !u!1 &1251717493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1251717494}
+  - 222: {fileID: 1251717496}
+  - 114: {fileID: 1251717495}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1251717494
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1251717493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 421895928}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1251717495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1251717493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: d8aebe311dceeaa4495f11256a632b3f, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Suggest using color recognition
+--- !u!222 &1251717496
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1251717493}
 --- !u!1 &1271565299
 GameObject:
   m_ObjectHideFlags: 0
@@ -17164,7 +17548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1390141016
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17180,6 +17564,7 @@ RectTransform:
   - {fileID: 1514541055}
   - {fileID: 935935726}
   - {fileID: 694431293}
+  - {fileID: 849754565}
   m_Father: {fileID: 149745110}
   m_RootOrder: 8
   m_AnchorMin: {x: .779000044, y: 0}
@@ -18478,13 +18863,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a786e5c0730e84d9b794e1693cd58b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brainNode: {fileID: 473725250}
-  correctState: 0
-  actionCost: 0
+  brainNode: {fileID: 795514476}
+  correctState: 3
+  actionCost: 50
   isCorrect: 0
-  earlyMessage: 
-  correctMessage: 
-  LateMessage: 
+  earlyMessage: To inhibit functions, we first have to detect a conflict.
+  correctMessage: We cannot find the right answer without color recognition.
+  LateMessage: All inhibitions are in place. We are ready to respond.
 --- !u!114 &1514541057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19777,7 +20162,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fill in
+  m_Text: Inhibit color recognition
 --- !u!222 &1600540822
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20815,8 +21200,8 @@ MonoBehaviour:
   actionCost: 25
   isCorrect: 1
   earlyMessage: We have not yet received information from Thalamus
-  correctMessage: We have identified word "blue" with yellow font color. Now we have
-    to select the right information type in another part of the brain.
+  correctMessage: We have identified word "blue" with a different, yellow font color.
+    The difference causes a conflict that we must resolve before responding.
   LateMessage: We have already decoded visual information
 --- !u!114 &1705456511
 MonoBehaviour:
@@ -24244,7 +24629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: c903b85976d19c7448f5e66f09cbf231, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 090362e02e8c23842bb436bb6f87593d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25723,7 +26108,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fill in
+  m_Text: Suggest using language processing
 --- !u!222 &2081167589
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25838,7 +26223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2087382004
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25854,6 +26239,7 @@ RectTransform:
   - {fileID: 397226307}
   - {fileID: 1178370831}
   - {fileID: 1964281085}
+  - {fileID: 421895928}
   m_Father: {fileID: 149745110}
   m_RootOrder: 9
   m_AnchorMin: {x: .779000044, y: 0}
