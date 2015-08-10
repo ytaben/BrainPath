@@ -167,6 +167,8 @@ public class GameController : MonoBehaviour
         totalScoreText.color = isWin ? Color.green : Color.red;
 
         finalImage.sprite = isWin ? victoryImage : defeatImage;
+
+        SaveLoad.NotifyLevelComplete(totalScore, isWin);
     }
     //Reinitialize the game field by disabling all brain nodes, then reactivating only the current one and
     //All the outbound nodes
