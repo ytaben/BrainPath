@@ -146,14 +146,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Inferior Frontal Gyrus (IFG) is largely responsible for:
+  m_Text: 'Cingulate cortex includes many smaller areas with different responsibilities.
+    Some of the most imporant ones:
 
-    - Attention control
+    - Monitoring conflicts and suggesting how to resolve them
 
-    - Response inhibition
+    - Reward based learning
 
+    - Emotion formation
 
-    IGF is especially imporant in goal oriented tasks.'
+'
 --- !u!222 &1853687
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2840,7 +2842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &232009526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25836,7 +25838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2087382004
 RectTransform:
   m_ObjectHideFlags: 0
