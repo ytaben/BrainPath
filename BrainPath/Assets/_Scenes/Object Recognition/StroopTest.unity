@@ -8810,6 +8810,7 @@ GameObject:
   - 114: {fileID: 655388927}
   - 114: {fileID: 655388930}
   - 114: {fileID: 655388931}
+  - 114: {fileID: 655388932}
   m_Layer: 0
   m_Name: CloseButton
   m_TagString: Untagged
@@ -8926,6 +8927,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c904d0839dc08764da9f44a96b2d6788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &655388932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655388925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41eaa6dd8262ec24b99c82c1f0e63407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1585572877}
 --- !u!1 &658861145
 GameObject:
   m_ObjectHideFlags: 0
@@ -21827,6 +21840,7 @@ GameObject:
   - 224: {fileID: 1757820214}
   - 222: {fileID: 1757820216}
   - 114: {fileID: 1757820215}
+  - 114: {fileID: 1757820217}
   m_Layer: 5
   m_Name: MessagePanel
   m_TagString: Untagged
@@ -21880,6 +21894,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1757820213}
+--- !u!114 &1757820217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757820213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880b4b8748044944ea52c4f8483db96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjects:
+  - {fileID: 1585572877}
 --- !u!1001 &1758565388
 Prefab:
   m_ObjectHideFlags: 0
