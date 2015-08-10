@@ -70,5 +70,13 @@ public static class SaveLoad  {
 
         SaveLevels();
     }
+
+    public static void NotifyLevelComplete(int score, bool isWin)
+    {
+        if (currentLevel == "") return;
+
+        UpdateLevel(currentLevel, score, isWin);
+        currentLevel = "";
+    }
 	
 }
