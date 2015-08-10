@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/MainMenu.unity
   - enabled: 1
     path: Assets/_Scenes/Tutorial 1.unity
+  - enabled: 1
+    path: Assets/_Scenes/Object Recognition/StroopTest.unity
