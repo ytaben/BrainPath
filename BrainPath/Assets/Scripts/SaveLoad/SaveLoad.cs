@@ -20,6 +20,9 @@ public static class SaveLoad  {
 
         LoadLevels();
     }
+
+    
+
     public static void SaveLevels()
     {
         levels.Clear();
@@ -51,6 +54,7 @@ public static class SaveLoad  {
 
     public static void UpdateLevel(string name, int score, bool isWin)
     {
+        if (levelsDict == null) { Initialize(); }
         Level level;
 
         if (levelsDict.TryGetValue(name, out level)) //We already played this level
