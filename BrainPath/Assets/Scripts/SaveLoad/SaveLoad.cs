@@ -17,6 +17,7 @@ public static class SaveLoad  {
     public static void Initialize()
     {
         levelsDict = new Dictionary<string, Level>();
+        levels = new List<Level>();
 
         LoadLevels();
     }
@@ -43,12 +44,19 @@ public static class SaveLoad  {
         {
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file;
-            try {
-                 file = File.Open(Application.persistentDataPath + "/savedGames.gd", FileMode.Open);
+            try
+            {
+                file = File.Open(Application.persistentDataPath + savePath, FileMode.Open);
             }
             catch (FileNotFoundException) { return; }
             levels = (List<Level>)bf.Deserialize(file);
             file.Close();
+        }
+        else levels = new List<Level>();
+
+        foreach (Level level in levels)
+        {
+            levelsDict[level.name] = level;
         }
     }
 
