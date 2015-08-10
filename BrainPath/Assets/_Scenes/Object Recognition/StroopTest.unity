@@ -14293,7 +14293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousArrow: {fileID: 2102272478}
-  nextArrow: {fileID: 0}
+  nextArrow: {fileID: 2047261033}
   previousNode: {fileID: 170611426}
   nextNode: {fileID: 0}
   name: Primary Motor Cortex
@@ -25513,7 +25513,7 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
-  pathNode: {fileID: 1520652349}
+  pathNode: {fileID: 943387681}
   name: Cingulate Cortex
   outboundEdges:
   - destination: {fileID: 473725243}
