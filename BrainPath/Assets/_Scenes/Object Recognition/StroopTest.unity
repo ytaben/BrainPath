@@ -1942,7 +1942,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fill In
+  m_Text: Send information through <b>Ventral</b> stream
 --- !u!222 &142355163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2840,7 +2840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &232009526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3369,7 +3369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &278825882
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4281,7 +4281,7 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
-  pathNode: {fileID: 0}
+  pathNode: {fileID: 943387681}
   name: Inferior Temporal Cortex
   outboundEdges:
   - destination: {fileID: 1785720409}
@@ -5922,12 +5922,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
-  correctState: 0
-  actionCost: 0
+  correctState: 1
+  actionCost: 25
   isCorrect: 0
-  earlyMessage: 
-  correctMessage: 
-  LateMessage: 
+  earlyMessage: We have not yet received information from Thalamus
+  correctMessage: The word is on the screen in front of us, but we still don't know
+    what it is.
+  LateMessage: We have already decoded visual information
 --- !u!114 &469838755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6414,7 +6415,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fill in
+  m_Text: Send information through <b>Dorsal</b> stream
 --- !u!222 &492626264
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10556,7 +10557,7 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
-  pathNode: {fileID: 1520652349}
+  pathNode: {fileID: 170611428}
   name: Inferior Frontal Gyrus
   outboundEdges:
   - destination: {fileID: 1785720409}
@@ -20808,12 +20809,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 1785720416}
-  correctState: 0
-  actionCost: 0
-  isCorrect: 0
-  earlyMessage: 
-  correctMessage: 
-  LateMessage: 
+  correctState: 1
+  actionCost: 25
+  isCorrect: 1
+  earlyMessage: We have not yet received information from Thalamus
+  correctMessage: We have identified word "blue" with yellow font color. Now we have
+    to select the right information type in another part of the brain.
+  LateMessage: We have already decoded visual information
 --- !u!114 &1705456511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22097,7 +22099,7 @@ MonoBehaviour:
   isActive: 0
   isExplored: 0
   isNew: 0
-  pathNode: {fileID: 943387681}
+  pathNode: {fileID: 1088919663}
   name: Primary Motor Cortex
   outboundEdges:
   - destination: {fileID: 1785720409}
