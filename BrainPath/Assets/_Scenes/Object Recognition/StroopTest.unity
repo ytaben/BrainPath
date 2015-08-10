@@ -2337,7 +2337,7 @@ MonoBehaviour:
   currentAnimationState: 0
   levelName: Stroop Test
   startNode: {fileID: 473725243}
-  TimeLimit: 800
+  TimeLimit: 1000
   BaseLevelScore: 750
   victoryMessage: We have successfuly completed the trial in the allocated time
   defeatMessage: We could not complete the trial in the allocated time
