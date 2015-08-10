@@ -20,6 +20,7 @@ public class LevelLoader : MonoBehaviour {
 
     void OnClick()
     {
+        SaveLoad.currentLevel = levelName;
         Application.LoadLevel(levelName);
     }
 }
