@@ -2299,7 +2299,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 182287096}
   - 114: {fileID: 182287097}
-  - 114: {fileID: 182287098}
   - 114: {fileID: 182287099}
   - 114: {fileID: 182287100}
   - 114: {fileID: 182287101}
@@ -2353,20 +2352,6 @@ MonoBehaviour:
   finalImage: {fileID: 491878416}
   victoryImage: {fileID: 0}
   defeatImage: {fileID: 0}
---- !u!114 &182287098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 182287095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0249f2cdabf6c674f9123ff21db3b57b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalStages: 0
-  currentStage: 0
-  helpScreens: []
 --- !u!114 &182287099
 MonoBehaviour:
   m_ObjectHideFlags: 0
