@@ -17006,12 +17006,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brainNode: {fileID: 329039376}
-  correctState: 0
-  actionCost: 0
+  correctState: 2
+  actionCost: 25
   isCorrect: 0
-  earlyMessage: 
-  correctMessage: 
-  LateMessage: 
+  earlyMessage: Visual information was not yet decoded in visual cortex
+  correctMessage: Stroop test doesn't require detailed visual processing. We are already
+    able to use it for conflict monitoring.
+  LateMessage: We have already used visual information and analyzed it through other
+    means.
 --- !u!114 &1306875664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19430,7 +19432,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1524757622
 RectTransform:
   m_ObjectHideFlags: 0
